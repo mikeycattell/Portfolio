@@ -1,0 +1,32 @@
+copy to write:
+ABOUT PAGE:
+	Who I work with
+	Web, App and Mobile Design
+	What I don't do
+
+	skills:
+		add svn, git reponsitries
+
+
+diff copy in right side of contact page
+
+humans.txt
+
+to do:
+interests page:
+	update pics
+	add last fm
+	change green colours to light to dark
+	more copy
+	last fm - on tape!
+	
+
+PICTURES page:
+	set up new tumblr with michaelcattell.com/pictures - syndex
+	gray bg, add info about camera in there somewhere - humans.txt\
+
+pages of me!
+
+HOME/ABOUT - header pics - agree on them
+
+Twitter feed?
