@@ -113,6 +113,7 @@ h1.mainh1 { font-size: 66px; position: absolute; top: 220px;/* left: 90px; */col
 h1.title { font-size: 46px; margin: 0; }
 h2.standardh2 { font-size: 36px; }
 h3.standardh3 { font-size: 32px;}
+h4.standardh4 { font-size: 26px;}
 p.date { color: #999999; font-size: 11px; font-style: italic; margin: 0; }
 p.intro { font-size: 19px;}
 p.lookhere { color: #fff; text-align: center; font-family: edmondsans; font-size: 30px; padding: 0; margin: 0; }
@@ -124,6 +125,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 .darktxt { color: #333;}
 .darkgray { color: #f2f2f2;}
 .white { color: #fff;}
+.green { color: #16A085;}
 
 .box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
 .box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
