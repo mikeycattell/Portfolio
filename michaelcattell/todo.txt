@@ -1,11 +1,13 @@
-copy to write:
-ABOUT PAGE:
-	Who I work with
-	Web, App and Mobile Design
-	What I don't do
+Copy to write:
 
-	skills:
-		add svn, git reponsitries
+ABOUT PAGE:
+	Who I work with - done
+	Web, App and Mobile Design  - done
+	What I don't do  - done
+
+skills:		
+	add svn, git reponsitries
+	build resume page and include dl version
 
 
 diff copy in right side of contact page
@@ -22,11 +24,11 @@ interests page:
 	
 
 PICTURES page:
-	set up new tumblr with michaelcattell.com/pictures - syndex
+	set up new tumblr with michaelcattell.com/pictures - syndex  - done
 	gray bg, add info about camera in there somewhere - humans.txt\
 
 pages of me!
 
 HOME/ABOUT - header pics - agree on them
 
-Twitter feed?
+decide if to include Twitter feed?
