@@ -109,7 +109,7 @@ a#purchaseLink {  }
 
 h1, h2, h3, h4, h5 { font-family: edmondsans; font-weight: normal; color: #4C4E54;}
 
-h1.mainh1 { font-size: 66px; position: absolute; top: 220px;/* left: 90px; */color: #fff;  }
+h1.mainh1 { font-size: 66px; position: absolute; top: 180px;/* left: 90px; */color: #fff;  }
 h1.title { font-size: 46px; margin: 0; }
 h2.standardh2 { font-size: 36px; }
 h3.standardh3 { font-size: 32px;}
