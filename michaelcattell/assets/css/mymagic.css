@@ -29,9 +29,9 @@ ul li { list-style: none outside none; }
 .listofdoanddont a:hover { color: #f2f2f2;  }
 
 .resumegreen { background: #16A085; padding: 10px; }
-.cheerfulgreen { background: #0D604F; padding: 10px; text-align: center; font-size: 18px;} 
-.visionarygreen {  background: #0F705D; padding: 10px; text-align: center; font-size: 18px; }
-.joyfulgreen { background: #11806A; padding: 10px; text-align: center; font-size: 18px; }
+.cheerfulgreen { background: #0D604F; padding: 10px; font-size: 18px;} 
+.visionarygreen {  background: #0F705D; padding: 10px; font-size: 18px; }
+.joyfulgreen { background: #11806A; padding: 10px; font-size: 18px; }
           
 
 a { color: #16A085; font-weight: 400;}
@@ -83,7 +83,7 @@ a#purchaseLink {  }
 #button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
 #home { background: url(../images/home2__.jpg) 50%  70% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
-#about { background: url(../images/about_1.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#about { background: url(../images/about_6.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 
 
 /**************** Font / Type rules ********************/
