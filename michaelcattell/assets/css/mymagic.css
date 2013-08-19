@@ -1,7 +1,8 @@
 body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; }
 	 #sub { background: #F5F6F6; }
 
-
+a { color: #16A085; font-weight: 400;}
+a:hover { color: #1B5378; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
 /********* Default Styling for all pages *************/
 ul li { list-style: none outside none; }
 
@@ -12,9 +13,6 @@ ul li { list-style: none outside none; }
 .techincals ul li:nth-child(1) { padding: 0px 0 0; color: #fff; }
 .techincals ul li a { color: #fff;  }
 .techincals ul li a:hover { color: #f2f2f2; }
-
- .greenbackground { background: #1ABC9C; padding: 0; }
-
 
 .resume { }
 
@@ -32,27 +30,20 @@ ul li { list-style: none outside none; }
 .cheerfulgreen { background: #0D604F; padding: 10px; font-size: 18px;} 
 .visionarygreen {  background: #0F705D; padding: 10px; font-size: 18px; }
 .joyfulgreen { background: #11806A; padding: 10px; font-size: 18px; }
-          
-
-a { color: #16A085; font-weight: 400;}
-a:hover { color: #1B5378; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
-
+.greenbackground { background: #1ABC9C; padding: 0; }     
+.lightgraybgstyle { background: #f8f8f8; }
+.darkgreen { background: #16A085 }    
 
 .firstfix { padding-left: 0;}
 .content { background-color:#fefefe; padding-top:60px; padding-bottom:0; position:relative; }
 .contentnobg { background-color:#transparent; padding-top:60px; padding-bottom:0; position:relative; }
-
 .contentnopad {	background-color:#fefefe; padding-top:0px; padding-bottom:0; position:relative; }
 .contentinternalpad  { padding: 40px 0 20px;}
 .contentinternalpadeven { padding: 40px 0;}
 .normalcontent { padding: 0 10px;}
 .content20 { padding: 20px 0;}
 
-.lightgraybgstyle { background: #f8f8f8; }
-.darkgreen { background: #16A085 } 
-
 .bordertop { border-top: 1px solid #d6d6d6; }
-
 
 .height5 { height: 5px; clear: both;}
 .height10 { height: 10px; clear: both;}
@@ -83,7 +74,7 @@ a#purchaseLink {  }
 #button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
 #home { background: url(../images/home2__.jpg) 50%  70% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
-#about { background: url(../images/about_6.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#about { background: url(../images/about_2.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 
 
 /**************** Font / Type rules ********************/
@@ -98,8 +89,6 @@ a#purchaseLink {  }
   src: url( ../fonts/jubilat-light-webfont.ttf ); /* IE */  
   src: local("jubilat-light"), url( ../fonts/jubilat-light-webfont.ttf) format("truetype"); /* non-IE */  
 }  
-
-
 
 @font-face {  
   font-family: "edmondsans";  
@@ -126,6 +115,8 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 .darkgray { color: #f2f2f2;}
 .white { color: #fff;}
 .green { color: #16A085;}
+
+/**************** image holders with that lovely hover effect ********************/
 
 .box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
 .box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
@@ -169,6 +160,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 	100% { transform: rotate(0deg); }
 }
 
+/* this bit makes that button wobbie/swing baby! */
 .swing {
 	-webkit-transform-origin: top center;
 	-moz-transform-origin: top center;
@@ -182,9 +174,13 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 
 #creditfooter { display: none;}
-.row.end [class*="column"] + [class*="column"]:last-child { float: left; }
+
 
 .workhold { margin: 0 0px 0 -15px }
+
+
+/******* Important fix - fixes foundation's random floating to the right last span when mobile size ********/
+.row.end [class*="column"] + [class*="column"]:last-child { float: left; }
 
 /*  Contact Section */
 .contact-details ul { margin: 0; padding: 0; list-style: none; }
@@ -229,20 +225,8 @@ h1.mainh1 { font-size: 38px; position: absolute; top: 120px;  }
 .contentnobg { padding-top:60px; }
  }
 
+/* carousel fixes */
 a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
 
-.lastFM { font-family: Arial, Helvetica, sans-serif; font-size: 100%; margin: 0; 	width: 90%; color: #666; }
-.lastFM a { }
-.lastFM a:hover { }
-.lastFM a img { border: none; }
-.lastFM img { float: left;	margin: 0 1em 0 0; }
-.lastFMHeader { font-size: 1.2em; font-weight: bold; padding: 0.2em 0; display: none; }
-.lovedtracks, .recenttracks, .topablums, .topartists, .toptracks {}
-.lastFMBody { border: 0px solid #999; }
-.lastFMBody ul
-{	margin: 0;	padding: 0;	list-style: none; }
-.itemRow { clear: left; margin: 0; padding: 0.4em; height: 64px; }
-.itemName a { font-weight: bold; }
-.odd { background-color: #; }
-.even { background-color: #; }	
+
