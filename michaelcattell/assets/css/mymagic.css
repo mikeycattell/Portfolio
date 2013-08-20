@@ -229,4 +229,6 @@ h1.mainh1 { font-size: 38px; position: absolute; top: 120px;  }
 a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
 
+a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
+.orbit-container { background: transparent;}
 
