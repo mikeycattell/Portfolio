@@ -33,6 +33,7 @@ ul li { list-style: none outside none; }
 .greenbackground { background: #1ABC9C; padding: 0; }     
 .lightgraybgstyle { background: #f8f8f8; }
 .darkgreen { background: #16A085 }    
+.darkblack { background: #101010;}
 
 .firstfix { padding-left: 0;}
 .content { background-color:#fefefe; padding-top:60px; padding-bottom:0; position:relative; }
@@ -115,7 +116,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 .darkgray { color: #f2f2f2;}
 .white { color: #fff;}
 .green { color: #16A085;}
-
+ 
 /**************** image holders with that lovely hover effect ********************/
 
 .box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
@@ -221,7 +222,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/home2__.jpg) 20%  80% no-repeat fixed; }
 h1.mainh1 { font-size: 38px; position: absolute; top: 120px;  }
-#about { background: url(../images/about_1.jpg) 90% 100% no-repeat fixed; height: 220px;	}
+#about { background: url(../images/about_2.jpg) 90% 100% no-repeat fixed; height: 220px;	}
 .contentnobg { padding-top:60px; }
  }
 
@@ -229,4 +230,6 @@ h1.mainh1 { font-size: 38px; position: absolute; top: 120px;  }
 a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
 
+a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
+.orbit-container { background: transparent;}
 
