@@ -1,5 +1,20 @@
 {% layout "alternative" %}
 {% block content %} 
+{{ "lfm.css" | asset_url | stylesheet_tag }}
+{{ "jquery.last.fm.js" | asset_url | script_tag }}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ <script>  
+   $('.albums').lfm({
+   APIkey: 'mikey_cattell',
+   User: '45e56e08be5bdd9117927163470ea232',
+   Behavior: "hover", //or click
+   limit: 20,     // 1 album - 50 albums
+   period: "3month" //overall|7day|1month|3month|6month|12month
+});
+</script>
+  
+
 <div class="">
        <section class="contentnobg">
        <div class="content20">
@@ -18,6 +33,17 @@
       </div>
   </div>
 </section>
+
+<section>
+  <div class="row">
+  <div class="twelve columns">
+
+<div style="height: 1000px">
+<div class="albums"></div></div>
+  </div>
+  </div>
+</section>
+
 
         <article>
         <div class="resumegreen listofdoanddont">
@@ -53,7 +79,7 @@
           <div class="twelve columns white">
             <h2 class="standardh2 white">Sorry, I cant hear you - got my earphones in</h2>
             <p class="intro">Ahh music - where would I be without it? Way behind on deadlines, and getting annoyed by outside noise.
- 
+            
             </p>
 
           </div>
@@ -90,6 +116,10 @@
 <style>
 .orbit-bullets { display: none; }
 </style>
+
+
+
+
 
 {% include "contactme" %} 
 {% include "footer" %} 
