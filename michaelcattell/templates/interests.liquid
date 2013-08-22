@@ -1,19 +1,5 @@
 {% layout "alternative" %}
 {% block content %} 
-{{ "lfm.css" | asset_url | stylesheet_tag }}
-{{ "jquery.last.fm.js" | asset_url | script_tag }}
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
- <script>  
-   $('.albums').lfm({
-   APIkey: 'mikey_cattell',
-   User: '45e56e08be5bdd9117927163470ea232',
-   Behavior: "hover", //or click
-   limit: 20,     // 1 album - 50 albums
-   period: "3month" //overall|7day|1month|3month|6month|12month
-});
-</script>
-  
 
 <div class="">
        <section class="contentnobg">
@@ -34,19 +20,8 @@
   </div>
 </section>
 
-<section>
-  <div class="row">
-  <div class="twelve columns">
-
-<div style="height: 1000px">
-<div class="albums"></div></div>
-  </div>
-  </div>
-</section>
-
-
         <article>
-        <div class="resumegreen listofdoanddont">
+        <div class="" style="background: #CBC2A5;">
         <div class="row">
           <div class="twelve columns white">
             <h2 class="standardh2 white">The most beautiful girl in the world</h2>
@@ -54,17 +29,8 @@
           </div>
         </div>     
         </div>
-        <ul data-orbit>
-          <li data-orbit-slide>
-                <img src="assets/images/interests/emma_mybeautifulwife.jpg" alt="" />
-          </li>
-          <li data-orbit-slide>
-                <img src="assets/images/interests/emma_mybeautifulwife.jpg" alt="" />
-          </li>
-          <li data-orbit-slide>
-                <img src="assets/images/interests/emma_mybeautifulwife.jpg" alt="" />
-          </li>
-        </ul>
+         <img src="assets/images/interests/emma_background.jpg" alt="" />
+
         </article>
 
 <style>
@@ -74,22 +40,50 @@
 </style>
 
          <article>
-        <div class="cheerfulgreen listofdoanddont">
+        <div class="" style="background: #A7B99F;">
         <div class="row">
           <div class="twelve columns white">
             <h2 class="standardh2 white">Sorry, I cant hear you - got my earphones in</h2>
-            <p class="intro">Ahh music - where would I be without it? Way behind on deadlines, and getting annoyed by outside noise.
-            
-            </p>
-
+            <p class="intro">Ahh music - where would I be without it? Way behind on deadlines, and getting annoyed by outside noise.</p>
           </div>
         </div> 
-        </div>    
-        <img src="assets/images/interests/musicplayer.jpg" alt="" style="position: relative;" />
+        </div> 
+        <div style="position: relative; background-image: url(assets/images/interests/music_background.jpg); background-position: top left; height: 400px; padding: 50px 0">   
+      <div class="row">
+    <div class="twelve columns">
+    <br>
+      <ul class="block-grid four-up booksiread">
+        <li>
+          <a href="http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307463745" title="Rework" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-rework.jpg" alt="Rework"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0307463745" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>Rework</h4>
+          <p><small>by Jason Fried and David Hansson</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/0787960756/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0787960756" title="The Five Dysfunctions of a Team" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-the-five-dysfunctions-of-a-team.jpg" alt="The Five Dysfunctions of a Team"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0787960756" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>The Five Dysfunctions of a Team</h4>
+          <p><small>by Patrick Lencioni</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/1591843790/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1591843790" title="Enchantment" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-enchantment.jpg" alt="Enchantment"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=1591843790" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>Enchantment</h4>
+          <p><small>by Guy Kawasaki</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/0307465357/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307465357" title="The 4-Hour Workweek" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-the-4-hour-workweek.jpg" alt="The 4-Hour Workweek"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0307465357" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>The 4-Hour Workweek</h4>
+          <p><small>by Timothy Ferriss</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+        </div>
+
+
         </article>
       
         <article>
-        <div class="visionarygreen listofdoanddont">
+        <div class="" style="background: #83BFA3;">
         <div class="row">
           <div class="twelve columns white">
             <h2 class="standard white">Getting away from the desk</h2>
@@ -97,11 +91,37 @@
           </div>
         </div>     
         </div>
-        <img src="assets/images/workspace.jpg" alt="" />
+   <div class="row">
+    <div class="twelve columns">
+    <br>
+      <ul class="block-grid four-up booksiread">
+        <li>
+          <a href="http://www.amazon.com/gp/product/0307463745/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307463745" title="Rework" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-rework.jpg" alt="Rework"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0307463745" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>Rework</h4>
+          <p><small>by Jason Fried and David Hansson</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/0787960756/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0787960756" title="The Five Dysfunctions of a Team" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-the-five-dysfunctions-of-a-team.jpg" alt="The Five Dysfunctions of a Team"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0787960756" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>The Five Dysfunctions of a Team</h4>
+          <p><small>by Patrick Lencioni</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/1591843790/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1591843790" title="Enchantment" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-enchantment.jpg" alt="Enchantment"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=1591843790" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>Enchantment</h4>
+          <p><small>by Guy Kawasaki</small></p>
+        </li>
+        <li>
+          <a href="http://www.amazon.com/gp/product/0307465357/ref=as_li_ss_tl?ie=UTF8&tag=jonsuhcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307465357" title="The 4-Hour Workweek" target="_blank"><img src="http://www.jonsuh.com/assets/about/book-the-4-hour-workweek.jpg" alt="The 4-Hour Workweek"/><img src="http://www.assoc-amazon.com/e/ir?t=jonsuhcom-20&l=as2&o=1&a=0307465357" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+          <h4>The 4-Hour Workweek</h4>
+          <p><small>by Timothy Ferriss</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
         </article>
         
         <article>
-        <div class="joyfulgreen listofdoanddont">
+        <div class="" style="background: #EDCBB0;">
         <div class="row">
           <div class="twelve columns white">
             <h2 class="standard white">Ralph</h2>
@@ -109,17 +129,13 @@
           </div>
         </div>   
         </div>  
-        <img src="assets/images/interests/ralph_greatestdogintheworld.jpg" alt="" />
+        <img src="assets/images/interests/ralph_background.jpg" alt="" />
         </article>        
 
       </section>
 <style>
 .orbit-bullets { display: none; }
 </style>
-
-
-
-
 
 {% include "contactme" %} 
 {% include "footer" %} 

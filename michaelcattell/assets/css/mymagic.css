@@ -43,6 +43,7 @@ ul li { list-style: none outside none; }
 .contentinternalpadeven { padding: 40px 0;}
 .normalcontent { padding: 0 10px;}
 .content20 { padding: 20px 0;}
+.content10all { padding: 10px;}
 
 .bordertop { border-top: 1px solid #d6d6d6; }
 
@@ -180,6 +181,15 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 
 .workhold { margin: 0 0px 0 -15px }
+.booksiread li { transition:all 0.25s ease-in-out 0s; -moz-transition:all 0.25s ease-in-out 0s; -webkit-transition:all 0.25s ease-in-out 0s; -o-transition:all 0.25s ease-in-out 0s;
+-ms-transition:all 0.25s ease-in-out 0s;  position:relative; }
+.booksiread li img:first-child { opacity:0.8; width:100%; transition:all 0.2s ease-in-out 0s; -moz-transition:all 0.2s ease-in-out 0s; -webkit-transition:all 0.2s ease-in-out 0s;
+-o-transition:all 0.2s ease-in-out 0s; -ms-transition:all 0.2s ease-in-out 0s; display:block; }
+.booksiread li img:last-child { width:1px; height:1px; position:absolute; top:0; left:0; }
+.booksiread li h4 { margin-top:10px;  margin-bottom:5px; }
+.booksiread li p { line-height:1em; margin-bottom:0; }
+.booksiread li p small { font-size:11px; font-size:1.1rem; }
+.booksiread li:hover img { opacity:1; }
 
 
 /******* Important fix - fixes foundation's random floating to the right last span when mobile size ********/
