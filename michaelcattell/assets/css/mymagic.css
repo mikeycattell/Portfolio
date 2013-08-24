@@ -2,7 +2,7 @@ body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #
 	 #sub { background: #F5F6F6; }
 
 a { color: #16A085; font-weight: 400;}
-a:hover { color: #1B5378; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
+a:hover { color: #097159; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
 /********* Default Styling for all pages *************/
 ul li { list-style: none outside none; }
 
