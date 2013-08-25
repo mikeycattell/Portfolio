@@ -75,7 +75,7 @@ a#purchaseLink {  }
 #button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 #button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
-#home { background: url(../images/home2__.jpg) 50%  70% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#home { background: url(../images/home4.jpg) 50%  70% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 #about { background: url(../images/about_2.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 
 
@@ -100,7 +100,7 @@ a#purchaseLink {  }
 
 h1, h2, h3, h4, h5 { font-family: edmondsans; font-weight: normal; color: #4C4E54;}
 
-h1.mainh1 { font-size: 66px; position: absolute; top: 180px;/* left: 90px; */color: #fff;  }
+h1.mainh1 { font-size: 66px; position: absolute; top: 180px;/* left: 90px; */color: #999;  }
 h1.title { font-size: 46px; margin: 0; }
 h2 { margin-bottom: 1px;}
 h2.standardh2 { font-size: 36px; }
@@ -232,7 +232,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 	/* Anything less than 1024 */
 @media only screen and (max-width: 768px) {
-#home { height: 300px; background: url(../images/home2__.jpg) 20%  80% no-repeat fixed; }
+#home { height: 300px; background: url(../images/home4.jpg) 20%  80% no-repeat fixed; }
 h1.mainh1 { font-size: 38px; position: absolute; top: 120px;  }
 #about { background: url(../images/about_2.jpg) 90% 100% no-repeat fixed; height: 220px;	}
 .contentnobg { padding-top:60px; }
