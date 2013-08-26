@@ -2,7 +2,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/premierfoodsafety/premierfoodsafety_opening.jpg">
+  {{ "premierfoodsafety_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -27,14 +27,14 @@
         <p class="intro">Lead Designer, showcasing and explaining modern techniques to the CEO of the company, ensuring a new brand direction to be kept consistent. Branding was reinvented and controlled in print, online and internally. </p>
       </div>
       <div class="six columns">
-         <img src="assets/images/portfolio/premierfoodsafety/premierfoodsafety_myrole.png">
+         {{ "premierfoodsafety_myrole.png" | asset_url | image_tag }}
       </div>      
     </div>
   </div>
 </section>
 
 <section class="contentnopad">
-  <img src="assets/images/portfolio/premierfoodsafety/premierfoodsafety_layout.jpg">
+  {{ "premierfoodsafety_layout.jpg" | asset_url | image_tag }}
 </section>
 
 <section class="content">
@@ -52,7 +52,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns">
-          <img src="assets/images/portfolio/premierfoodsafety/premierfoodsafety_print.jpg">
+          {{ "premierfoodsafety_print.jpg" | asset_url | image_tag }}
       </div>         
       <div class="six columns">
         <h3 class="standardh3">Print is dead – not according to real companies</h3>
