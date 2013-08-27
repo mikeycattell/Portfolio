@@ -1,9 +1,7 @@
 {% block content %}
-  <div id="homeslide"></div>
 <header class="clearfix">
   <section>
   <img src="assets/images/portfolio/argos/argos_opening.jpg">
-
   </section>
 </header>
 
@@ -103,16 +101,11 @@
           </div>
         </div>
     </div>
-<a href="#homeslide" class="scrollTo">Home</a>
+
   </div>
 </section>
 
-<script>
-$('.scrollTo').on('click', function(e) {
-    e.preventDefault();
-    Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
-});
-</script>
+
 {% include "contactme" %} 
 {% include "footer" %} 
 {% endblock %}
