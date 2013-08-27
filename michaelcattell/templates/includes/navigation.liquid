@@ -1,7 +1,8 @@
-               <div class="cbp-af-header hide-for-small hide-for-medium">
+               <div class="cbp-af-header hide-for-small">
                   <div class="cbp-af-inner">
                      <div class="logoholder" ><a href="index" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png"></a></div>
                      <nav>
+                        <a href="index">Home</a>                     
                         <a href="work">Work</a>
                         <a href="about">About</a>
                         <a href="blog">Writings</a>
@@ -12,19 +13,34 @@
                   </div>
                </div>
 
-               <div class="cbp-af-header gray hide-for-large">
-                  <div class="cbp-af-inner">
-                     <div class="logoholder content10all" style="float: left;" ><a href="index" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png"></a></div>
-                     <nav class="mini darktxt content10all">
-                        <a href="index">Home</a>
-                        <a href="work">Work</a>
-                        <a href="about">About</a>
-                        <a href="blog">Writings</a>
-                        <a href="interests">Interests</a>
-                        <a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a>
-                        <a href="contact">Contact</a>
-                     </nav>
-                  </div>
-               </div>
+             
+    <!-- Navigation -->
+      <nav class="top-bar show-for-small">
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li style=" float: left; padding: 10px 0 0 0;">
+            <div class="logoholder" ><a href="index" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png"></a></div>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#" style="color: #000;"><span>menu</span></a></li>
+        </ul>
 
-                        
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="index">Home</a></li>                 
+            <li><a href="work">Work</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="blog">Writings</a></li>
+            <li><a href="interests">Interests</a></li>
+            <li><a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+
+    <!-- End Navigation -->
+
+<style>
+.top-bar { left: 0; overflow: hidden; position: fixed; top: 0; transition: height 0.3s ease 0s; width: 100%; z-index: 10000; 
+height: 90px; background: #f6f6f6; opacity:0.6; filter:alpha(opacity=60); }
+.top-bar .toggle-topbar.menu-icon { font-size: 19px; margin-top: -16px; padding-left: 40px; right: 15px; top: 20%; }
+</style>
