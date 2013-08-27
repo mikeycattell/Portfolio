@@ -1,4 +1,4 @@
-body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; }
+body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
 a { color: #16A085; font-weight: 400;}
@@ -26,6 +26,7 @@ ul li { list-style: none outside none; }
 .listofdoanddont a { color: #fff; font-weight: normal; }
 .listofdoanddont a:hover { color: #f2f2f2;  }
 
+.whitebackground { background: #fff; }
 .resumegreen { background: #16A085; padding: 10px; }
 .cheerfulgreen { background: #0D604F; padding: 10px; font-size: 18px;} 
 .visionarygreen {  background: #0F705D; padding: 10px; font-size: 18px; }
@@ -67,7 +68,7 @@ a.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26
 a.bigblue:hover { background-color: #12836C;  }
 
 a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0; padding: 14px 12px; }
-.bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0; padding: 14px 12px; }
+.bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0 6px; padding: 14px 12px; }
 .bigred:hover { background-color: #c0392b;  }
 
 
@@ -465,13 +466,26 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 #contact-form .submit:hover { background: #16A085; color: #FFFFFF; }
 
 /*media changes and stuff*/
+@media only screen and (max-width: 767px) {
+   body { font-size: 15px; }
+   p.intro { font-size: 16px; }
+
+   h3.standardh3 { font-size: 22px; }
+   h2.standardh2small { font-size: 26px; }
+   h2.standardh2 { font-size: 28px; }
+   h1.title { font-size: 30px; margin: 0; }
+
+   span.headline a { font-size: 26px; }
+
+   p.lookhere { font-size: 22px; }
+
+}
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 768px) { }
+@media only screen and (min-width: 768px) {
+}
 
 /* Used to alter styles for screens at least 1280px wide. */
 @media only screen and (min-width: 1280px) {
- }
-
 }
 
 /* Used to alter styles for screens at least 1440px wide. */
@@ -479,19 +493,19 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 /* Apply styles to screens in landscape orientation */
 @media only screen and (orientation: landscape) {
-
- }
+}
 
 /* Apply styles to screens in portrait orientation */
 @media only screen and (orientation: portrait) {  
-
 }
+
+
 
 	/* Anything less than 1024 */
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/home4.jpg) 20%  80% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
-#about { background: url(../images/about_2.jpg) 90% 100% no-repeat fixed; height: 220px;	}
+#about { background: url(../images/about_4.jpg) 90% 100% no-repeat fixed; height: 220px;	}
 .contentnobg { padding-top:60px; }
  }
 
