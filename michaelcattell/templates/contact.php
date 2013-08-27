@@ -24,7 +24,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to michae.a.cattell@gmail.com');
+		alert('Message failed. Please, send an email to michael.a.cattell@gmail.com');
 		window.location = 'contact.html';
 	</script>
 <?php

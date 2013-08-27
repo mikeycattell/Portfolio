@@ -83,3 +83,12 @@
 		line-height: 1;
 	}
 }
+
+.top-bar { left: 0; overflow: hidden; position: fixed; top: 0; transition: height 0.3s ease 0s; width: 100%; z-index: 10000; 
+height: 90px; background: #f6f6f6; opacity:0.6; filter:alpha(opacity=60); }
+.top-bar .toggle-topbar.menu-icon { font-size: 19px; margin-top: 5px; padding-left: 40px; right: 0; top: 0%; }
+.top-bar .toggle-topbar.menu-icon a span { box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000; display: block;
+    height: 0; position: absolute;  right: 0;  width: 16px; }
+.top-bar ul > li.toggle-topbar:hover { background: transparent;}
+.top-bar ul.left { margin-top: 50px;}
+.top-bar ul > li a:not(.button) { font-size: 15px;} 
