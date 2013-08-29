@@ -43,7 +43,7 @@
        <!-- Thumbnails -->
        <div class="row">
           
-              <div class="nine columns">
+              <div class="nine columns contactformholder">
      
                <form id="contact-form" action="contact.php" method="post">
                      <p class="contact-name">
@@ -63,6 +63,21 @@
                       
                       </div>
                   </form>
+
+      <div class="span8 contactformholder">
+        <form action="contact.php" method="post">
+          <div class="controls controls-row">
+            <input id="name" name="mc_name" type="text" class="span7" placeholder="Name">
+            <input id="email" name="mc_email" type="email" class="span5" placeholder="Email address">
+          </div>
+          <div class="controls">
+            <textarea id="message" name="mc_message" class="span12" placeholder="Your Message" rows="5"></textarea>
+          </div>
+          <div class="controls">
+            <button id="contact-submit" type="submit" value="Send" class="btn btn-danger input-medium pull-right">Send</button>
+          </div>
+        </form>
+      </div>
 
               </div>
         

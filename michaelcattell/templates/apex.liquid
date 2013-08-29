@@ -2,7 +2,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/apexworkplace/apex_opening.jpg">
+  {{ "apex_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -21,7 +21,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns animated fadeInLeftBig">
-        <img src="assets/images/portfolio/apexworkplace/grouppic.jpg">
+        {{ "grouppic.jpg" | asset_url | image_tag }}
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">My Role</h3>
@@ -35,7 +35,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns">
-        <img src="assets/images/portfolio/apexworkplace/apex_layout.png">
+        {{ "apex_layout.png" | asset_url | image_tag }}
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">The Layout</h3>
@@ -57,7 +57,7 @@
 </section>
 
 <section class="contentnopad">
-  <img src="assets/images/portfolio/apexworkplace/apexworkplace_layout.jpg">
+  {{ "apexworkplace_layout.jpg" | asset_url | image_tag }}
 </section>
 
 <section class="contentnopad">

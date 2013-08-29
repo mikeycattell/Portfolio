@@ -2,7 +2,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/daxon/daxon_opening.jpg">
+    {{ "daxon_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -11,13 +11,13 @@
     <div class="row">
         <div class="twelve columns">
           <h2>About the project</h2>
-          <p><a href="http://www.daxon.co.uk/" title="view daxon website here">www.daxon.co.uk/</a></p>
+          <p><a href="http://www.daxon.co.uk" title="view daxon website here">www.daxon.co.uk</a></p>
         </div>
     </div>
 </section>
  
 <section class="contentinternalpadeven whitebackground animated fadeInUpBig">
-  <img src="assets/images/portfolio/daxon/daxon_layout.jpg">
+  {{ "daxon_layout.jpg" | asset_url | image_tag }}
 </section>
 
 {% include "contactme" %} 

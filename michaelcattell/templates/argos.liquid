@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/argos/argos_opening.jpg">
+    {{ "argos_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -26,7 +26,7 @@
         <p>Be the Front-end Developer, working alongside their marketing team to ensure consistent branding throughout the home and sub pages.</p>
       </div>       
       <div class="six columns">
-        <img src="assets/images/portfolio/argos/argos_role.png">
+        {{ "argos_role.png" | asset_url | image_tag }}
       </div>      
     </div>
   </div>
@@ -44,7 +44,7 @@
 </section>
 
 <section class="contentnopad">
-  <img src="assets/images/portfolio/argos/argos_layout.png">
+  {{ "argos_layout.png" | asset_url | image_tag }}
 </section>
 
 <section class="contentnopad">
@@ -55,7 +55,7 @@
         <p>As the site was aiming to Ex-pat audience, we kept the feeling of Argos intact while promoting more diverse products – who doesn’t want a BBQ or sun beds in Spain?</p>
       </div>       
       <div class="six columns pictureinright animated">
-        <img src="assets/images/portfolio/argos/argosspain_location.png">
+        {{ "argosspain_location.png" | asset_url | image_tag }}
       </div>      
     </div>
   </div>
@@ -83,19 +83,19 @@
     <div class="row">
         <!-- Thumbnails start -->
         <div class="four columns work">
-          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs"><img src="assets/images/portfolio/pomsnotbombs_nail.jpg" />
+          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
             </a>
           </div>
         </div>
         <div class="four columns work">
-          <div class="box"> <a href="premierfoodsafety" title="view the case study for Premier Food Safety"><img src="assets/images/portfolio/premierfoodsafety_nail.jpg" />
+          <div class="box"> <a href="premierfoodsafety" title="view the case study for Premier Food Safety">{{ "premierfoodsafety_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Premier Food Safety<br><span class="darktxt">Design, Build, Manage</span></p>
             </a>
           </div>
         </div>
         <div class="four columns work end">
-          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety"><img src="assets/images/portfolio/smallpeeps_nail.jpg" />
+          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
             </a>
           </div>

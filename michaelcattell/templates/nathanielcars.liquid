@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/nathanielcars/nathaniel_opening.jpg">
+    {{ "nathaniel_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -10,7 +10,7 @@
     <div class="row">
         <div class="twelve columns">
           <h2>About the project</h2>
-          <p><a href="http://www.nathanielcars.co.uk/" title="view nathanielcars website here">www.nathanielcars.co.uk/</a></p>
+          <p><a href="http://www.nathanielcars.co.uk" title="view nathanielcars website here">www.nathanielcars.co.uk</a></p>
           <p class="intro">A company specializing in selling cars and servicing cars for the past 30 years.</p>
           <p class="intro">They wanted something a little different, something funky and stand out from the others – i think I achieved this!</p>
         </div>
@@ -27,32 +27,16 @@
         <p class="intro">As previously stated, the client wanted something that stood out from the others, I worked hard to make it usable, attractive and not so pushy as most car dealers.</p>        
       </div>
       <div class="six columns animated fadeInRightBig">
-         <img src="assets/images/portfolio/nathanielcars/nathaniel_role.jpg">
+         {{ "nathaniel_role.jpg" | asset_url | image_tag }}
       </div>          
     </div>
   </div>
 </section>
 
 <section class="contentinternalpadeven">
-  <img src="assets/images/portfolio/nathanielcars/nathaniel_layout.jpg">
+  {{ "nathaniel_layout.jpg" | asset_url | image_tag }}
 </section>
 
-<section class="contentnopad" style="display: none">
-  <div class="contentinternalpadeven">
-    <div class="row">
-      <div class="six columns">
-        <p>qweqweqwe</p>
-      </div>    
-      <div class="six columns">
-        <h3 class="standardh3">Sketch it out first</h3>
-        <p>If any designer tells you they go from head to PS/Fireworks never believe them! I work my way through many pens, as im always scribbling the layout. Here you can see the design didn’t really change from the 1st scribble.</p>
-      </div>
-      <div class="six columns">
-        <p>qweqweqwe</p>
-      </div>         
-     </div>
-  </div>
-</section>
 
 <section class="contentnopad">
   <div class="contentinternalpadeven">

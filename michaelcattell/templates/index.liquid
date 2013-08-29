@@ -23,7 +23,7 @@
         <div class="four columns meet-me end">
           <div class="hide-for-small"><a class="bigred button animated shake" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a></div>
           <span class="info-image">
-          <div class="box"> <a href="about"><img src="assets/images/workexample.jpg" />
+          <div class="box"> <a href="about">{{ "workexample.jpg" | asset_url | image_tag }}
             <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
             </a> </div>
           </span>
@@ -50,19 +50,19 @@
     <div class="row">
         <!-- Thumbnails start -->
         <div class="four columns work">
-          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs"><img src="assets/images/portfolio/pomsnotbombs_nail.jpg" />
+          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
             </a>
           </div>
         </div>
         <div class="four columns work">
-          <div class="box"> <a href="argos" title="view the case study for Argos-Spain"><img src="assets/images/portfolio/argos_nail.jpg" />
+          <div class="box"> <a href="argos" title="view the case study for Argos-Spain">{{ "argos_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Argos<br><span class="darktxt">Build</span></p>
             </a>
           </div>
         </div>
         <div class="four columns work end">
-          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety"><img src="assets/images/portfolio/smallpeeps_nail.jpg" />
+          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
             <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
             </a>
           </div>

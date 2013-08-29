@@ -1,7 +1,8 @@
   <div id="homeslide"></div>
                <div class="cbp-af-header hide-for-small">
                   <div class="cbp-af-inner">
-                     <div class="logoholder animated tada"><a href="index" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png"></a></div>
+                     <div class="logoholder animated tada"><a href="index" title="Go to home page">
+                      {{ "michaelcattell_logo.png" | asset_url | image_tag }}</a></div>
                      <nav>
                         <a href="index">Home</a>                     
                         <a href="work">Work</a>
@@ -20,7 +21,7 @@
         <ul class="title-area">
           <!-- Title Area -->
           <li style=" float: left; padding: 10px 0 0 0;">
-            <div class="logoholder animated tada"><a href="index" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png"></a></div>
+            <div class="logoholder animated tada"><a href="index" title="Go to home page">{{ "michaelcattell_logo.png" | asset_url | image_tag }}</a></div>
           </li>
           <li class="toggle-topbar menu-icon"><a href="#" style="color: #000;"><span>menu</span></a></li>
         </ul>

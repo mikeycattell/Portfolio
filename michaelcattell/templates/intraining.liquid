@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/intraining/intraining_opening.jpg">
+    {{ "intraining_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -16,7 +16,7 @@
 </section>
  
 <section class="contentinternalpadeven animated fadeInUpBig">
-  <img src="assets/images/portfolio/intraining/intraining_layout.jpg">
+  {{ "intraining_layout.jpg" | asset_url | image_tag }}
 </section>
 
 {% include "contactme" %} 

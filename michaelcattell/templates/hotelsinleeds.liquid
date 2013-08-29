@@ -2,7 +2,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/hotelsinleeds/hotelsinleedsopen.jpg">
+    {{ "hotelsinleedsopen.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -11,13 +11,13 @@
     <div class="row">
         <div class="twelve columns">
           <h2>About the project</h2>
-          <p><a href="http://www.hotelsinleeds.org/" title="view hotels in leeds website here">www.hotelsinleeds.org/</a></p>
+          <p><a href="http://www.hotelsinleeds.org/" title="view hotels in leeds website here">www.hotelsinleeds.org</a></p>
         </div>
     </div>
 </section>
  
 <section class="contentinternalpadeven whitebackground animated fadeInUpBig">
-  <img src="assets/images/portfolio/hotelsinleeds/hotelsinleeds_layout.jpg">
+      {{ "hotelsinleeds_layout.jpg" | asset_url | image_tag }}
 </section>
 
 {% include "contactme" %} 

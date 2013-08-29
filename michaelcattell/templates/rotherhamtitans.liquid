@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/rotherhamtitans/titanrugby_opening.jpg">
+    {{ "titanrugby_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -10,13 +10,13 @@
     <div class="row">
         <div class="twelve columns">
           <h2>About the project</h2>
-          <p><a href="http://www.rotherhamrugby.co.uk/home/" title="view rotherham titans website here">www.rotherhamrugby.co.uk/home/</a></p>
+          <p><a href="http://www.rotherhamrugby.co.uk" title="view rotherham titans website here">www.rotherhamrugby.co.uk</a></p>
         </div>
     </div>
 </section>
  
 <section class="contentinternalpadeven animated fadeInUpBig">
-  <img src="assets/images/portfolio/rotherhamtitans/rotherhamtitans_layout.jpg">
+  {{ "rotherhamtitans_layout.jpg" | asset_url | image_tag }}
 </section>
  
 {% include "contactme" %} 
