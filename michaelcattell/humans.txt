@@ -1,8 +1,34 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+##############
+##   TEAM   ##
+##############
+                            
+Design, layout & responsive development,  Michael (Mikey) Cattell.
+                            
+Site: http://michaelcattell.com, https://github.com/mikeycattell
+                            
+Twitter: @mikeycattell
+                            
+Location: Anaheim, USA.
+					
 
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+################
+##   THANKS   ##
+################
+					
+Name: Emma Cattell (My wife - www.glamlifeofahousewife.com ) for being my tester and putting up with my jQuery rants!
+
+                            
+##############
+##   SITE   ##
+##############
+
+Last update: YYYY/MM/DD 
+                            
+Standards: HTML5, CSS3
+                            
+Components: Foundation Zurb, jQuery
+
+
+Software: Sublime Text 2, Fireworks, Photoshop, Git, Mixture.io. 
+
+                           

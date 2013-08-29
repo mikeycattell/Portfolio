@@ -1,7 +1,8 @@
+{% layout "alternative" %}
 {% block content %}
 <header class="clearfix">
   <section>
-    {{ "argos_opening.jpg" | asset_url | image_tag }}
+    {{ "_argos_opening.jpg" | asset_url | image_tag }}
   </section>
 </header>
 
@@ -44,7 +45,7 @@
 </section>
 
 
-<section class="contentnopad pictureinright animated">
+<section class="contentnopad fadeInImg animated">
   {{ "argos_layout.png" | asset_url | image_tag }}
 
 </section>
@@ -73,41 +74,7 @@
     </div>
   </div>
 </section>
-
-  <section class="content">
-  <div class="lightgraybgstyle contentinternalpadeven">
-    <!-- Thumbnails -->
-    <div class="row">
-      <div class="twelve columns">
-        <h3 class="standardh3">Other work</h3>
-      </div>
-    </div>
-    <div class="row">
-        <!-- Thumbnails start -->
-        <div class="four columns work">
-          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work">
-          <div class="box"> <a href="premierfoodsafety" title="view the case study for Premier Food Safety">{{ "premierfoodsafety_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Premier Food Safety<br><span class="darktxt">Design, Build, Manage</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work end">
-          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
-            </a>
-          </div>
-        </div>
-    </div>
-
-  </div>
-</section>
-
-
+{% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
 {% endblock %}

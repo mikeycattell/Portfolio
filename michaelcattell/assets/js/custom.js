@@ -20,7 +20,7 @@ function isElementInViewport(elem) {
 
 // Check if it's time to start the animation.
 function checkAnimation() {
-    var $elem = $('.pictureinright');
+    var $elem = $('.fadeInImg');
 
     // If the animation has already been started
     if ($elem.hasClass('start')) return;

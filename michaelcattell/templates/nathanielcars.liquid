@@ -26,14 +26,14 @@
         <h3 class="standardh3">The Layout</h3>
         <p class="intro">As previously stated, the client wanted something that stood out from the others, I worked hard to make it usable, attractive and not so pushy as most car dealers.</p>        
       </div>
-      <div class="six columns animated fadeInRightBig">
+      <div class="six columns">
          {{ "nathaniel_role.jpg" | asset_url | image_tag }}
       </div>          
     </div>
   </div>
 </section>
 
-<section class="contentinternalpadeven">
+<section class="contentinternalpadeven fadeInImg animated">
   {{ "nathaniel_layout.jpg" | asset_url | image_tag }}
 </section>
 
@@ -49,7 +49,7 @@
     </div>
   </div>
 </section>
-
+{% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
 {% endblock %}
