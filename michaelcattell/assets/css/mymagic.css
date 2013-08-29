@@ -1,26 +1,25 @@
 body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
+/********* Default Styling for all pages *************/
 a { color: #16A085; font-weight: 400;}
 a:hover { color: #097159; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
-/********* Default Styling for all pages *************/
+
 ul li { list-style: none outside none; }
 
 .techincals { }
-
-.techincals ul { padding: 0px; margin: 0; }
-.techincals ul li { padding: 3px 0; color: #fff; }
-.techincals ul li:nth-child(1) { padding: 0px 0 0; color: #fff; }
-.techincals ul li a { color: #fff;  }
-.techincals ul li a:hover { color: #f2f2f2; }
+	.techincals ul { padding: 0px; margin: 0; }
+	.techincals ul li { padding: 3px 0; color: #fff; }
+	.techincals ul li:nth-child(1) { padding: 0px 0 0; color: #fff; }
+	.techincals ul li a { color: #fff;  }
+	.techincals ul li a:hover { color: #f2f2f2; }
 
 .resume { }
-
-.resume ul { padding: 0px; margin: 0; }
-.resume ul li { padding: 6px 0; color: #fff; }
-.resume ul li:nth-last-child { padding: 60px 0 0; color: #fff; }
-.resume ul li a { color: #fff; font-weight: bold;  }
-.resume ul li a:hover { color: #f2f2f2; }
+	.resume ul { padding: 0px; margin: 0; }
+	.resume ul li { padding: 6px 0; color: #fff; }
+	.resume ul li:nth-last-child { padding: 60px 0 0; color: #fff; }
+	.resume ul li a { color: #fff; font-weight: bold;  }
+	.resume ul li a:hover { color: #f2f2f2; }
 
 .listofdoanddont {  }
 .listofdoanddont a { color: #fff; font-weight: normal; }
@@ -53,7 +52,8 @@ ul li { list-style: none outside none; }
 .height10 { height: 10px; clear: both;}
 .height15 { height: 15px; clear: both;}
 .height20 { height: 20px; clear: both;}
-
+.height25 { height: 25px; clear: both;}
+.height30 { height: 30px; clear: both;}
 .info-image { display: block; height: 315px; max-height: 315px; overflow: hidden; }
 
 /*button styling*/
@@ -70,13 +70,6 @@ a.bigblue:hover { background-color: #12836C;  }
 a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0; padding: 14px 12px; }
 .bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0 10px; padding: 14px 12px; }
 .bigred:hover { background-color: #c0392b;  }
-
-
-a.purchaseLink { }
-.purchase { }
-
-a#purchaseLink {  }
-#purchase {  }
 
 #button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 #button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
@@ -114,7 +107,7 @@ h2.standardh2small { font-size: 28px; }
 h3.standardh3 { font-size: 32px;}
 h4.standardh4 { font-size: 26px;}
 p.date { color: #999999; font-size: 11px; font-style: italic; margin: 0; }
-p.intro { font-size: 19px;}
+p.intro { font-size: 18px;}
 p.lookhere { color: #fff; text-align: center; font-family: edmondsans; font-size: 30px; padding: 0; margin: 0; }
 p.smallpara { color: #999; font-size: 14px; padding: 0; margin: 0; }
 
@@ -137,14 +130,17 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 .box:hover p { opacity: 1; transition: opacity 0.5s ease-in-out; }
 .box:nth-child(1):hover{ background: #16A085 ; }
 
+/**************** animated fades etc - slight customisation ********************/
+
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1.3s;-moz-animation-duration:1.3s;-ms-animation-duration:1.3s;-o-animation-duration:1.3s;animation-duration:1.3s;}
+
 .animated.hinge{-webkit-animation-duration:1.3s;-moz-animation-duration:1.3s;-ms-animation-duration:1.3s;-o-animation-duration:1.3s;animation-duration:1.3s;}
 	40% { -webkit-transform: rotate(-10deg); }
 	60% { -webkit-transform: rotate(5deg); }	
 	80% { -webkit-transform: rotate(-5deg); }	
 	100% { -webkit-transform: rotate(0deg); }
 }
-
+/* this bit makes that button wobbie/swing baby! */
 @-moz-keyframes swing {
 	20% { -moz-transform: rotate(15deg); }	
 	40% { -moz-transform: rotate(-10deg); }
@@ -169,7 +165,6 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 	100% { transform: rotate(0deg); }
 }
 
-/* this bit makes that button wobbie/swing baby! */
 .swing {
 	-webkit-transform-origin: top center;
 	-moz-transform-origin: top center;
@@ -181,6 +176,8 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 	animation-name: swing;
 }
 
+
+/* this bit makes my images fade in */
 @-webkit-keyframes fadeInLeftBig {
 	0% {
 		opacity: 0;
@@ -387,13 +384,6 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 	animation-name: fadeInLeftBig;
 }
 
-
-.pictureinright.start { 
-  -webkit-animation-name: fadeInRight;
-  -moz-animation-name: fadeInRight;
-  -o-animation-name: fadeInRight;
-  animation-name: fadeInRight;}
-
 @-moz-keyframes pictureinright {
   0% {
     opacity: 0;
@@ -431,13 +421,16 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 }
 
 
+.pictureinright.start { 
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;}
 
 
 
 
-#creditfooter { display: none;}
-
-
+/******* interest styling for the listing items (book/music) ********/
 .workhold { margin: 0 0px 0 -15px }
 .booksiread li { transition:all 0.25s ease-in-out 0s; -moz-transition:all 0.25s ease-in-out 0s; -webkit-transition:all 0.25s ease-in-out 0s; -o-transition:all 0.25s ease-in-out 0s;
 -ms-transition:all 0.25s ease-in-out 0s;  position:relative; }
@@ -452,6 +445,9 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 /******* Important fix - fixes foundation's random floating to the right last span when mobile size ********/
 .row.end [class*="column"] + [class*="column"]:last-child { float: left; }
+
+/******* hides feedburner footer ********/
+#creditfooter { display: none;}
 
 /*  Contact Section */
 .contact-details ul { margin: 0; padding: 0; list-style: none; }
@@ -501,7 +497,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 
 
 
-	/* Anything less than 1024 */
+/* Anything less than 1024 */
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/header/home.jpg) 60%  90% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
