@@ -1,0 +1,146 @@
+{% layout "none" %}
+{{ "resume.css" | asset_url | stylesheet_tag }}
+{% block content %}
+
+<div id="container">
+  <div id="header">
+    <div id="name">
+<!-- enter your name here //-->
+      <h1>Michael <span class="darkgray">Cattell</span></h1>
+    </div>
+    <div id="topLinks">
+<!-- enter your portfolio of links of interest here //-->
+      <ul class="unstyled">
+        <li><a href="work">Portfolio</a></li>
+        <li><a href="writings">Blog</a></li>
+        <li><a href="http://www.twitter.com/mikeycattell">Twitter</a></li>
+        <li><a href="index">Home</a></li>
+      </ul>
+    </div>
+    <div id="headline">
+<!-- enter your headline here, to use the strike though, wrap your copy in a span tag (optional //-->
+      <h2>User Interface Designer & Front-end < /Developer></h2>
+    </div>
+  </div>
+  <div id="content">
+    <div class="row">
+      <div class="rowTitle">
+        <h3>Profile</h3>
+      </div>
+      <div class="rowContent">
+<!-- enter your personal profile here //-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowTitle">
+<!-- enter your skills below - NOTE: this needs to be three columns //-->
+        <h3>Skills</h3>
+      </div>
+      <div class="rowContent">
+        <div>
+<!-- enter your first skill here //-->
+          <h4>Web Design</h4>
+          <p>Front end web design and development</p>
+        </div>
+        <div>
+<!-- enter your second skill here //-->
+          <h4>User Experience</h4>
+          <p>Interface, information architecture and usability expert.</p>
+        </div>
+        <div>
+<!-- enter your third skill here //-->
+          <h4>Project Management</h4>
+          <p>Detail oriented and capable of managing multiple projects.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowTitle">
+        <h3>Technical</h3>
+      </div>
+      <div class="rowContent">
+<!-- enter your technical skills here //-->
+        <div>
+          <ul class="unstyled">
+            <li>XHTML</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+            <li>Javascript</li>
+            <li>eCommerce</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="unstyled">
+            <li>WordPress</li>
+            <li>PHP</li>
+            <li>Blogger</li>
+            <li>Mobile</li>
+            <li>GIT</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="unstyled">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>PhoneGap</li>
+            <li>MAC &amp; PC</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowTitle">
+        <h3>Experience</h3>
+      </div>
+      <div class="rowContent">
+<!-- enter your work experience here //-->
+        <h4>Acme Web Design <small>2008 - Current</small></h4>
+        <h4>Front End Developer</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+
+        <h4>Beta Web Design <small>2006 - 2008</small></h4>
+        <h4>Web Designer</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+
+        <h4>Cappa Websites <small>2002 - 2006</small></h4>
+        <h4>Junior Web Designer</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowTitle">
+        <h3>Education</h3>
+      </div>
+      <div class="rowContent">
+<!-- enter your education here //-->
+        <h4>University Name <small>1998 - 2002</small></h4>
+        <h4>Web Design</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowTitle">
+        <h3>Contact</h3>
+      </div>
+      <div class="rowContent">
+<!-- enter your contact info here //-->
+        <ul class="unstyled">
+          <li>City, State</li>
+          <li>Country</li>
+          <li>604 123 1234</li>
+          <li><a href="#">johnsmith@website.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>&copy; 2012 John Smith | Template by <a href="http://cardeo.ca">Cardeo.ca</a></p>
+  </div>
+</div>
+
+
+{% include "contactme" %} 
+{% include "footer" %} 
+{% endblock %}
