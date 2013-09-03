@@ -35,8 +35,8 @@ ul li { list-style: none outside none; }
 .darkgreen { background: #16A085 }    
 .darkblack { background: #101010;}
 
-.content { background-color:#fefefe; padding-top:60px; padding-bottom:0; position:relative; }
-.contentnobg {  padding-top:60px; padding-bottom:0; position:relative; }
+.content { background-color:#fefefe; padding-top:2.5em; padding-bottom:0; position:relative; }
+.contentnobg {  padding-top:2.5em; padding-bottom:0; position:relative; }
 .contentnopad {	background-color:#fefefe; padding-top:0px; padding-bottom:0; position:relative; }
 .contentinternalpad  { padding: 40px 0 20px;}
 .contentinternalpadeven { padding: 40px 0;}
@@ -136,7 +136,7 @@ span.headline a:hover { color: #1B5378; font-weight: 300; transition: background
 .white { color: #fff;}
 .green { color: #16A085;}
 
-span.testimonial { font-size: 20px; color: #999; line-height: 30px; }
+span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; }
 p.testimonialname { font-size: 24px; padding: 0; margin: 0; color: #333; }
 p.testimonialtitle { font-size: 12px; padding: 0; }
 
@@ -303,7 +303,7 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 #home { height: 300px; background: url(../images/header/home.jpg) 60%  90% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
 #about { background: url(../images/header/about_5.jpg) 90% 60% no-repeat fixed; height: 220px;	}
-.contentnobg { padding-top:60px; }
+
  }
 
 
@@ -317,3 +317,33 @@ a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 
 /* interests page */
 .interestbanner { background-color: #cecec1; }
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://sampsonresume.com/labs/pIkfp.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
