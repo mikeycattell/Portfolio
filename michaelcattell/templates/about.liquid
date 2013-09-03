@@ -1,7 +1,10 @@
 {% block content %}
 <header class="clearfix">
-  <section id="about" data-speed="4" data-type="background"> </section>
+  <section>
+  {{ "about_.jpg" | asset_url | image_tag }}
+  </section>
 </header>
+
 
 <!--modals for links who i work with, web,app, what i dont do-->
 <div id="whoiworkwith" class="reveal-modal">
@@ -98,13 +101,13 @@
           <li>Image editing and graphic design</li>
           <li>Leadership of Projects</li>
           <li>User of SVN and GIT</li>
-          <li><a href="http://www.last.fm/user/mikey_cattell" title="listing my latest and mostly embarrassing tunes listened to"><strong>Jukebox master</strong></a></li>
+          <li><a href="http://www.last.fm/user/mikey_cattell" title="listing my latest and mostly embarrassing tunes listened too"><strong>Jukebox master</strong></a></li>
         </ul>
       </div>
-      <div class="resumegreen">
+      <div class="resumegreen" style="display: none">
         <div class="resume">
           <ul>
-            <li><a href="cv">My CV / Resume</a><div class="right">{{ "cv_circle.png" | asset_url | image_tag }}</div></li>
+            <li><a href="">My CV / Resume</a><div class="right">{{ "cv_circle.png" | asset_url | image_tag }}</div></li>
           </ul>
         </div>
       </div>

@@ -1,18 +1,22 @@
 {% block content %}
+
 <header class="clearfix">
-  <section id="home" data-speed="4" data-type="background">
+  <section>
+  <div style="position: relative;">
+    {{ "home1.jpg" | asset_url | image_tag }}
+  </div>
     <div class="row">
-      <div class="twelve columns">
-        <h1 class="mainh1 animated fadeInLeftBig">User Interface <span class="green">Designer</span> &<br>
-          Front-end <span class="green">< /Developer></span></h1>
-      </div>
+      <h1 class="mainh1 animated fadeInLeftBig show-for-large">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
     </div>
-  </section>
+</section>      
+<h1 class="smallh1 animated fadeInLeftBig show-for-small">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
 </header>
 
 
+
 <section class="contentnobg">
-    <div class="row">
+    <div class="row">    
         <div class="eight columns">
           <div class="show-for-small"> <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a> </div>
           <h2>Meet me</h2>
@@ -23,7 +27,7 @@
         <div class="four columns meet-me end">
           <div class="hide-for-small"><a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a></div>
           <span class="info-image">
-          <div class="box"> <a href="about">{{ "workexample.jpg" | asset_url | image_tag }}
+          <div class="box"> <a href="about">{{ "workexample_4.jpg" | asset_url | image_tag }}
             <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
             </a> </div>
           </span>

@@ -66,6 +66,9 @@ a.bigwhite { background-color: #fff; border: 0;  color: #666; font-size: 30px; l
 a.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26px; line-height: 20px; margin: 0px 0; padding: 14px 10px; }
 	a.bigblue:hover { background-color: #12836C;  }
 
+button.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26px; line-height: 20px; margin: 0px 0; padding: 14px 10px; }
+	button.bigblue:hover { background-color: #12836C;  }
+
 a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0; padding: 14px 12px; }
 	.bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0 10px; padding: 14px 12px; }
 	.bigred:hover { background-color: #c0392b;  }
@@ -73,8 +76,14 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 #button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 	#button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
-#home { background: url(../images/header/home.jpg) 50%  70% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
-#about { background: url(../images/header/about_4.jpg) 50% 150% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#home { background: url(../images/header/home.jpg) 50%  140% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#about { background: url(../images/header/about_5.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+
+/*
+<header class="clearfix" style="display: none;">
+  <section id="about" data-speed="4" data-type="background"> </section>
+</header>
+*/
 
 
 /**************** Font / Type rules ********************/
@@ -91,6 +100,13 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 }  
 
 @font-face {  
+  font-family: "BreeSerif";  
+  src: url( ../fonts/BreeSerif-Regular.otf); /* IE */  
+  src: local("edmondsans"), url( ../fonts/BreeSerif-Regular.otf) format("truetype"); /* non-IE */  
+}  
+
+
+@font-face {  
   font-family: "edmondsans";  
   src: url( ../fonts/Edmondsans-Regular.otf ); /* IE */  
   src: local("edmondsans"), url( ../fonts/Edmondsans-Regular.otf) format("truetype"); /* non-IE */  
@@ -99,6 +115,8 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 h1, h2, h3, h4, h5 { font-family: edmondsans; font-weight: normal; color: #4C4E54;}
 
 h1.mainh1 { font-size: 66px; position: absolute; top: 170px;/* left: 90px; */color: #fff;  }
+h1.mediumh1 { font-size: 46px; position: absolute; top: 100px;/* left: 90px; */color: #fff;  }
+h1.smallh1 { font-size: 26px; position: absolute; top: 70px;/* left: 90px; */color: #fff;  }
 h1.title { font-size: 46px; margin: 0; }
 h2 { margin-bottom: 1px;}
 h2.standardh2 { font-size: 36px; }
@@ -230,14 +248,14 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 /*  Contact Section */
 .contact-details ul { margin: 0; padding: 0; list-style: none; }
 .contact-details ul li { margin: 0 0 20px; line-height: 28px;  padding: 0; }
-#contact-form { margin-bottom: 0; }
-#contact-form p { margin-bottom: 1px; }
-#contact-form input,
-#contact-form textarea { border: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background-color: #f2f2f2; color: #666; font-size: 16px; height: auto; padding: 15px; margin: 0; resize: none; }
-#contact-form input { -moz-box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; width: 100%; }
-#contact-form textarea { width: 100%; resize: vertical; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; }
-#contact-form .submit { background: #E0E0E0; color: #fff; cursor: pointer; display: inline-block; font-size: 18px; font-weight: 500; padding: 16px 40px; text-align: center; vertical-align: middle; width: auto; margin-top: 10px;-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s; -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s; -o-transition: background 0.1s linear 0s, color 0.1s linear 0s; transition: background 0.1s linear 0s, color 0.1s linear 0s; }
-#contact-form .submit:hover { background: #16A085; color: #FFFFFF; }
+.contact-form { margin-bottom: 0; }
+.contact-form p { margin-bottom: 1px; }
+.contact-form input,
+.contact-form textarea { border: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background-color: #f2f2f2; color: #666; font-size: 16px; height: auto; padding: 15px; margin: 0; resize: none; }
+.contact-form input { -moz-box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; width: 100%; }
+.contact-form textarea { width: 100%; resize: vertical; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; }
+.contact-form .submit { background: #E0E0E0; color: #fff; cursor: pointer; display: inline-block; font-size: 18px; font-weight: 500; padding: 16px 40px; text-align: center; vertical-align: middle; width: auto; margin-top: 10px;-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s; -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s; -o-transition: background 0.1s linear 0s, color 0.1s linear 0s; transition: background 0.1s linear 0s, color 0.1s linear 0s; }
+.contact-form .submit:hover { background: #16A085; color: #FFFFFF; }
 
 /*media changes and stuff*/
 @media only screen and (max-width: 767px) {
@@ -255,23 +273,28 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 
 }
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 }
 
 /* Used to alter styles for screens at least 1280px wide. */
 @media only screen and (min-width: 1280px) {
+
+ 
 }
 
 /* Used to alter styles for screens at least 1440px wide. */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+}
 
 /* Apply styles to screens in landscape orientation */
 @media only screen and (orientation: landscape) {
 }
 
 /* Apply styles to screens in portrait orientation */
-@media only screen and (orientation: portrait) {  
+@media only screen and (orientation: portrait) { 
 }
+ 
 
 
 
@@ -279,9 +302,11 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/header/home.jpg) 60%  90% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
-#about { background: url(../images/header/about_4.jpg) 90% 100% no-repeat fixed; height: 220px;	}
+#about { background: url(../images/header/about_5.jpg) 90% 60% no-repeat fixed; height: 220px;	}
 .contentnobg { padding-top:60px; }
  }
+
+
 
 /* carousel fixes */
 a.orbit-prev, a.orbit-next { opacity: 0.6; }

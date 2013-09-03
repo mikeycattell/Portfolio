@@ -17,7 +17,7 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Thank you for the message, you cool dude! Now sit down, pour yourself a little drink whilst I conjure up a great response.');
+		alert('Thank you for the message! Sit tight, I shall try get back to you within 24 hours, but to keep you entertained, why not look at pictures of my dog: www.pomsnotbombs.co.uk');
 		window.location = 'contact.html';
 	</script>
 <?php
