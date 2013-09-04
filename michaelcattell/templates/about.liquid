@@ -1,8 +1,6 @@
 {% block content %}
-<header class="clearfix">
-  <section>
+<header class="hide-for-small">
   {{ "about_.jpg" | asset_url | image_tag }}
-  </section>
 </header>
 
 
@@ -67,8 +65,6 @@
       </div>
       <div class="twelve columns">
         <p class="intro">Being a <strong>User Interface Designer</strong>, means I can design a website to meet your needs and exceed them, coupled with the ability as a <strong>Front-end Developer</strong> allows me to be able to not only design, but code your website to work on all devices, ensuring they work correctly and something.</p>
-        <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier here than England)</i>, which has allowed me to experience the ups and downs, <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
-        <p>I am an incredibly passionate designer; skilled in colour theory, typography, and layout principles (harmony, balance, contrast, and emphasis) – basically this means, I will get the colour of your branding right, and put your company’s message across correctly and very professionally – consequently making customers love you and buy/read/click your products!</p>
         <p>I focus on writing clean, elegant and efficient code. I have a fondness for <strong>HTML (5)</strong>, <strong>CSS (3)</strong>, a hint of <strong>jQuery</strong> and often with a big scoop of <strong>Wordpress/Tumblr/Perch</strong>.</p>
       </div>
     </div>
@@ -78,28 +74,24 @@
 <section class="content">
   <div class="row">
     <div class="four columns">
-      <h3 class="standardh3">My Beliefs</h3>
-      <p>I am very privileged to do a job which entails me having complete freedom and scope to show off my creativity, coming from X years in the banking industry, I see both the need for forward thinking and ROI, yet the need to make everything as simple and easy to use as possible.</p>
-      <p>I approach all projects in a very simple manner: what does the client want, what does the user want and how can I give it to them. These three questions are the basic foundations on which I design and build my ideas, strating from a simple notepad and pencil to coding, via a quick visit to Photoshop or Fireworks!</p>
+      <h3 class="standardh3">My History</h3>
+      <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier there than England)</i>, which has allowed me to experience the ups and downs, <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
     </div>
     <div class="four columns">
       <h3 class="standardh3">My Methods</h3>
-      <p>I put my heart into every project I do, regardless of the size and budget, I design with the user in mind, aiming for the wow factor alongside ease of use for everyone.</p>
-      <p>I can both design and code (HTML, CSS, and jQuery) or be used as a Front-end Developer to code a pre-existing design.</p>
-      <p>I support the client throughout the project, and always being responsive to their needs means that all projects are done to a high standard.</p>
+      <p>I am an incredibly passionate designer; skilled in colour theory, typography, and layout principles (harmony, balance, contrast, and emphasis) – basically this means, I will get the colour of your branding right, and put your company’s message across correctly and very professionally – consequently making customers love you and buy/read/click your products!</p>
     </div>
     <div class="four columns end fadeInImg animated">
       <div class="content510 techincals greenbackground white">
-        <h3 class="standardh3 white">The Technicals</h3>
+        <h3 class="standardh3 white">My Skills</h3>
         <ul>
           <li>Standards-compliant, semantic <strong>HTML5</strong></li>
           <li>Well-documented, well-organized <strong>CSS3</strong></li>
           <li>Accessibility fundamentals</li>
-          <li>Cross-browser compatibility problem-solving</li>
+          <li>Cross-browser compatibility</li>
           <li>Grids, layout, typography, colour theory</li>
-          <li><strong>Wordpress / Tumblr</strong> theme development</li>
+          <li><strong>Wordpress / Tumblr</strong> theme builds</li>
           <li>Image editing and graphic design</li>
-          <li>Leadership of Projects</li>
           <li>User of SVN and GIT</li>
           <li><a href="http://www.last.fm/user/mikey_cattell" title="listing my latest and mostly embarrassing tunes listened too"><strong>Jukebox master</strong></a></li>
         </ul>
@@ -157,6 +149,72 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="contentnopadno darkishgraybgstyle contentinternalpadeven">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="standardh3">Albums I love this month:</h3>
+        <ul class="block-grid four-up booksiread">
+          <li>
+            <a href="http://www.rdio.com/artist/Vampire_Weekend/album/Modern_Vampires_of_the_City/" title="Vampire Weekend - Modern Vampires of the City" target="_blank">
+            {{ "vampireweekend.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Vampire Weekend</h4>
+            <p><small>Modern Vampire of the City</small></p>
+          </li>
+          <li>
+            <a href="http://www.rdio.com/artist/The_Weeknd/album/Trilogy/" title="The Weeknd - Trilogy" target="_blank">
+            {{ "theweeknd.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>The Weeknd</h4>
+            <p><small>Trilogy</small></p>
+          </li>
+          <li>
+            <a href="http://www.rdio.com/artist/Incubus/album/Morning_View_1/" title="Incubus - Morning View" target="_blank">
+            {{ "incubus.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Incubus</h4>
+            <p><small>Morning View</small></p>
+          </li>
+          <li>
+            <a href="http://www.rdio.com/artist/Panic!_At_The_Disco/album/Pretty._Odd./" title="Panic! At The Disco - Pretty. Odd." target="_blank">
+            {{ "panicatthedisco.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Panic! At The Disco</h4>
+            <p><small>Pretty. Odd.</small></p>
+          </li>
+        </ul>
+        <br>
+        <h3 class="standardh3">Books I have read and enjoyed:</h3>
+        <ul class="block-grid four-up booksiread">
+          <li>
+            <a href="http://www.amazon.com/1984-60th-Anniversary-Edition-George-Orwell/dp/0452262933/ref=sr_1_1?ie=UTF8&qid=1377376853&sr=8-1&keywords=1984" title="1984" target="_blank">
+            {{ "1984.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Nineteen Eighty-Four</h4>
+            <p><small>George Orwell</small></p>
+          </li>
+          <li>
+            <a href="http://www.amazon.com/Design-Is-Job-Mike-Monteiro/dp/1937557049/ref=sr_1_1?ie=UTF8&qid=1377381457&sr=8-1&keywords=design+of+a+job" title="design is a job" target="_blank">
+            {{ "designisajob.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Design is a job</h4>
+            <p><small>Mike Monterio</small></p>
+          </li>
+          <li>
+            <a href="http://www.amazon.com/The-Catcher-Rye-J-D-Salinger/dp/0316769487/ref=sr_1_1?ie=UTF8&qid=1377381551&sr=8-1&keywords=the+catcher+in+the+rye" title="the catcher in the rye" target="_blank">
+            {{ "catcherinrye.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4 class="white">The Catcher in the Rye</h4>
+            <p><small>J. D. Salinger</small></p>
+          </li>
+          <li>
+            <a href="http://www.amazon.com/Hardboiled-Web-Design-Andy-Clarke/dp/1907828001/ref=sr_1_1?ie=UTF8&qid=1377381921&sr=8-1&keywords=hardboiled+web+design" title="Hardboiled Web Design" target="_blank">
+            {{ "hardboiled.jpg" | asset_url | image_tag }}<img src="" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important"/></a>
+            <h4>Hardboiled Web Design</h4>
+            <p><small>Andy Clarke</small></p>
+          </li>
+        </ul>     
+
+      </div>
+    </div>
+  </div>
+</section>
+
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 

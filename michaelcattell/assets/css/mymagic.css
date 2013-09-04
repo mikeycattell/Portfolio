@@ -1,9 +1,32 @@
+/* --------------------------------------------------------
+Style Sheet for MichaelCattell.com
+
+author: Michael Cattell
+email: michael.a.cattell@gmail.com
+website: http://www.michaelcattell.com
+----------------------------------------------------------*/
+
+/* -----------------------------------------------------------
+CONTENTS:
+=Resets & General
+=button styling
+=Font/Type rules
+=image holders with that lovely hover effect
+=animated fades etc - slight customisation
+=styling for the listing items (book/music)
+=Important fix
+=media changes and stuff
+************/
+
 body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
-/********* Default Styling for all pages *************/
+/********* =Resets & General *************/
 a { color: #16A085; font-weight: 400;}
-a:hover { color: #097159; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
+	a:hover { color: #097159; font-weight: 400; transition: background 0.3s ease-in-out; text-decoration:underline }
+
+.hr { border-bottom:1px solid #CCCCCC; position:relative; margin: 10px 0; padding: 0; }
+.bordertop { border-top: 1px solid #d6d6d6; }
 
 ul li { list-style: none outside none; }
 
@@ -32,20 +55,20 @@ ul li { list-style: none outside none; }
 .joyfulgreen { background: #11806A; padding: 10px; font-size: 18px; }
 .greenbackground { background: #1ABC9C; padding: 0; }     
 .lightgraybgstyle { background: #f8f8f8; }
+.darkishgraybgstyle { background: #F2F2F2; }
 .darkgreen { background: #16A085 }    
 .darkblack { background: #101010;}
 
 .content { background-color:#fefefe; padding-top:2.5em; padding-bottom:0; position:relative; }
 .contentnobg {  padding-top:2.5em; padding-bottom:0; position:relative; }
 .contentnopad {	background-color:#fefefe; padding-top:0px; padding-bottom:0; position:relative; }
+.contentnopadno { padding-top:0px; padding-bottom:0; position:relative; }
 .contentinternalpad  { padding: 40px 0 20px;}
 .contentinternalpadeven { padding: 40px 0;}
 .normalcontent { padding: 0 10px;}
 .content20 { padding: 20px 0;}
 .content10all { padding: 10px;}
 .content510 { padding: 5px 10px;}
-
-.bordertop { border-top: 1px solid #d6d6d6; }
 
 .height5 { height: 5px; clear: both;}
 .height10 { height: 10px; clear: both;}
@@ -55,7 +78,7 @@ ul li { list-style: none outside none; }
 .height30 { height: 30px; clear: both;}
 .info-image { display: block; height: 315px; max-height: 315px; overflow: hidden; }
 
-/*button styling*/
+/*=button styling*/
 .button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 button, .button { border-width: 0px;}
 	.button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
@@ -72,21 +95,22 @@ button.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-siz
 a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0; padding: 14px 12px; }
 	.bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 18px 0 10px; padding: 14px 12px; }
 	.bigred:hover { background-color: #c0392b;  }
+	.bigredhome { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 8px 0 10px; padding: 14px 12px; }
+	.bigredhome:hover { background-color: #c0392b;  }	
 
 #button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 	#button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
+/* handy parallex code but unused in end
 #home { background: url(../images/header/home.jpg) 50%  140% no-repeat fixed; height: 450px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 #about { background: url(../images/header/about_5.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
-
-/*
 <header class="clearfix" style="display: none;">
   <section id="about" data-speed="4" data-type="background"> </section>
 </header>
 */
 
 
-/**************** Font / Type rules ********************/
+/**************** =Font/Type rules ********************/
 @font-face {  
   font-family: "open sans";  
   src: url( ../fonts/OpenSans-Regular.ttf ); /* IE */  
@@ -105,7 +129,6 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
   src: local("edmondsans"), url( ../fonts/BreeSerif-Regular.otf) format("truetype"); /* non-IE */  
 }  
 
-
 @font-face {  
   font-family: "edmondsans";  
   src: url( ../fonts/Edmondsans-Regular.otf ); /* IE */  
@@ -122,46 +145,52 @@ h2 { margin-bottom: 1px;}
 h2.standardh2 { font-size: 36px; }
 h2.standardh2small { font-size: 28px; }
 h3.standardh3 { font-size: 32px;}
+h3.standardbookh3 { font-size: 32px; padding: 5px 0;}
 h4.standardh4 { font-size: 26px;}
 p.date { color: #999999; font-size: 11px; font-style: italic; margin: 0; }
 p.intro { font-size: 18px;}
 p.lookhere { color: #fff; text-align: center; font-family: edmondsans; font-size: 30px; padding: 0; margin: 0; }
 p.smallpara { color: #999; font-size: 14px; padding: 0; margin: 0; }
+p.testimonialname { font-size: 24px; padding: 0; margin: 0; color: #333; }
+p.testimonialtitle { font-size: 12px; padding: 0; }
 
 span.headline a {font-size: 30px; color: #16A085; }
-span.headline a:hover { color: #1B5378; font-weight: 300; transition: background 0.3s ease-in-out; text-decoration:underline }
+	span.headline a:hover { color: #1B5378; font-weight: 300; transition: background 0.3s ease-in-out; text-decoration:underline }
  
+ span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; }
+
 .darktxt { color: #333;}
 .darkgray { color: #f2f2f2;}
 .white { color: #fff;}
 .green { color: #16A085;}
 
-span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; }
-p.testimonialname { font-size: 24px; padding: 0; margin: 0; color: #333; }
-p.testimonialtitle { font-size: 12px; padding: 0; }
-
-/**************** image holders with that lovely hover effect ********************/
+/**************** =image holders with that lovely hover effect ********************/
 
 .box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
-.box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
-.box p.plus a {  color: #fff; }
-.box img{ opacity: 1; width: 100%; display: block; transition: opacity 0.4s ease-in-out; }
-.box:hover img{ opacity: 0.5; }
+	.box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
+	.box p.plus a {  color: #fff; }
+	.box img{ opacity: 1; width: 100%; display: block; transition: opacity 0.4s ease-in-out; }
+	.box:hover img{ opacity: 0.5; }
 /* box colors */
 .box:hover p { opacity: 1; transition: opacity 0.5s ease-in-out; }
 .box:nth-child(1):hover{ background: #16A085 ; }
 
-/**************** animated fades etc - slight customisation ********************/
+.box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
+	.box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
+	.box p.plus a {  color: #fff; }
+	.box img{ opacity: 1; width: 100%; display: block; transition: opacity 0.4s ease-in-out; }
+	.box:hover img{ opacity: 0.5; }
+/* box colors */
+.box:hover p { opacity: 1; transition: opacity 0.5s ease-in-out; }
+.box:nth-child(1):hover{ background: #16A085 ; }
+
+
+
+/**************** =animated fades etc - slight customisation ********************/
 
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
 
-.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
-	40% { -webkit-transform: rotate(-10deg); }
-	60% { -webkit-transform: rotate(5deg); }	
-	80% { -webkit-transform: rotate(-5deg); }	
-	100% { -webkit-transform: rotate(0deg); }
-}
-/* this bit makes that button wobbie/swing baby! */
+/* this bit makes that button wobble/swing baby! */
 @-moz-keyframes swing {
 	20% { -moz-transform: rotate(15deg); }	
 	40% { -moz-transform: rotate(-10deg); }
@@ -185,7 +214,6 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 	80% { transform: rotate(-5deg); }	
 	100% { transform: rotate(0deg); }
 }
-
 .swing {
 	-webkit-transform-origin: top center;
 	-moz-transform-origin: top center;
@@ -196,7 +224,6 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 	-o-animation-name: swing;
 	animation-name: swing;
 }
-
 
 /* this bit makes my images fade in */
 @-webkit-keyframes fadeInImg {
@@ -218,6 +245,7 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 	100% {opacity: 1;}
 }
 
+/* this part works with my custom.js section to make the item appear when you scroll to it */
 .fadeInImg.start {
 	-webkit-animation-name: fadeIn;
 	-moz-animation-name: fadeIn;
@@ -225,8 +253,50 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 	animation-name: fadeIn;
 }
 
+.animate {
+	-webkit-animation-duration: 1.3s;
+	   -moz-animation-duration: 1.3s;
+	     -o-animation-duration: 1.3s;
+	        animation-duration: 1.3s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
 
-/******* interest styling for the listing items (book/music) ********/
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.animate.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+	animation-delay:1.3s;
+	-webkit-animation-delay:1.3s; /* Safari and Chrome fix as norm! */
+}
+
+
+/******* =styling for the listing items (book/music) ********/
 .workhold { margin: 0 0px 0 -15px }
 .booksiread li { transition:all 0.25s ease-in-out 0s; -moz-transition:all 0.25s ease-in-out 0s; -webkit-transition:all 0.25s ease-in-out 0s; -o-transition:all 0.25s ease-in-out 0s;
 -ms-transition:all 0.25s ease-in-out 0s;  position:relative; }
@@ -239,7 +309,7 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 .booksiread li:hover img { opacity:1; }
 
 
-/******* Important fix - fixes foundation's random floating to the right last span when mobile size ********/
+/******* =Important fix - fixes foundation's random floating to the right last span when mobile size ********/
 .row.end [class*="column"] + [class*="column"]:last-child { float: left; }
 
 /******* hides feedburner footer ********/
@@ -247,7 +317,7 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 
 /*  Contact Section */
 .contact-details ul { margin: 0; padding: 0; list-style: none; }
-.contact-details ul li { margin: 0 0 20px; line-height: 28px;  padding: 0; }
+	.contact-details ul li { margin: 0 0 20px; line-height: 28px;  padding: 0; }
 .contact-form { margin-bottom: 0; }
 .contact-form p { margin-bottom: 1px; }
 .contact-form input,
@@ -262,29 +332,35 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
    body { font-size: 15px; }
    p.intro { font-size: 16px; }
 
-   h3.standardh3 { font-size: 22px; }
-   h2.standardh2small { font-size: 26px; }
+   h3.standardh3 { font-size: 26px; }
+   h2.standardh2small { font-size: 28px; }
    h2.standardh2 { font-size: 28px; }
    h1.title { font-size: 30px; margin: 0; }
 
    span.headline a { font-size: 26px; }
 
    p.lookhere { font-size: 22px; }
+	.showcase-items li { width: 50% !important; }
+	.block-grid.three-up > li:nth-child(3n+1) { clear: none; }
 
 }
+
+@media only screen and (max-width: 450px) {
+	.showcase-items li { width: 100% !important; }
+	.booksiread li { width: 100% !important; }
+}
+
+
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
 @media only screen and (max-width: 768px) {
 }
 
 /* Used to alter styles for screens at least 1280px wide. */
 @media only screen and (min-width: 1280px) {
-
- 
 }
 
 /* Used to alter styles for screens at least 1440px wide. */
 @media only screen and (min-width: 1440px) {
-
 }
 
 /* Apply styles to screens in landscape orientation */
@@ -294,19 +370,13 @@ p.testimonialtitle { font-size: 12px; padding: 0; }
 /* Apply styles to screens in portrait orientation */
 @media only screen and (orientation: portrait) { 
 }
- 
-
-
 
 /* Anything less than 1024 */
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/header/home.jpg) 60%  90% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
 #about { background: url(../images/header/about_5.jpg) 90% 60% no-repeat fixed; height: 220px;	}
-
  }
-
-
 
 /* carousel fixes */
 a.orbit-prev, a.orbit-next { opacity: 0.6; }
@@ -317,33 +387,3 @@ a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 
 /* interests page */
 .interestbanner { background-color: #cecec1; }
-
-/* Start by setting display:none to make this hidden.
-   Then we position it in relation to the viewport window
-   with position:fixed. Width, height, top and left speak
-   speak for themselves. Background we set to 80% white with
-   our animation centered, and no-repeating */
-.modal {
-    display:    none;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: rgba( 255, 255, 255, .8 ) 
-                url('http://sampsonresume.com/labs/pIkfp.gif') 
-                50% 50% 
-                no-repeat;
-}
-
-/* When the body has the loading class, we turn
-   the scrollbar off with overflow:hidden */
-body.loading {
-    overflow: hidden;   
-}
-
-/* Anytime the body has the loading class, our
-   modal element will be visible */
-body.loading .modal {
-    display: block;
