@@ -348,7 +348,11 @@ span.headline a {font-size: 30px; color: #16A085; }
 @media only screen and (max-width: 450px) {
 	.showcase-items li { width: 100% !important; }
 	.booksiread li { width: 100% !important; }
+.info-image { max-height: 200px; overflow: hidden; width: 100%; }
+.box { float: left; margin: 10px 0; width: 100%; }
+.box img {  }
 }
+
 
 
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */

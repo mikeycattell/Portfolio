@@ -6,24 +6,21 @@
       {{ "home1.jpg" | asset_url | image_tag }}
     </div>
     <div class="row">
-<<<<<<< HEAD
-      <h1 class="mainh1 animated fadeInLeftBig show-for-large">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
-      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;Front-end &#60;&#47; Developer&#62;</h1>
-    </div>
-</section>      
-=======
-      <h1 class="mainh1 animated fadeInLeftBig hide-for-small hide-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
-      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+      <h1 class="mainh1 animated fadeInLeftBig hide-for-small hide-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
     </div>
   </section>      
->>>>>>> 52d195a45f3420892bbdee277fe03c346b4c2396
+</header>
+
+<header class="show-for-small">
+  {{ "home.jpg" | asset_url | image_tag }}
 </header>
 
 <section class="contentnobg">
   <div class="row">    
     <div class="eight columns">
       <div class="show-for-small">
-        <h1 class="title animated fadeIn">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+        <h1 class="title animated fadeIn">Coffee drinker, Creative thinker<br>& Code tinker</h1>
         <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
       </div>
 
@@ -36,13 +33,13 @@
       <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
     </div>
 
-    <div class="four columns meet-me end">
-    <span class="info-image">
-      <div class="box"> <a href="about">{{ "workexample_4.jpg" | asset_url | image_tag }}
-        <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
-        </a>
-      </div>
-    </span>
+
+        <ul class="four columns">
+          <li>
+            <a  class="box" href="about" title="Want to know more about me? Click here"> {{ "workexample_4.jpg" | asset_url | image_tag }}<p class="plus">Designer<br>Front-end Developer<br>Music Expert<br><span class="darktxt">Funny Man</span></p></a>
+          </li>
+        </ul>      
+    
 
   </div>
 </section>

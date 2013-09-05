@@ -1,84 +1,70 @@
 {% layout "alternative" %}
 {% block content %} 
-               <section class="contentnobg hide-for-small">
-                  <div class="contentinternalpadeven">
-                     <!-- Thumbnails -->
-                     
-                        <div class="twelve columns">
-                 
-                  <!-- Google Map -->
-                  <div id="map-area">
-                      <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
-                  </div>
-                  <!-- End Google Map -->
-<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=33.860153,-117.837296&amp;spn=0.478387,0.617294&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=33.860153,-117.837296&amp;spn=0.478387,0.617294&amp;t=m&amp;z=11&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>            
+ <section class="contentnobg hide-for-small">
+    <div class="contentinternalpadeven">
+     <div class="twelve columns">
+   
+      <!-- Google Map -->
+      <div id="map-area">
+          <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
+      </div>
+      <!-- End Google Map -->
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=33.860153,-117.837296&amp;spn=0.478387,0.617294&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=33.860153,-117.837296&amp;spn=0.478387,0.617294&amp;t=m&amp;z=11&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>            
 
-                         </div>
-                     
-                    </div>
-                  </section>
-
-               <section class="contentnobg">
-                  <div class="contentinternalpadeven">
-                     <!-- Thumbnails -->
-                     <div class="row">
-                        <div class="twelve columns">
-
-                          <!-- Title Page -->
-                          
-                              <h1 class="title">Get in Touch</h1>
-                              <h2 class="standardh2">I am currently accepting new projects.</h2>
-                              <h3 class="standardh3">If you want to talk about design, my work, or what I had for breakfast, feel free to drop me an email.</h3>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-
- <section>
-    <div style="">
-       <div class="row">
-          
-              <div class="nine columns contact-form">
-     
-                 <form action="contact.php" method="post">
-                     <p class="contact-name controls">
-                        <input id="name" type="text" placeholder="Name" value="" name="mc_name" />
-                      </p>
-                      <p class="contact-email controls">
-                        <input id="email" name="mc_email" type="email" placeholder="Email address">
-                      </p>
-                      <p class="contact-message controls">
-                        <textarea id="message" name="mc_message" placeholder="Your Message" rows="10" cols="40"></textarea>
-                      </p>
-                      <p class="contact-submit controls">
-                      <button id="contact-submit" type="submit" value="Send" class="bigblue button">Send</button>
-                      </p>
-                  </form>
-
-              </div>
-        
-            <div class="three columns end">
-              <div class="contact-details">
-                <p>I’m "<a href="https://www.google.com/search?q=mikeycattell+&oq=mikeycattell+&aqs=chrome.0.69i57j69i60l3j0l2.3004j0&sourceid=chrome&ie=UTF-8" "title="quick google search will find me everywhere">mikeycattell</a>" on pretty much everything, but in case you wanted to keep in touch on any other sites, you can also find me on:</p>
-                    <ul class="socialscontact">
-                        <li>Twitter - <a href="https://twitter.com/mikeycattell" title="for all my latest and greatest - follow me on twitter">@mikeycattell</a></li>
-                        <li>Last.fm - <a href="http://www.last.fm/user/mikey_cattell" title="my latest tunes and my embarrassing tunes">mikey_cattell</a></li>
-                        <li>Linkedin - <a href="www.linkedin.com/pub/michael-cattell/18/919/6a/" title="Here is my professional thing - has all my education etc here">Linkedin</a></li>                    
-                        <li>Svppy - <a href="https://svpply.com/mikeycattell" title="Its Pinterest..but for stuff I want!">@mikeycattell</a></li>                        
-                    </ul>
-                <p>Or you can simply email me, like the old days: <a href="mailto:michael.a.cattell@gmail.com">michael.a.cattell@gmail.com</a>
-
-                </div>
-            </div>
+     </div>
        
-    <!-- End Services Form -->
-  </div>
-</div>
-<!-- End Contact Section -->
+    </div>
+  </section>
+
+ <section class="contentnobg">
+    <div class="contentinternalpadeven">
+       
+       <div class="row">
+          <div class="twelve columns">
+            <h1 class="title">Get in Touch</h1>
+            <h2 class="standardh2">I am currently accepting new projects.</h2>
+            <h3 class="standardh3">If you want to talk about design, my work, or what I had for breakfast, feel free to drop me an email.</h3>
+          </div>
+        </div>
+    </div>
+ </section>
+
+    
+<!-- Contact Form -->
+<section>
+  <div class="row">
+    
+    <div class="nine columns contact-form">
+       <form action="contact.php" method="post">
+           <p class="contact-name controls">
+              <input id="name" type="text" placeholder="Name" value="" name="mc_name" />
+            </p>
+            <p class="contact-email controls">
+              <input id="email" name="mc_email" type="email" placeholder="Email address">
+            </p>
+            <p class="contact-message controls">
+              <textarea id="message" name="mc_message" placeholder="Your Message" rows="10" cols="40"></textarea>
+            </p>
+            <p class="contact-submit controls">
+            <button id="contact-submit" type="submit" value="Send" class="bigblue button">Send</button>
+            </p>
+        </form>
+    </div>
+  
+    <div class="three columns end">
+      <div class="contact-details">
+        <p>I’m "<a href="https://www.google.com/search?q=mikeycattell+&oq=mikeycattell+&aqs=chrome.0.69i57j69i60l3j0l2.3004j0&sourceid=chrome&ie=UTF-8" "title="quick google search will find me everywhere">mikeycattell</a>" on pretty much everything, but in case you wanted to keep in touch on any other sites, you can also find me on:</p>
+        <ul class="socialscontact">
+            <li>Twitter - <a href="https://twitter.com/mikeycattell" title="for all my latest and greatest - follow me on twitter">@mikeycattell</a></li>
+            <li>Last.fm - <a href="http://www.last.fm/user/mikey_cattell" title="my latest tunes and my embarrassing tunes">mikey_cattell</a></li>
+            <li>Linkedin - <a href="www.linkedin.com/pub/michael-cattell/18/919/6a/" title="Here is my professional thing - has all my education etc here">Linkedin</a></li>                    
+            <li>Svppy - <a href="https://svpply.com/mikeycattell" title="Its Pinterest..but for stuff I want!">@mikeycattell</a></li>                        
+        </ul>
+        <p>Or you can simply email me, like the old days: <a href="mailto:michael.a.cattell@gmail.com">michael.a.cattell@gmail.com</a>
+      </div>
+    </div>
+
+   </div>
 </section>
 <div class="height20"></div>
 

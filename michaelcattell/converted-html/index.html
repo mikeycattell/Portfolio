@@ -12,7 +12,7 @@
   <link href="assets/css/mymagic.min.css" rel="stylesheet" type="text/css" media="all">
   <link href="assets/css/component.min.css" rel="stylesheet" type="text/css" media="all">
   <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="humans.txt" rel="stylesheet" type="text/css" media="all">    
+    <link href="humans.txt" rel="stylesheet" type="text/css" media="all"> 
   <script src="assets/js/vendor/custom.modernizr.min.js"></script>
   <link rel="shortcut icon" href="assets/favicon.png">
 </head>
@@ -20,14 +20,14 @@
     <div id="homeslide"></div>
      <div class="cbp-af-header hide-for-small">
         <div class="cbp-af-inner">
-           <div class="logoholder animated tada"><a href="index.html" title="Go to home page">
-            <img src="assets/images/icons/michaelcattell_logo.png" alt=""></a></div>
+           <a class="logoholder animated tada" href="index.html" title="Go to home page">
+            <img src="assets/images/icons/michaelcattell_logo.png" alt=""></a>
            <nav>
               <a href="index.html" style="display: none;">Home</a>                     
               <a href="work.html">Work</a>
               <a href="about.html">About</a>
               <a href="blog">Writings</a>
-              <a href="interests.html">Interests</a>
+              <a href="interests.html" style="display: none;">Interests</a>
               <a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a>
               <a href="contact.html">Contact</a>
            </nav>
@@ -37,12 +37,12 @@
              
     <!-- mobile navigation -->
       <nav class="top-bar show-for-small">
-        <ul class="title-area">
-          <!-- Title Area -->
-          <li>
-            <div class="logoholdermob animated tada"><a href="index.html" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo.png" alt=""></a></div>
+      <ul class="title-area">
+          
+          <li style="background: transparent; float: left; padding: 5px 0 0;">
+            <a class="logoholdermob animated tada" href="index.html" title="Go to home page"><img src="assets/images/icons/michaelcattell_logo_mob.png" alt=""></a>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#" style="color: #000;"><span>menu</span></a></li>
+          <li class="toggle-topbar menu-icon"><a href="#" style="color: #fff;"><span>menu</span></a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -51,7 +51,6 @@
             <li><a href="work.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog">Writings</a></li>
-            <li><a href="interests.html">Interests</a></li>
             <li><a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -59,41 +58,47 @@
       </nav>
 
     <!-- End Navigation -->
+
+ 
 	
   
-<header class="clearfix">
+<header class="hide-for-small">
   <section>
-  <div style="position: relative;">
-    <img src="assets/images/header/home1.jpg" alt="">
-  </div>
-    <div class="row">
-      <h1 class="mainh1 animated fadeInLeftBig show-for-large">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
-      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+    <div style="position: relative;">
+      <img src="assets/images/header/home1.jpg" alt="">
     </div>
-</section>      
+    <div class="row">
+      <h1 class="mainh1 animated fadeInLeftBig hide-for-small hide-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+    </div>
+  </section>      
+</header>
+<header class="show-for-small">
+  <img src="assets/images/header/home.jpg" alt="">
 </header>
 <section class="contentnobg">
-    <div class="row">    
-        <div class="eight columns">
-          <div class="show-for-small">
-          <h1 class="title animated fadeIn">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
-          <a class="bigred button animated swing" href="contact.html" title="Got work and need a designer/coder? Get in touch!">Available for work!</a> </div>
-          <h2>Meet me</h2>
-          <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
-          <p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>
-          <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact.html" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and excited!</p>
-        </div>
-        <div class="four columns meet-me end">
-          <div class="hide-for-small"><a class="bigred button animated swing" href="contact.html" title="Got work and need a designer/coder? Get in touch!">Available for work!</a></div>
-          <span class="info-image">
-          <div class="box"> <a href="about.html"><img src="assets/images/workexample_4.jpg" alt="">
-            <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
-            </a> </div>
-          </span>
-        </div>
+  <div class="row">    
+    <div class="eight columns">
+      <div class="show-for-small">
+        <h1 class="title animated fadeIn">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+        <a class="bigred button animated swing" href="contact.html" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+      <div class="hide-for-small">
+        <a class="bigredhome button animate bounce" href="contact.html" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+      <h2>Meet me</h2>
+      <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
+      <!--<p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>-->
+      <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact.html" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
     </div>
+        <ul class="four columns">
+          <li>
+            <a class="box" href="about.html" title="Want to know more about me? Click here"> <img src="assets/images/workexample_4.jpg" alt=""><p class="plus">Designer<br>Front-end Developer<br>Music Expert<br><span class="darktxt">Funny Man</span></p></a>
+          </li>
+        </ul>      
+  </div>
 </section>
-  <section class="content">
+<section class="content">
   <div class="lightgraybgstyle contentinternalpadeven">
     <!-- Thumbnails -->
     <div class="row">
@@ -103,27 +108,27 @@
       <div class="four columns end">
       <a href="work.html" title="see all my work!" class="bigblue button">See all my work</a>
       </div>       
-      <div class="height10"></div>
+       <div class="height10"></div>
     </div>
     <div class="row">
-        <!-- Thumbnails start -->
-        <div class="four columns work">
-          <div class="box"> <a href="pomsnotbombs.html" title="view the case study for Poms not Bombs"><img src="assets/images/portfolio/pomsnotbombs_nail.jpg" alt="">
-            <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work">
-          <div class="box"> <a href="argos.html" title="view the case study for Argos-Spain"><img src="assets/images/portfolio/argos_nail.jpg" alt="">
-            <p class="plus">Argos<br><span class="darktxt">Build</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work end">
-          <div class="box"> <a href="smallpeeps.html" title="view the case study for Premier Food Safety"><img src="assets/images/portfolio/smallpeeps_nail.jpg" alt="">
-            <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
-            </a>
-          </div>
+        <div class="twelve columns">
+          <ul class="block-grid three-up showcase-items">
+            <li>
+                <div class="box"><a href="pomsnotbombs.html" title="view the case study for Poms not Bombs"><img src="assets/images/portfolio/pomsnotbombs_nail.jpg" alt="">
+                <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p></a>
+                </div>
+            </li>
+            <li>
+              <div class="box"> <a href="argos.html" title="view the case study for Argos-Spain"><img src="assets/images/portfolio/argos_nail.jpg" alt="">
+              <p class="plus">Argos<br><span class="darktxt">Build</span></p></a>
+              </div>
+            </li>
+            <li>
+              <div class="box"> <a href="smallpeeps.html" title="view the case study for Premier Food Safety"><img src="assets/images/portfolio/smallpeeps_nail.jpg" alt="">
+              <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p></a>
+              </div>
+            </li>
+          </ul>    
         </div>
     </div>
   </div>
@@ -159,11 +164,25 @@
           Based in <span class="white">California (USA)</span> and <span class="white">Yorkshire (UK)</span></p>
       </div>
       <div class="six columns text-right end">
-        <p class="gray" style="font-family: 30px;"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
+        <p class="gray" style="font-family: 30px;"><a class="white" href="mailto:michael.a.cattell@gmail.com" title="drop me an email, i love um!">michael.a.cattell@gmail.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
       </div>
     </div>
   </div>
-</section> 
+</section>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15536515-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
 
   <script>
 document.write('<script src=' + ('__proto__' in {} ? 'assets/js/vendor/zepto.min.js' : 'assets/js/vendor/jquery.min.js') + '><\/script>')
