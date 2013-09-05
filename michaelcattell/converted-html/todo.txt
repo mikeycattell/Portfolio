@@ -1,0 +1,34 @@
+Copy to write:
+
+ABOUT PAGE:
+	Who I work with - done
+	Web, App and Mobile Design  - done
+	What I don't do  - done
+
+skills:		
+	add svn, git reponsitries
+	build resume page and include dl version
+
+
+diff copy in right side of contact page
+
+humans.txt
+
+to do:
+interests page:
+	update pics
+	add last fm
+	change green colours to light to dark
+	more copy
+	last fm - on tape!
+	
+
+PICTURES page:
+	set up new tumblr with michaelcattell.com/pictures - syndex  - done
+	gray bg, add info about camera in there somewhere - humans.txt\
+
+pages of me!
+
+HOME/ABOUT - header pics - agree on them
+
+decide if to include Twitter feed?

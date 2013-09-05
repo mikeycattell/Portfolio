@@ -1,80 +1,91 @@
 {% block content %}
 
-<header class="clearfix">
+<header class="hide-for-small">
   <section>
-  <div style="position: relative;">
-    {{ "home1.jpg" | asset_url | image_tag }}
-  </div>
+    <div style="position: relative;">
+      {{ "home1.jpg" | asset_url | image_tag }}
+    </div>
     <div class="row">
+<<<<<<< HEAD
       <h1 class="mainh1 animated fadeInLeftBig show-for-large">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
       <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;Front-end &#60;&#47; Developer&#62;</h1>
     </div>
 </section>      
+=======
+      <h1 class="mainh1 animated fadeInLeftBig hide-for-small hide-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+    </div>
+  </section>      
+>>>>>>> 52d195a45f3420892bbdee277fe03c346b4c2396
 </header>
 
-
-
 <section class="contentnobg">
-    <div class="row">    
-        <div class="eight columns">
-          <div class="show-for-small"> <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a> </div>
-          <h2>Meet me</h2>
-          <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
-          <p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>
-          <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and excited!</p>
-        </div>
-        <div class="four columns meet-me end">
-          <div class="hide-for-small"><a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a></div>
-          <span class="info-image">
-          <div class="box"> <a href="about">{{ "workexample_4.jpg" | asset_url | image_tag }}
-            <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
-            </a> </div>
-          </span>
-        </div>
+  <div class="row">    
+    <div class="eight columns">
+      <div class="show-for-small">
+        <h1 class="title animated fadeIn">User Interface Designer &amp;<br>Front-end &#60;&#47; Developer&#62;</h1>
+        <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+
+      <div class="hide-for-small">
+        <a class="bigredhome button animate bounce" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+      <h2>Meet me</h2>
+      <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
+      <!--<p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>-->
+      <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
     </div>
+
+    <div class="four columns meet-me end">
+    <span class="info-image">
+      <div class="box"> <a href="about">{{ "workexample_4.jpg" | asset_url | image_tag }}
+        <p class="plus">Designer<br>Front-end Developer<br>Music Listener<br>Fun Expert</p>
+        </a>
+      </div>
+    </span>
+
+  </div>
 </section>
 
-  <section class="content">
+
+<section class="content">
   <div class="lightgraybgstyle contentinternalpadeven">
     <!-- Thumbnails -->
     <div class="row">
       <div class="eight columns">
         <h3 class="standardh3">My latest work</h3>
       </div>
-      <div class="three columns end">
+      <div class="four columns end">
       <a href="work" title="see all my work!" class="bigblue button">See all my work</a>
       </div>       
-        <div class="twelve columns">
-          <p class="intro">Here is a taster of my work, more can be found on my work page!</p>
-        </div>
- 
-      <div class="height10"></div>
-    </div>
-    <div class="row">
-        <!-- Thumbnails start -->
-        <div class="four columns work">
-          <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work">
-          <div class="box"> <a href="argos" title="view the case study for Argos-Spain">{{ "argos_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Argos<br><span class="darktxt">Build</span></p>
-            </a>
-          </div>
-        </div>
-        <div class="four columns work end">
-          <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
-            <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
-            </a>
-          </div>
-        </div>
+       <div class="height10"></div>
     </div>
 
+    <div class="row">
+        <div class="twelve columns">
+          <ul class="block-grid three-up showcase-items">
+            <li>
+                <div class="box"><a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
+                <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p></a>
+                </div>
+            </li>
+            <li>
+              <div class="box"> <a href="argos" title="view the case study for Argos-Spain">{{ "argos_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Argos<br><span class="darktxt">Build</span></p></a>
+              </div>
+            </li>
+            <li>
+              <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p></a>
+              </div>
+            </li>
+          </ul>    
+        </div>
+    </div>
   </div>
 </section>
 
+    
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 

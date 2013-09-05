@@ -35,3 +35,4 @@ function checkAnimation() {
 $(window).scroll(function(){
     checkAnimation();
 });
+
