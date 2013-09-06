@@ -1,26 +1,28 @@
 {% block content %}
 
-<header class="hide-for-small">
+<header>
   <section>
-    <div style="position: relative;">
-      {{ "home1.jpg" | asset_url | image_tag }}
+    <div style="position: relative; display: none;">
+      {{ "home_large.jpg" | asset_url | image_tag }}
     </div>
-    <div class="row">
-      <h1 class="mainh1 animated fadeInLeftBig hide-for-small hide-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
-      <h1 class="mediumh1 animated fadeInLeftBig show-for-medium">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+    <div class="headerholder noise">
+     <div class="row">
+      <div class="headerposition">
+      <hgroup>
+        <h3 class="standardh33 animated fadeIn">Welcome</h3>
+        <h1 class="mainh11 animated fadeIn Big">Coffee drinker, Creative thinker<br>& Code tinker</h1>
+        <h2 class="standardh22">Freelancer: USA and UK</h3>
+       </hgroup>
+      </div>
     </div>
+  </div>
   </section>      
-</header>
-
-<header class="show-for-small">
-  {{ "home.jpg" | asset_url | image_tag }}
 </header>
 
 <section class="contentnobg">
   <div class="row">    
     <div class="eight columns">
       <div class="show-for-small">
-        <h1 class="title animated fadeIn">Coffee drinker, Creative thinker<br>& Code tinker</h1>
         <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
       </div>
 
