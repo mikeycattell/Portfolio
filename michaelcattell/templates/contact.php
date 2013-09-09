@@ -3,7 +3,7 @@ $field_name = $_POST['mc_name'];
 $field_email = $_POST['mc_email'];
 $field_message = $_POST['mc_message'];
 
-$mail_to = 'michael.a.cattell@gmail.com';
+$mail_to = 'hello@michaelcattell.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -24,7 +24,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to michael.a.cattell@gmail.com');
+		alert('Message failed. Please, send an email to hello@michaelcattell.com');
 		window.location = 'contact.html';
 	</script>
 <?php
