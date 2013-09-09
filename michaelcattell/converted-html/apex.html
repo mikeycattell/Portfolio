@@ -59,7 +59,7 @@
   
 <header class="clearfix">
   <section>
-  <img src="assets/images/portfolio/apexworkplace/apex_opening.jpg" alt="">
+  <img class="lazy" src="assets/ajax-loader.gif" data-original="assets/images/portfolio/apexworkplace/apex_opening.jpg" alt="">
   </section>
 </header>
 <section class="contentinternalpadeven">
@@ -75,8 +75,8 @@
 <section class="contentnopad">
   <div class="contentinternalpadeven">
     <div class="row">
-      <div class="six columns fadeInImg animated">
-        <img src="assets/images/portfolio/apexworkplace/grouppic.jpg" alt="">
+      <div class="six columns">
+        <img class="lazy" src="assets/ajax-loader.gif" data-original="assets/images/portfolio/apexworkplace/grouppic.jpg" alt="">
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">My Role</h3>
@@ -88,8 +88,8 @@
 <section class="contentnopad">
   <div class="contentinternalpadeven">
     <div class="row">
-      <div class="six columns fadeInImg animated">
-        <img src="assets/images/portfolio/apexworkplace/apex_layout.png" alt="">
+      <div class="six columns">
+        <img class="lazy" src="assets/ajax-loader.gif" data-original="assets/images/portfolio/apexworkplace/apex_layout.png" alt="">
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">The Layout</h3>
@@ -109,8 +109,8 @@
   </div>
 </section>
 <section class="contentnopad">
-  <div class="twelve coulums fadeInImg animated">
-  <img src="assets/images/portfolio/apexworkplace/apexworkplace_layout.jpg" alt="">
+  <div class="twelve columns">
+  <img class="lazy" src="assets/ajax-loader.gif" data-original="assets/images/portfolio/apexworkplace/apexworkplace_layout.jpg" alt="">
   </div>
 </section>
 <section class="contentnopad">
@@ -123,6 +123,7 @@
     </div>
   </div>
 </section>
+
 <!--thumbnails for other works-->
 <section class="content">
   <div class="lightgraybgstyle contentinternalpadeven">
@@ -209,9 +210,14 @@ document.write('<script src=' + ('__proto__' in {} ? 'assets/js/vendor/zepto.min
 <script src="assets/js/cbpAnimatedHeader.min.js"></script>
 <script src="assets/js/classie.min.js"></script>
 <script src="assets/js/custom.min.js"></script>
-<script src="assets/js/foundation/foundation.joyride.js"></script>
+<script src="assets/js/jquery.lazyload.min.js"></script>
 <script>
 $(document).foundation();
+</script>
+<script>
+$(function(){
+    $("img.lazy").lazyload();
+});
 </script>
 
 </body>
