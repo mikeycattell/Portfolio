@@ -2,7 +2,7 @@
 Style Sheet for MichaelCattell.com
 
 author: Michael Cattell
-email: michael.a.cattell@gmail.com
+email: hello@michaelcattell.com
 website: http://www.michaelcattell.com
 ----------------------------------------------------------*/
 
@@ -18,7 +18,7 @@ CONTENTS:
 =media changes and stuff
 ************/
 
-body { background: #fff; font-family: 'Droid Sans', sans-serif; color: #747474; font-size: 20px; }
+body { background: #fff; font-family: 'PT Sans', sans-serif; color: #747474; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
 /********* =Resets & General *************/
@@ -118,31 +118,8 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 
 
 /**************** =Font/Type rules ********************/
-@font-face {  
-  font-family: "open sans";  
-  src: url( ../fonts/OpenSans-Regular.ttf ); /* IE */  
-  src: local("open sans"), url( ../fonts/OpenSans-Regular.ttf) format("truetype"); /* non-IE */  
-}  
 
-@font-face {  
-  font-family: "jubilat-light";  
-  src: url( ../fonts/jubilat-light-webfont.ttf ); /* IE */  
-  src: local("jubilat-light"), url( ../fonts/jubilat-light-webfont.ttf) format("truetype"); /* non-IE */  
-}  
-
-@font-face {  
-  font-family: "BreeSerif";  
-  src: url( ../fonts/BreeSerif-Regular.otf); /* IE */  
-  src: local("edmondsans"), url( ../fonts/BreeSerif-Regular.otf) format("truetype"); /* non-IE */  
-}  
-
-@font-face {  
-  font-family: "edmondsans";  
-  src: url( ../fonts/Edmondsans-Regular.otf ); /* IE */  
-  src: local("edmondsans"), url( ../fonts/Edmondsans-Regular.otf) format("truetype"); /* non-IE */  
-}  
-
-h1, h2, h3, h4, h5 { font-family: 'Maven Pro', sans-serif; font-weight: normal; color: #4C4E54;}
+h1, h2, h3, h4, h5 { font-family: 'PT Sans', sans-serif; font-weight: 100; color: #4C4E54;}
 
 h1.mainh1 { font-size: 66px; position: absolute; top: 220px;/* left: 90px; */color: #fff;  }
 h1.mainh11 { font-size: 66px; color: #fff; margin: 0;  }

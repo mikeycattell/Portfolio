@@ -5,7 +5,7 @@
 Design, layout & responsive development,  Michael (Mikey) Cattell.
                             
 Site: http://michaelcattell.com, https://github.com/mikeycattell
-                            
+Email: hello@michaelcattell.com                            
 Twitter: @mikeycattell
                             
 Location: Anaheim, USA.
