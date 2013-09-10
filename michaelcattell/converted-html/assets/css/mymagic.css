@@ -18,7 +18,7 @@ CONTENTS:
 =media changes and stuff
 ************/
 
-body { background: #fff; font-family: jubilat-light, Arial, sans-serif; color: #747474; font-size: 20px; }
+body { background: #fff; font-family: 'Droid Sans', sans-serif; color: #747474; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
 /********* =Resets & General *************/
@@ -142,7 +142,7 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
   src: local("edmondsans"), url( ../fonts/Edmondsans-Regular.otf) format("truetype"); /* non-IE */  
 }  
 
-h1, h2, h3, h4, h5 { font-family: edmondsans; font-weight: normal; color: #4C4E54;}
+h1, h2, h3, h4, h5 { font-family: 'Maven Pro', sans-serif; font-weight: normal; color: #4C4E54;}
 
 h1.mainh1 { font-size: 66px; position: absolute; top: 220px;/* left: 90px; */color: #fff;  }
 h1.mainh11 { font-size: 66px; color: #fff; margin: 0;  }
@@ -157,7 +157,7 @@ h2.standardh2 { font-size: 36px; }
 h2.standardh22 { font-size: 36px; color: #fff; }
 h2.standardh2small { font-size: 28px; }
 h3.standardh3 { font-size: 32px;}
-h3.standardh33 { font-size: 32px; color: #fff;}
+h3.standardh33 { font-size: 32px; color: #fff; }
 h3.standardbookh3 { font-size: 32px; padding: 5px 0;}
 h4.standardh4 { font-size: 26px;}
 p.date { color: #999999; font-size: 11px; font-style: italic; margin: 0; }

@@ -1,10 +1,12 @@
-
+<script>
+document.write('<script src=' + ('__proto__' in {} ? 'assets/js/vendor/zepto.min.js' : 'assets/js/vendor/jquery.min.js') + '><\/script>')
+</script>
 {{ "app.js" | asset_url | script_tag }}
 {{ "cbpAnimatedHeader.min.js" | asset_url | script_tag }}
 {{ "cbpAnimatedHeader.js" | asset_url | script_tag }}
 {{ "classie.js" | asset_url | script_tag }}
 {{ "custom.js" | asset_url | script_tag }}
-{{ "jquery.lazyload.js" | asset_url | script_tag }}
+{{ "foundation.joyride.js" | asset_url | script_tag }}
 <script>
 $(document).foundation();
 </script>
