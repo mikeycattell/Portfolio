@@ -1,6 +1,6 @@
 {% block content %}
 
-<header>
+<!--<header>
   <section>
     <div style="position: relative; display: none;">
       {{ "home_large.jpg" | asset_url | image_tag }}
@@ -12,40 +12,30 @@
         <h3 class="standardh33 animated fadeIn">Welcome</h3>
         <h1 class="mainh11 animated fadeIn Big"><strong>Creative</strong> thinker, <strong>Code</strong> tinker & <strong>Coffee</strong> drinker</h1>
         <h2 class="standardh22">Freelancer: UK and USA</h3>
+        <a class="bigredhome button animated fadeIn" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
        </hgroup>
       </div>
     </div>
   </div>
   </section>      
-</header>
+</header>-->
 
-<section class="contentnobg">
-  <div class="row">    
-    <div class="eight columns">
-      <div class="show-for-small">
-        <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+<header class="clearfix hide-for-small">
+  <section id="home" data-speed="4" data-type="background">
+    <div class="row">
+      <div class="headerposition">
+      <hgroup>
+        <h1 class="mainh11 animated fadeIn Big">Creative thinker, Code tinker & Coffee drinker</h1>
+        <h2 class="standardh22">Freelancer: UK and USA</h3>
+        <a class="animated fadeIn" style="background: #16A085; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px rgba(255, 255, 255, 0.15) inset; color: #FFFFFF; display: inline-block; font-size: 18px; letter-spacing: 1px; margin: 3% 0 0; padding: 20px; text-transform: capitalize; transition: all 0.2s ease-in 0s;" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+       </hgroup>
       </div>
-
-      <div class="hide-for-small">
-        <a class="bigredhome button animate bounce" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
-      </div>
-      <h2>Meet me</h2>
-      <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
-      <!--<p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>-->
-      <p class="intro">As of November 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
     </div>
 
+  </section>
+</header>
 
-    <div class="four columns fadeInImg">
-      <a  class="box" href="about" title="Want to know more about me? Click here"> {{ "workexample_4.jpg" | asset_url | image_tag }}<p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
-    </div>      
-    
-
-  </div>
-</section>
-
-
-<section class="content">
+<section>
   <div class="lightgraybgstyle contentinternalpadeven">
     <!-- Thumbnails -->
     <div class="row">
@@ -82,6 +72,30 @@
   </div>
 </section>
 
+<section class="contentnobg">
+  <div class="row">    
+    <div class="eight columns">
+      <div class="show-for-small">
+        <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+
+      <div class="hide-for-small">
+        <a class="bigredhome button animate bounce" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      </div>
+      <h2>Meet me</h2>
+      <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
+      <!--<p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>-->
+      <p class="intro">As of October 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
+    </div>
+
+
+    <div class="four columns fadeInImg">
+      <a  class="box" href="about" title="Want to know more about me? Click here"> {{ "workexample_4.jpg" | asset_url | image_tag }}<p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
+    </div>      
+    
+
+  </div>
+</section>
     
 {% include "writings" %} 
 {% include "contactme" %} 
