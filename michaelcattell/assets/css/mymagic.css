@@ -18,7 +18,7 @@ CONTENTS:
 =media changes and stuff
 ************/
 
-body { background: #fff; font-family: 'Roboto', sans-serif; color: #747474; font-size: 20px; }
+body { background: #fff; font-family: 'Roboto', sans-serif; color: #9BA6AD; font-size: 20px; }
 	 #sub { background: #F5F6F6; }
 
 /********* =Resets & General *************/
@@ -54,7 +54,7 @@ ul li { list-style: none outside none; }
 .visionarygreen {  background: #0F705D; padding: 10px; font-size: 18px; }
 .joyfulgreen { background: #11806A; padding: 10px; font-size: 18px; }
 .greenbackground { background: #1ABC9C; padding: 0; }     
-.lightgraybgstyle { background: #f8f8f8; }
+.lightgraybgstyle { background: #f5f5f5; }
 .darkishgraybgstyle { background: #F2F2F2; }
 .darkgreen { background: #16A085 }    
 .darkblack { background: #101010;}
@@ -86,14 +86,14 @@ ul li { list-style: none outside none; }
 
 /*********** =button styling ************/
 
-.button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
+.button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 button, .button { border-width: 0px;}
 	.button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
 a.bigwhite { background-color: #fff; border: 0;  color: #666; font-size: 30px; line-height: 30px; margin: 18px 0; padding: 18px 30px; width: 60%; }
 	a.bigwhite:hover { background-color: #333;  }
 
-a.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26px; line-height: 20px; margin: 0px 0; padding: 14px 10px; }
+a.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26px; line-height: 20px; margin: 0px 0; padding: 14px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 	a.bigblue:hover { background-color: #12836C;  }
 
 button.bigblue { background-color: #16A085; border: 0; color: #FFFFFF;  font-size: 26px; line-height: 20px; margin: 0px 0; padding: 14px 10px; }
@@ -105,21 +105,22 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 	.bigredhome { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-size: 26px; line-height: 20px; margin: 8px 0 10px; padding: 14px 12px; }
 	.bigredhome:hover { background-color: #c0392b;  }	
 
-#button { border-radius: 4px 4px 4px 4px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
+#button { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block;  cursor: pointer; font-weight: normal; text-align:center; width: 100%; }
 	#button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
+.greenbuttonhome { background: #16A085; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px rgba(255, 255, 255, 0.15) inset; color: #FFFFFF; display: inline-block; font-size: 18px; letter-spacing: 1px; margin: 3% 0 0; padding: 20px; text-transform: capitalize; transition: all 0.2s ease-in 0s;}	
+	.greenbuttonhome:hover { background: #12836C; color: #fff; }
 /* handy parallex code but unused in end */
-#home { background: url(../images/header/home.jpg) 0%  0% no-repeat fixed; height: 470px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
-#about { background: url(../images/header/about_5.jpg) 50% 100% no-repeat fixed; height: 300px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
+#home { background: url(../images/header/home.jpg) 50%  120% no-repeat fixed; height: 490px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
+#about { background: url(../images/header/about_5.jpg) 50% 290% no-repeat fixed; height: 490px;	margin: 0 auto; width: 100%; max-width: 1920px; position: relative; }
 /*<header class="clearfix" style="display: none;">
   <section id="about" data-speed="4" data-type="background"> </section>
 </header>
 */
 
-
 /**************** =Font/Type rules ********************/
 
-h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; font-weight: 100; color: #4C4E54;}
+h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; font-weight: 100; color: #4A545A;}
 
 h1.mainh1 {  position: absolute; top: 220px;/* left: 90px; */color: #fff;font-size: 68px; font-weight: 300; line-height: 1.2;  }
 h1.mainh11 { font-size: 66px; color: #fff; margin: 0;  }
@@ -128,14 +129,15 @@ h1.mediumh1 { font-size: 46px; position: absolute; top: 100px;/* left: 90px; */c
 h1.mediumh11 { font-size: 46px; color: #fff;  }
 
 h1.smallh1 { font-size: 26px; position: absolute; top: 70px;/* left: 90px; */color: #fff;  }
-h1.title { font-size: 46px; margin: 0; }
+h1.title { font-size: 46px; margin: 0; font-weight: 300; }
 h2 { margin-bottom: 1px;}
 h2.standardh2 { font-size: 36px; }
 h2.standardh22 { font-size: 36px; color: #fff; }
 h2.standardh2small { font-size: 28px; }
-h3.standardh3 { font-size: 32px;}
-h3.standardh33 { font-size: 32px; color: #fff; }
+h3.standardh3 { font-size: 32px; font-weight: 300;}
+h3.standardh33 { font-size: 32px; color: #fff; font-weight: 300;}
 h3.standardbookh3 { font-size: 32px; padding: 5px 0;}
+h4 { font-size: 1.3375em; }
 h4.standardh4 { font-size: 26px;}
 p.date { color: #999999; font-size: 11px; font-style: italic; margin: 0; }
 p.intro { font-size: 18px;}
@@ -144,10 +146,12 @@ p.smallpara { color: #999; font-size: 14px; padding: 0; margin: 0; }
 p.testimonialname { font-size: 24px; padding: 0; margin: 0; color: #333; }
 p.testimonialtitle { font-size: 12px; padding: 0; }
 
-span.headline a {font-size: 30px; color: #16A085; }
+p { font-weight: 300; }
+.writingspara { font-weight: 300; }
+span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 	span.headline a:hover { color: #1B5378; font-weight: 300; transition: background 0.3s ease-in-out; text-decoration:underline }
  
- span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; }
+ span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; font-weight: 300 }
 
 .darktxt { color: #333;}
 .darkgray { color: #f2f2f2;}
@@ -312,7 +316,7 @@ span.headline a {font-size: 30px; color: #16A085; }
    body { font-size: 15px; }
    p.intro { font-size: 16px; }
 
-   h3.standardh3 { font-size: 26px; }
+   h3.standardh3 { font-size: 26px; font-weight: 300;}
    h2.standardh2small { font-size: 28px; }
    h2.standardh2 { font-size: 28px; }
    h1.title { font-size: 30px; margin: 0; }
@@ -326,16 +330,16 @@ h1.mainh11 { font-size: 36px;  }
 h2.standardh22 { font-size: 22px; }
 h3.standardh33 { font-size: 18px; }
 .headerposition { margin: 0; padding: 5em 0 2em; }
-
 }
 
 @media only screen and (max-width: 450px) {
+
 .showcase-items li { width: 100% !important; }
 .booksiread li { width: 100% !important; }
 .info-image { max-height: 200px; overflow: hidden; width: 100%; }
 .box { float: left; margin: 10px 0; width: 100%; }
 .box img {  }
-h1.mainh11 { font-size: 36px;  }
+h1.mainh11 { font-size: 26px;  }
 h2.standardh22 { font-size: 16px; }
 h3.standardh33 { font-size: 16px; }
 .headerposition { margin: 0; padding: 5em 0 1em; }
@@ -348,7 +352,7 @@ h3.standardh33 { font-size: 16px; }
 @media only screen and (max-width: 768px) {
 	h1.mediumh1 { font-size: 10px; position: absolute; top: 120px;  }
 	.noise { background-image: none; }
-
+	#about { background: url(../images/header/about_5.jpg) 90% 50% no-repeat fixed; height: 220px;	}
 }
 
 /* Used to alter styles for screens at least 1280px wide. */
@@ -365,20 +369,20 @@ h3.standardh33 { font-size: 16px; }
 
 /* Apply styles to screens in portrait orientation */
 @media only screen and (orientation: portrait) { 
+h1.mainh11 { font-size: 58px;  }
 }
 
 /* Anything less than 1024 */
 @media only screen and (max-width: 768px) {
 #home { height: 300px; background: url(../images/header/home.jpg) 60%  90% no-repeat fixed; }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px;  }
-#about { background: url(../images/header/about_5.jpg) 90% 60% no-repeat fixed; height: 220px;	}
-h1.mainh11 { font-size: 46px; color: #fff; margin: 0;  }
+
+h1.mainh11 { font-size: 34px; color: #fff; margin: 0; font-weight: 300;  }
  }
 
 /* carousel fixes */
 a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
-
 a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 .orbit-container { background: transparent;}
 
