@@ -36,3 +36,25 @@ $(window).scroll(function(){
     checkAnimation();
 });
 
+// Flexslider custom..bits
+ $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: false,
+        animationLoop: false,
+        itemWidth: 300,
+        itemMargin: 40,
+        move: 1, 
+        randomize: true, 
+        pausePlay: true,
+        pauseOnAction: true,
+        pauseOnHover: false,  
+        touch: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });

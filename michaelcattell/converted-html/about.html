@@ -13,8 +13,8 @@
   <link href="assets/css/component.min.css" rel="stylesheet" type="text/css" media="all" />
   <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" media="all" />
   <link href="humans.txt" rel="stylesheet" type="text/css" media="all" /> 
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-  
+  <link href="assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
   <script src="assets/js/vendor/custom.modernizr.min.js"></script>  
   <link rel="shortcut icon" href="assets/favicon.png">
 </head>
@@ -64,11 +64,10 @@
  
 	
   
-<header class="hide-for-small">
-  <img src="assets/images/header/about_.jpg" alt="" />
-</header>
-<header class="show-for-small">
-  <img src="assets/images/header/about_5.jpg" alt="" />
+<header class="clearfix">
+  <section id="about">
+    <img src="assets/images/header/about_.jpg" alt="" />
+  </section>
 </header>
 <!--modals for links who i work with, web,app, what i dont do-->
 <div id="whoiworkwith" class="reveal-modal">
@@ -80,7 +79,7 @@
     <p>I design, doing the heavy lifting stuff isn’t for me – im not made for searching through databases and long streams of code – I get confused and frazzled just thinking about it, but you are not either made to look at a screen pushing them curved corner squares around. Some say we could be a match made in heaven, but as I’m already married - I could never commit.</p>
     <p>I know where to put my code, and roughly what your code means (the simple stuff of course), so you can trust me not to break anything – but I maybe might need help sometimes!</p>
     <h4 class="standardh4">Startups – you energetic things</h4>
-    <p>I have a fun and well fun history of working with start ups in California, so I am well versed in startups and the limitations, but I don’t care for them – I care for getting your product out there to wow the audience. I understand that the big word of the day is <strong> budget</strong>, so I am flexible to adjust my costs to match your dreams! I can do most things, so designing things for web as well as print is a joy for me! </p
+    <p>I have a fun and well fun history of working with start ups in California, so I am well versed in startups and the limitations, but I don’t care for them – I care for getting your product out there to wow the audience. I understand that the big word of the day is budget, so I am flexible to adjust my costs to match your dreams! I can do most things, so designing things for web as well as print is a joy for me! </p
        >
     <h4 class="stardardh4">Individuals – just you and me and some thinking</h4>
     <p>Like any good partnership, you have to start getting to know each other – and this is why I love working one on one, I get to know your passion for the project (be it your company or just you) and really give you something that is personal and something you can be proud of, and know you helped hugely in the progress of building your brand. I can advise on most things, all I ask for is a coffee before meetings.</p>
@@ -90,7 +89,7 @@
   <a class="close-reveal-modal">&#215;</a> </div>
 <div id="webapp" class="reveal-modal">
   <h3>Web, App and Mobile Design</h3>
-  <h4 class="standardh4">Website <strong>design and build</strong></h4>
+  <h4 class="standardh4">Website design and build</h4>
   <p>Designing web sites is my bread and butter, it’s what I do. If you need a strong online presence, I ensure I can help in this area – I promise a website which will work on all ‘online devices’, any level of users will be able to use it, and I can also help and offer advice on setting up and assisting on your social media approaches.</p>
   <p>NOTE: I don’t do development work (the heavy stuff), I would need to outsource this, which I would be upfront about when it gets into this field, but I have more than enough really amazing developers on hand to help!</p>
   <h4 class="standardh4">Website design-only</h4>
@@ -129,8 +128,8 @@
         <div class="hide-for-small"><a class="bigred button animated shake" href="contact.html" title="Got work and need a designer/coder? Get in touch!">Available for work!</a></div>
       </div>
       <div class="twelve columns">
-        <p class="intro">Being a <strong>User Interface Designer</strong>, means I can design a website to meet your needs and exceed them, coupled with the ability as a <strong>Front-end Developer</strong> allows me to be able to not only design, but code your website to work on all devices, ensuring they work correctly and something.</p>
-        <p>I focus on writing clean, elegant and efficient code. I have a fondness for <strong>HTML (5)</strong>, <strong>CSS (3)</strong>, a hint of <strong>jQuery</strong> and often with a big scoop of <strong>Wordpress/Tumblr/Perch</strong>.</p>
+        <p class="intro">Being a User Interface Designer, means I can design a website to meet your needs and exceed them, coupled with the ability as a Front-end Developer allows me to be able to not only design, but code your website to work on all devices, ensuring they work correctly and something.</p>
+        <p>I focus on writing clean, elegant and efficient code. I have a fondness for HTML (5), CSS (3), a hint of jQuery and often with a big scoop of Wordpress/Tumblr/Perch.</p>
       </div>
     </div>
   </div>
@@ -139,13 +138,13 @@
   <div class="row">
     <div class="four columns">
       <h3 class="standardh3">My History</h3>
-      <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier there than England)</i>, which has allowed me to experience the ups and downs, <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
+      <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier there than England)</i>, which has allowed me to experience the ups and downs <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
     </div>
     <div class="four columns">
       <h3 class="standardh3">My Methods</h3>
       <p>I am an incredibly passionate designer; skilled in colour theory, typography, and layout principles (harmony, balance, contrast, and emphasis) – basically this means, I will get the colour of your branding right, and put your company’s message across correctly and very professionally – consequently making customers love you and buy/read/click your products!</p>
     </div>
-    <div class="four columns end fadeInImg animated">
+    <div class="four columns end">
       <div class="content510 techincals greenbackground white">
         <h3 class="standardh3 white">My Skills</h3>
         <ul>
@@ -274,7 +273,9 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="standardh3">Writings</h3>
-        <script src="http://feeds.feedburner.com/michaelcattell/ztcG?format=sigpro" type="text/javascript" ></script>
+        	<div class="writingspara">
+        	<script src="http://feeds.feedburner.com/michaelcattell/ztcG?format=sigpro" type="text/javascript" ></script>
+        	</div>
       </div>
     </div>
   </div>
@@ -329,6 +330,8 @@ document.write('<script src=' + ('__proto__' in {} ? 'assets/js/vendor/zepto.min
 <script src="assets/js/classie.min.js"></script>
 <script src="assets/js/custom.min.js"></script>
 <script src="assets/js/foundation/foundation.joyride.js"></script>
+<script src="assets/js/jquery.flexslider-min.min.js"></script>
+
 <script>
 $(document).foundation();
 </script>
