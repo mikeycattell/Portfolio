@@ -1,6 +1,8 @@
 {% block content %}
 <header class="clearfix">
-  <section id="about" data-speed="4" data-type="background"></section>
+  <section id="about">
+    {{ "about_.jpg" | asset_url | image_tag }}
+  </section>
 </header>
 
 
@@ -75,7 +77,7 @@
   <div class="row">
     <div class="four columns">
       <h3 class="standardh3">My History</h3>
-      <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier there than England)</i>, which has allowed me to experience the ups and downs, <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
+      <p>I have been in this game for 8 years, working with digital agencies in Yorkshire, to being Senior designer based in South California <i>(it is true, it is a lot more sunnier there than England)</i>, which has allowed me to experience the ups and downs <del>we all know sometimes things don’t work out how they are suppose to</del>. So I am well versed in most things web-ster-ish, thus leaving us both to not suffer from sleepless nights and panicky phonecalls at 3am.</p>
     </div>
     <div class="four columns">
       <h3 class="standardh3">My Methods</h3>
