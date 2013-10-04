@@ -10,7 +10,7 @@
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
 .cbp-af-header nav a { line-height:97px; }
-.cbp-af-header .logoholder { padding: 10px 10px 0; display: inline-block; position: relative;background: #; }
+.cbp-af-header .logoholder { padding: 15px 10px 0; display: inline-block; position: relative;background: #; }
 .cbp-af-header h1 {	color: #fff; letter-spacing: 4px; font-size: 4em; margin: 0; padding: 10px; float: left; background: #1abc9c; }
 
 .cbp-af-header nav { float: right; }
