@@ -1,125 +1,35 @@
 {% block content %}
-
-<!--<header>
-  <section>
-    <div style="position: relative; display: none;">
-      {{ "home_large.jpg" | asset_url | image_tag }}
-      <img src="{{ asset_url | item.image.file }}" alt="{{ item.image.alt }}" />
-    </div>
-    <div class="headerholder">
-     <div class="row">
-      <div class="headerposition">
-      <hgroup>
-        <h3 class="standardh33 animated fadeIn">Welcome</h3>
-        <h1 class="mainh11 animated fadeIn Big"><strong>Creative</strong> thinker, <strong>Code</strong> tinker & <strong>Coffee</strong> drinker</h1>
-        <h2 class="standardh22">Freelancer: UK and USA</h3>
-        <a class="bigredhome button animated fadeIn" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
-       </hgroup>
-      </div>
-    </div>
-  </div>
-  </section>      
-</header>-->
-
 <header class="clearfix">
   <section id="home">
     <div class="row">
       <div class="headerposition">
       <hgroup>
         <h1 class="mainh11 animated fadeIn Big">Creative thinker, Code tinker & Coffee drinker</h1>
-        <h2 class="standardh22">Freelancer: UK and USA</h3>
+        <h2 class="standardh22 animated fadeInDown">Freelancer: UK and USA</h2>
         <a class="animated fadeIn greenbuttonhome" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
        </hgroup>
       </div>
     </div>
-
   </section>
 </header>
 
-<section>
-  <div class="lightgraybgstyle contentinternalpadeven">
-    <!-- Thumbnails -->
-
-    <div class="row">
-        <div class="twelve columns">
-
-            <div class="flexslider carousel">
-              <ul class="slides">
-              <li>
-                <div class="box"><a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p></a></div>
-              </li>
-              <li>
-                <div class="box"> <a href="argos" title="view the case study for Argos-Spain">{{ "argos_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Argos<br><span class="darktxt">Build</span></p></a></div>     
-              </li>
-              <li>
-                <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p></a></div>
-              </li>
-              <li>
-                <div class="box"> <a href="premierfoodsafety" title="view the case study for Premier Food Safety"> {{ "premierfoodsafety_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Premier Food Safety<br><span class="darktxt">Design, Build, Manage</span></p></a> </div>
-              </li>            
-              <li>
-                <div class="box"> <a href="nathanielcars"> {{ "nathaniels_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Nathaniel Cars<br><span class="darktxt">Design, Build </span></p></a> </div>
-              </li>
-              <li>
-                <div class="box"> <a href="mtcdirect"> {{ "mtcdirect_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">MTC Direct<br><span class="darktxt">Design, Build </span></p></a> </div>
-              </li>
-              <li>
-                <div class="box"> <a href="daxon"> {{ "daxon_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Daxon<br><span class="darktxt">Design, Build</span></p></a> </div>
-              </li>
-            </ul>
-          </div>
-          <ul class="block-grid three-up showcase-items" style="display: none;">
-            <li>
-                <div class="box"><a href="pomsnotbombs" title="view the case study for Poms not Bombs">{{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
-                <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p></a>
-                </div>
-            </li>
-            <li>
-              <div class="box"> <a href="argos" title="view the case study for Argos-Spain">{{ "argos_nail.jpg" | asset_url | image_tag }}
-              <p class="plus">Argos<br><span class="darktxt">Build</span></p></a>
-              </div>
-            </li>
-            <li>
-              <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety">{{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
-              <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p></a>
-              </div>
-            </li>
-          </ul>    
-        </div>
-    </div>
-  </div>
-</section>
+{% include "otherwork" %} 
 
 <section class="contentnobg">
   <div class="row">    
+    
     <div class="eight columns">
-      <!--<div class="show-for-small">
-        <a class="bigred button animated swing" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
-      </div>
-
-      <div class="hide-for-small">
-        <a class="bigredhome button animate bounce" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
-      </div>-->
-
       <h2>Meet me</h2>
       <br>
       <p class="intro"> Well hello there, I’m Michael (often known as Mikey), for those of you that I haven’t met yet, I’m a friendly <del>and often funny</del> User Interface Designer and Front-end Developer from England, currently living in California, America.</p>
-      <!--<p class="intro">I am an experienced designer with a love to travel, I can happily go where I'm needed to help people build their products, this adaptability allows me to work with start ups, small to big agencies on a freelance basis based in UK and America, to assist in making the most of their web presence.</p>-->
       <p class="intro">As of October 2013, I will be joining the world of freelance design and build, focusing on designing and developing experiences, so feel free to <a href="contact" title="get in touch for me to design some magic">get in touch</a> to discuss your plans and get excited!</p>
     </div>
 
-
     <div class="four columns fadeInImg">
-      <a class="box" href="about" title="Want to know more about me? Click here"> {{ "megray.jpg" | asset_url | image_tag }}<p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
+      <a class="box" href="about" title="Want to know more about me? Click here"> 
+      <img src="{{"megray.jpg" | asset_url }}" alt="item" />
+      <p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
     </div>      
-    
 
   </div>
 </section>
