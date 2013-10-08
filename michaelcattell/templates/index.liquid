@@ -4,6 +4,7 @@
   <section>
     <div style="position: relative; display: none;">
       {{ "home_large.jpg" | asset_url | image_tag }}
+      <img src="{{ asset_url | item.image.file }}" alt="{{ item.image.alt }}" />
     </div>
     <div class="headerholder">
      <div class="row">
