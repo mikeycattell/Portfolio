@@ -4,14 +4,12 @@
 <div class="cbp-af-header hide-for-small">
   <div class="cbp-af-inner">
      <a class="logoholder animated tada" href="index" title="Go to home page">
-      {{ "michaelcattell_logo.png" | asset_url | image_tag }}</a>
+       <img src="{{ "michaelcattell_logo.png" | asset_url }}" alt="Michael Cattell Home Icon" />
      <nav>
         <a href="index" style="show-for-medium">Home</a>                     
         <a href="work">Work</a>
         <a href="about">About</a>
         <a href="blog">Writings</a>
-        <a href="interests" style="display: none;">Interests</a>
-        <a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a>
         <a href="contact">Contact</a>
      </nav>
   </div>
@@ -22,7 +20,9 @@
   <ul class="title-area">
     
     <li style="background: transparent; float: left; padding: 5px 0 0;">
-      <a class="logoholdermob animated tada" href="index" title="Go to home page">{{ "michaelcattell_logo_mob.png" | asset_url | image_tag }}</a>
+      <a class="logoholdermob animated tada" href="index" title="Go to home page">
+        <img src="{{ "michaelcattell_logo.png" | asset_url }}" alt="Michael Cattell Home Icon" />
+      </a>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#" style="color: #fff;"><span>menu</span></a></li>
   </ul>
@@ -33,7 +33,6 @@
       <li><a href="work">Work</a></li>
       <li><a href="about">About</a></li>
       <li><a href="blog">Writings</a></li>
-      <li><a href="http://mikeycattell.tumblr.com/" title="see random pictures that i take..randomly">Pictures</a></li>
       <li><a href="contact">Contact</a></li>
     </ul>
   </section>
