@@ -358,7 +358,8 @@ h2.standardh22 { font-size: 16px; }
 h3.standardh33 { font-size: 16px; }
 .headerposition { margin: 0; padding: 5em 0 1em; }
 .noise { background-image: none; }
-
+blockquote {   font-size: 18px!important;  }
+p.quote {  font-size: 16px!important;  }
 }
 
 
@@ -383,6 +384,7 @@ h3.standardh33 { font-size: 16px; }
 @media only screen and (orientation: landscape) {
 h1.mainh11 { font-size: 58px;  position: relative; }
 .headerposition hgroup {  padding: 10px 20px;}
+
 }
 
 /* Apply styles to screens in portrait orientation */
