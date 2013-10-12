@@ -2,7 +2,7 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-    {{ "smallpeeps_opening.png" | asset_url | image_tag }}
+      <img src="{{"smallpeeps_opening.png" | asset_url }}" alt="Michael Cattell Home Icon" />
   </section>
 </header>
 
@@ -26,8 +26,8 @@
         <h3 class="standardh3">My Role</h3>
         <p class="intro">Design logo and personalize ‘off-the-shelf’ bought shop (for e-commerce). Also assist in teaching how to use backend of shop and advise on SEO techniques.</p>
       </div>
-      <div class="six columns fadeInImg animated">
-         {{ "smallpeeps_role.png" | asset_url | image_tag }}
+      <div class="six columns preview fadeIn">
+           <img src="{{"smallpeeps_role.png" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>      
     </div>
   </div>
@@ -45,8 +45,8 @@
 </section>
 
 
-<section class="contentnopad fadeInImg animated">
-  {{ "smallpeeps_layout.jpg" | asset_url | image_tag }}
+<section class="contentnopad preview fadeIn">
+    <img src="{{"smallpeeps_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
 </section>
 
 <section class="contentnopad">
@@ -56,8 +56,8 @@
         <h3 class="standardh3">Is it a bird..well no, it’s a logo</h3>
         <p class="intro">The request was to do a logo which was ‘youthful but smart enough to go inside a boutique..oh and also a bird within the logo due to the naming of ‘Peeps’, of course I happily obliged – I haven’t drawn a bird in years!</p>
       </div>
-      <div class="six columns fadeInImg animated">
-          {{ "smallpeeps_birds.jpg" | asset_url | image_tag }}
+      <div class="six columns preview fadeIn">
+        <img src="{{"smallpeeps_birds.jpg" | asset_url }}" alt="" />
       </div>      
     </div>
   </div>
@@ -77,6 +77,10 @@
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
+</script>
 {% endblock %}

@@ -440,3 +440,6 @@ p.center18 { text-align: center; font-size: 18px; padding: 0; margin: 0; color: 
 
 .has-tip { border-bottom: 1px dotted #1ABC9C; color: #1ABC9C ; cursor: help; font-weight: normal; }
 p.featuredlinks { font-size: 16px; line-height: 36px; } 
+
+.preview {-webkit-transition-duration: 1.6s;-moz-transition-duration: 1.6s-ms-transition-duration: 1.6s; -o-transition-duration: 1.6s;transition-duration: 1.6s;-webkit-transition-delay: 1.6s;-moz-transition-delay: 1.6s;-ms-transition-delay: 1.6s;-o-transition-delay: 1.6s; transition-delay: 1.6s;}
+.info { -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -ms-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; -webkit-transition-delay: 0.15s; -moz-transition-delay: 0.15s; -ms-transition-delay: 0.15s;-o-transition-delay: 0.15s; transition-delay: 0.15s; margin-top: 5%; width: 35%;}

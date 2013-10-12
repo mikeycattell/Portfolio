@@ -11,14 +11,12 @@
     </div>
   </section>
 </header>
-<script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: mikeycattell,
-        accessToken: '241386756.61c3a51.70d3ca34ac4945ddba662d7b1b092af9'
-    });
-    userFeed.run();
-</script>
+<style>
+
+</style>
+
+
+  
 <section>
   <div class="lightgraybgstyle contentinternalpadeven animated fadeIn quoted">
     <div class="row">
@@ -41,7 +39,7 @@
          <p class="intro">Specialising in Front end web design, ecommerce & interface design plus the occasional app design. Also have a keen practiced interest in branding and logo design.</p>
          <p class="intro">I mainly work from my well equipped offices based in Doncaster and Birmingham. When I’m not my office I’m usually on-site with clients or agencies around Yorkshire, Midlands or even America!</p>
       </div>
-      <div class="four columns">
+      <div class="four columns preview lightSpeedIn">
         <img src="{{"familyandme.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />      
       </div>
       <div class="height10 show-for-small"></div>
@@ -165,5 +163,9 @@
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
+</script>
 {% endblock %}
 

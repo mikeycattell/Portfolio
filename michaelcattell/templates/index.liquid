@@ -26,7 +26,7 @@
       <p class="intro">Interested in working with me? <a href="contact" title="get in touch to discuss your project">Tell me about your project.</a> </p>
     </div>
 
-    <div class="four columns fadeInImg">
+    <div class="four columns preview fadeInRight">
       <a class="box" href="about" title="Want to know more about me? Click here"> 
       <img src="{{"michaelcattell.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
       <p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
@@ -38,6 +38,8 @@
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
+</script>
 {% endblock %}
