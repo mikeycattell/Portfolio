@@ -2,8 +2,11 @@
 {% block content %}
 
 <header class="clearfix">
-  <section class="fixermargin">
+  <section class="fixermargin" style="position: relative; z-index: 3;">
   {{ "premierfoodsafety_opening.jpg" | asset_url | image_tag }}
+  </section>
+  <section class="titles" style="position: absolute; text-align: center; top: 100px; width: 100%; z-index:99;">
+    <h1 style="padding:30px;  border: 4px solid #b63e5a; display: inline-block;">Photo Story</h1>
   </section>
 </header>
 
@@ -21,7 +24,7 @@
  
 <section class="contentnopad">
   <div class="contentinternalpadeven">
-    <div class="row">
+    <div class="row preview fadeInLeft">
       <div class="six columns">
         <h3 class="standardh3">My Role</h3>
         <p class="intro">Lead Designer, showcasing and explaining modern techniques to the CEO of the company, ensuring a new brand direction to be kept consistent. Branding was reinvented and controlled in print, online and internally. </p>
@@ -33,8 +36,10 @@
   </div>
 </section>
 
-<section class="contentnopad fadeInImg animated">
+<section class="contentnopad">
+  <div class="">
   {{ "premierfoodsafety_layout.jpg" | asset_url | image_tag }}
+  </div>
 </section>
 
 <section class="content">
@@ -51,11 +56,11 @@
 <section class="contentnopad">
   <div class="contentinternalpadeven">
     <div class="row">
-      <div class="six columns fadeInImg animated">
+      <div class="six columns">
           {{ "premierfoodsafety_print.jpg" | asset_url | image_tag }}
       </div>         
       <div class="six columns">
-        <h3 class="standardh3">Print is dead – not according to real companies</h3>
+        <h3 class="standardh3">Who says print is dead?</h3>
         <p class="intro">An important part of this company’s revenue is via incoming calls, sending out a flyer every quarter therefore is make or break – my task was to un-complicate quite a complicated flyer! I made the pricing as clear as possible, and also directed the user’s eye to right side of the flyer (the manager would look to the left as that bit is relevant, but the right side is more for the entry level employees).</p>
       </div>
      </div>
@@ -76,6 +81,4 @@
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"></script>
 {% endblock %}

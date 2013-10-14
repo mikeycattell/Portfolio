@@ -5,7 +5,7 @@
       <div class="headerposition">
       <hgroup>
         <h1 class="mainh11 animated fadeIn Big">Creative thinker, Code tinker & Coffee drinker</h1>
-        <h2 class="standardh22 animated fadeInDown">Freelancer: UK and USA</h2>
+        <h2 class="standardh22 animated fadeInDown">Digital Designer: Yorkshire, Midlands and America</h2>
         <a class="animated fadeIn greenbuttonhome" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
        </hgroup>
       </div>
@@ -38,8 +38,4 @@
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>
-var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
-</script>
 {% endblock %}

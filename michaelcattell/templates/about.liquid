@@ -11,18 +11,13 @@
     </div>
   </section>
 </header>
-<style>
-
-</style>
-
-
   
 <section>
   <div class="lightgraybgstyle contentinternalpadeven animated fadeIn quoted">
     <div class="row">
       <div class="twelve columns">
         <blockquote>
-        <strong>&quot;</strong>Mikey is a talented and expert graphic designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
+        <strong>&quot;</strong>Mikey is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
         </blockquote>
         <p class="quote">Christine Le - Project Manager of Marketing Campaigns</p>
       </div>
@@ -39,12 +34,12 @@
          <p class="intro">Specialising in Front end web design, ecommerce & interface design plus the occasional app design. Also have a keen practiced interest in branding and logo design.</p>
          <p class="intro">I mainly work from my well equipped offices based in Doncaster and Birmingham. When I’m not my office I’m usually on-site with clients or agencies around Yorkshire, Midlands or even America!</p>
       </div>
-      <div class="four columns preview lightSpeedIn">
-        <img src="{{"familyandme.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />      
+      <div class="four columns preview fadeInRight">
+        <img src="{{"familyandme.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
       </div>
       <div class="height10 show-for-small"></div>
       <div class="twelve columns">
-        <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little <a href="http://www.pomsnotbombs.co.uk" title="Look at cute pictures of a cute little Pomeranian">Ralph</a> around the garden with my camera!</p>
+        <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little Ralph around the garden with my camera!</p>
         <p class="intro">Hire me! <a href="contact" class="animated fadeIn" title="Available to design the heck out of anything you can dream of, so let me know!">I'm available. </a>
       </div>
 
@@ -163,9 +158,5 @@
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>
-var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
-</script>
 {% endblock %}
 

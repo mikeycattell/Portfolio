@@ -382,7 +382,7 @@ p.quote {  font-size: 16px!important;  }
 
 /* Apply styles to screens in landscape orientation */
 @media only screen and (orientation: landscape) {
-h1.mainh11 { font-size: 58px;  position: relative; }
+h1.mainh11 { font-size: 62px;  position: relative; }
 .headerposition hgroup {  padding: 10px 20px;}
 
 }
@@ -411,6 +411,7 @@ a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
 a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 .orbit-container { background: transparent;}
+.flexslider .slides li:hover img { filter: none; opacity: 0.4!important; transform: scale(1.02); transition: all 0.15s ease-in 0s; }
 
 /* interests page */
 .interestbanner { background-color: #cecec1; }
@@ -440,3 +441,6 @@ p.center18 { text-align: center; font-size: 18px; padding: 0; margin: 0; color: 
 
 .has-tip { border-bottom: 1px dotted #1ABC9C; color: #1ABC9C ; cursor: help; font-weight: normal; }
 p.featuredlinks { font-size: 16px; line-height: 36px; } 
+
+.preview {-webkit-transition-duration: 1.6s;-moz-transition-duration: 1.6s-ms-transition-duration: 1.6s; -o-transition-duration: 1.6s;transition-duration: 1.6s;-webkit-transition-delay: 1.6s;-moz-transition-delay: 1.6s;-ms-transition-delay: 1.6s;-o-transition-delay: 1.6s; transition-delay: 1.6s;}
+.info { -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -ms-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; -webkit-transition-delay: 0.15s; -moz-transition-delay: 0.15s; -ms-transition-delay: 0.15s;-o-transition-delay: 0.15s; transition-delay: 0.15s; margin-top: 5%; width: 35%;}

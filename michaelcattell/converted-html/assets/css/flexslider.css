@@ -118,12 +118,12 @@ html[xmlns] .slides {
     font-family: "FontAwesome";
     font-size: 30px;
     letter-spacing: 2px;
-    opacity: 3;
+    opacity: 0.8;
 }
 .flex-direction-nav a.flex-next:before {
     content: ">";
     letter-spacing: 0;
-    opacity: 3;
+    opacity: 0.8;
 
 }
 #content .flex-control-nav {

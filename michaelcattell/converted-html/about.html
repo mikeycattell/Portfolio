@@ -92,20 +92,12 @@
     </div>
   </section>
 </header>
-<script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: mikeycattell,
-        accessToken: '241386756.61c3a51.70d3ca34ac4945ddba662d7b1b092af9'
-    });
-    userFeed.run();
-</script>
 <section>
   <div class="lightgraybgstyle contentinternalpadeven animated fadeIn quoted">
     <div class="row">
       <div class="twelve columns">
         <blockquote>
-        <strong>&quot;</strong>Mikey is a talented and expert graphic designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
+        <strong>&quot;</strong>Mikey is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
         </blockquote>
         <p class="quote">Christine Le - Project Manager of Marketing Campaigns</p>
       </div>
@@ -121,12 +113,12 @@
          <p class="intro">Specialising in Front end web design, ecommerce & interface design plus the occasional app design. Also have a keen practiced interest in branding and logo design.</p>
          <p class="intro">I mainly work from my well equipped offices based in Doncaster and Birmingham. When I’m not my office I’m usually on-site with clients or agencies around Yorkshire, Midlands or even America!</p>
       </div>
-      <div class="four columns">
-        <img src="assets/images/familyandme.jpg" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />      
+      <div class="four columns preview fadeInRight">
+        <img src="assets/images/familyandme.jpg" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
       </div>
       <div class="height10 show-for-small"></div>
       <div class="twelve columns">
-        <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little <a href="http://www.pomsnotbombs.co.uk" title="Look at cute pictures of a cute little Pomeranian">Ralph</a> around the garden with my camera!</p>
+        <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little Ralph around the garden with my camera!</p>
         <p class="intro">Hire me! <a href="contact.html" class="animated fadeIn" title="Available to design the heck out of anything you can dream of, so let me know!">I'm available. </a>
       </div>
       <div class="four columns" style="display: none">
@@ -256,8 +248,7 @@
   <div class="darkblack contentinternalpad">
     <div class="row">
       <div class="six columns">
-        <p class="gray" style="font-family: 30px;">User Interface Designer and Front-end Developer<br>
-          Based in <span class="white">California (USA)</span> and <span class="white">Yorkshire (UK)</span></p>
+        <p class="gray" style="font-family: 30px;">User Interface Designer and Front-end Developer<br>Based in <span class="white">Yorkshire, Midlands, </span> and <span class="white">America</span></p>
       </div>
       <div class="six columns text-right end">
         <p class="gray" style="font-family: 30px;"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
@@ -278,6 +269,10 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+var items=[".preview",".info"],bottomPadding=100;$("document").ready(function(){$(window).scroll(function(){$.each(items,function(e,t){$.each($(t),function(e,t){var n=Math.max($("body").scrollTop(),$("html").scrollTop());n+$(window).height()-bottomPadding>$(t).position().top?$(t).addClass("animated"):$(t).removeClass("animated")})})})});
 </script>
  
 

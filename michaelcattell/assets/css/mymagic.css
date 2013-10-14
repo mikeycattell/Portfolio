@@ -382,7 +382,7 @@ p.quote {  font-size: 16px!important;  }
 
 /* Apply styles to screens in landscape orientation */
 @media only screen and (orientation: landscape) {
-h1.mainh11 { font-size: 58px;  position: relative; }
+h1.mainh11 { font-size: 62px;  position: relative; }
 .headerposition hgroup {  padding: 10px 20px;}
 
 }
@@ -411,6 +411,7 @@ a.orbit-prev, a.orbit-next { opacity: 0.6; }
 .orbit-slide-number { display: none;}
 a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 .orbit-container { background: transparent;}
+.flexslider .slides li:hover img { filter: none; opacity: 0.4!important; transform: scale(1.02); transition: all 0.15s ease-in 0s; }
 
 /* interests page */
 .interestbanner { background-color: #cecec1; }
