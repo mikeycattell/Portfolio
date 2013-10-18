@@ -160,7 +160,7 @@ h2.standardh2 { font-size: 36px; }
 h2.standardh22 { font-size: 36px; color: #fff; }
 h2.standardh222 { font-size: 36px; color: #fff; }
 h2.standardh2small { font-size: 28px; }
-h3.standardh3 { font-size: 32px; font-weight: ;}
+h3.standardh3 { font-size: 32px;}
 h3.standardh33 { font-size: 32px; color: #fff; font-weight: 300;}
 h3.standardbookh3 { font-size: 32px; padding: 5px 0;}
 h4 { font-size: 1.3375em; }
@@ -208,40 +208,6 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
 
-/* this bit makes that button wobble/swing baby! */
-@-moz-keyframes swing {
-	20% { -moz-transform: rotate(15deg); }	
-	40% { -moz-transform: rotate(-10deg); }
-	60% { -moz-transform: rotate(5deg); }	
-	80% { -moz-transform: rotate(-5deg); }	
-	100% { -moz-transform: rotate(0deg); }
-}
-
-@-o-keyframes swing {
-	20% { -o-transform: rotate(15deg); }	
-	40% { -o-transform: rotate(-10deg); }
-	60% { -o-transform: rotate(5deg); }	
-	80% { -o-transform: rotate(-5deg); }	
-	100% { -o-transform: rotate(0deg); }
-}
-
-@keyframes swing {
-	20% { transform: rotate(15deg); }	
-	40% { transform: rotate(-10deg); }
-	60% { transform: rotate(5deg); }	
-	80% { transform: rotate(-5deg); }	
-	100% { transform: rotate(0deg); }
-}
-.swing {
-	-webkit-transform-origin: top center;
-	-moz-transform-origin: top center;
-	-o-transform-origin: top center;
-	transform-origin: top center;
-	-webkit-animation-name: swing;
-	-moz-animation-name: swing;
-	-o-animation-name: swing;
-	animation-name: swing;
-}
 
 /* this bit makes my images fade in */
 @-webkit-keyframes fadeInImg {
@@ -313,7 +279,7 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 	-webkit-animation-delay:1.3s; /* Safari and Chrome fix as norm! */
 }
 
-.preview {-webkit-transition-duration: 1.6s;-moz-transition-duration: 1.6s-ms-transition-duration: 1.6s; -o-transition-duration: 1.6s;transition-duration: 1.6s;-webkit-transition-delay: 1.6s;-moz-transition-delay: 1.6s;-ms-transition-delay: 1.6s;-o-transition-delay: 1.6s; transition-delay: 1.6s;}
+.preview { -webkit-transition-duration: 1.6s;-moz-transition-duration: 1.6s; -ms-transition-duration: 1.6s; -o-transition-duration: 1.6s;transition-duration: 1.6s;-webkit-transition-delay: 1.6s;-moz-transition-delay: 1.6s;-ms-transition-delay: 1.6s;-o-transition-delay: 1.6s; transition-delay: 1.6s; }
 .info { -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -ms-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; -webkit-transition-delay: 0.15s; -moz-transition-delay: 0.15s; -ms-transition-delay: 0.15s;-o-transition-delay: 0.15s; transition-delay: 0.15s; margin-top: 5%; width: 35%;}
 
 
@@ -359,31 +325,28 @@ a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 .interestbanner { background-color: #cecec1; }
 
 /*********** media changes and stuff *********/
+
 @media only screen and (max-width: 767px) {
    body { font-size: 15px; }
    p.intro { font-size: 16px; }
-
    h3.standardh3 { font-size: 26px; font-weight: 300;}
    h2.standardh2small { font-size: 28px; }
    h2.standardh2 { font-size: 28px; }
    h1.title { font-size: 30px; margin: 0; }
-
    span.headline a { font-size: 26px; }
-
     p.lookhere { font-size: 22px; }
 	.showcase-items li { width: 50% !important; }
 	.block-grid.three-up > li:nth-child(3n+1) { clear: none; }
-h1.mainh11 { font-size: 36px; }
-h1.mainh111 { font-size: 60px; margin: 0 10px; }
-h2.standardh22 { font-size: 22px; } 
-h2.standardh222 { font-size: 22px;  margin: 0 13px;  }
-h3.standardh33 { font-size: 18px; }
-.headerposition { margin: 0; padding: 5em 0 2em; }
-
-.fixermargin { margin: 64px 0 0;}
-
+	h1.mainh11 { font-size: 36px; }
+	h1.mainh111 { font-size: 60px; margin: 0 10px; }
+	h2.standardh22 { font-size: 22px; } 
+	h2.standardh222 { font-size: 22px;  margin: 0 13px;  }
+	h3.standardh33 { font-size: 18px; }
+	.headerposition { margin: 0; padding: 5em 0 2em; }
+	.fixermargin { margin: 64px 0 0;}
 }
 
+/* Anything 450 to 767 - 768px */
 @media only screen and (max-width: 450px) {
 .showcase-items li { width: 100% !important; }
 .booksiread li { width: 100% !important; }
@@ -401,51 +364,29 @@ p.quote {  font-size: 16px!important;  }
 .headerholderabout { padding: 6em 0 3em;}
 }
 
-
 /* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
 @media only screen and (max-width: 768px) {
 	h1.mediumh1 { font-size: 10px; position: absolute; top: 120px;  }
 	.noise { background-image: none; }
-
-}
-
-/* Used to alter styles for screens at least 1280px wide. */
-@media only screen and (min-width: 1280px) {
-}
-
-/* Used to alter styles for screens at least 1440px wide. */
-@media only screen and (min-width: 1440px) {
 }
 
 /* Apply styles to screens in landscape orientation */
 @media only screen and (orientation: landscape) {
 h1.mainh11 { font-size: 62px;  position: relative; }
-
 .headerposition hgroup {  padding: 10px 20px;}
 }
 
 /* Apply styles to screens in portrait orientation */
 @media only screen and (orientation: portrait) { 
 h1.mainh11 { font-size: 58px;  position: relative; }
-
 .headerposition hgroup {  padding: 10px 20px;}
+}
 
-
-/* Anything less than 1024 */
+/* Anything less than 1024 but stops at 768px */
 @media only screen and (max-width: 768px) {
 #home {  height: 350px;    }
 #about {  height: 300px;   }
 h1.mainh1 { font-size: 33px; position: absolute; top: 120px; left: 10px;  }
-
 h1.mainh11 { font-size: 34px; color: #fff; margin: 0; font-weight: 300; position: relative;  }
-
 .headerposition hgroup {  padding: 10px 20px;}
  }
-
-
-
-
-
-
-
-
