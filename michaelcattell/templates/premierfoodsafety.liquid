@@ -5,9 +5,6 @@
   <section class="fixermargin" style="position: relative; z-index: 3;">
   {{ "premierfoodsafety_opening.jpg" | asset_url | image_tag }}
   </section>
-  <section class="titles" style="position: absolute; text-align: center; top: 100px; width: 100%; z-index:99;">
-    <h1 style="padding:30px;  border: 4px solid #b63e5a; display: inline-block;">Photo Story</h1>
-  </section>
 </header>
 
 <section class="contentinternalpadeven">
@@ -21,9 +18,15 @@
         </div>
     </div>
 </section>
+
+<section class="contentnopad">
+  <div class="">
+  {{ "premierfoodsafety_layout.jpg" | asset_url | image_tag }}
+  </div>
+</section>
  
 <section class="contentnopad">
-  <div class="contentinternalpadeven">
+  <div class="contentinternalpad40top0bottom">
     <div class="row preview fadeInLeft">
       <div class="six columns">
         <h3 class="standardh3">My Role</h3>
@@ -33,12 +36,6 @@
          {{ "premierfoodsafety_myrole.png" | asset_url | image_tag }}
       </div>      
     </div>
-  </div>
-</section>
-
-<section class="contentnopad">
-  <div class="">
-  {{ "premierfoodsafety_layout.jpg" | asset_url | image_tag }}
   </div>
 </section>
 
