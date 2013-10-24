@@ -9,8 +9,10 @@
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
-.cbp-af-header nav a { line-height:97px; }
-.cbp-af-header .logoholder { padding: 15px 10px 0; display: inline-block; position: relative;background: #; }
+.cbp-af-header nav a { line-height:97px; }   color: #FFFFFF;
+
+.cbp-af-header .logoholder { padding: 35px 10px 0; display: inline-block; position: relative; font-size: 18px; font-weight: 300; }
+/*.cbp-af-header .logoholder { padding: 35px 10px 0; display: inline-block; position: relative;background: #; }*/
 .cbp-af-header h1 {	color: #fff; letter-spacing: 4px; font-size: 4em; margin: 0; padding: 10px; float: left; background: #1abc9c; }
 
 .cbp-af-header nav { float: right; }
@@ -92,7 +94,8 @@
 
 .logoholdermob { background: transparent; float: left; padding: 0px 0 0; }
 .logoholdermob:hover { margin-right: 10px; } 
-.logoholder { background: transparent; float: left; padding: 10px 0 0; }
+.logoholder { background: transparent; float: left; padding: 35px 0 0; font-size: 24px; font-weight: 300; color: #fff; font-family: 'Roboto', sans-serif;  }
+.logoholder a:link, a:visit{ color: #fff;  }
 .logoholder:hover { margin-right: 10px; } 
 
 .top-bar ul > li a:not(.button) {height: 100%;  font-weight: normal; line-height: 50px;}
