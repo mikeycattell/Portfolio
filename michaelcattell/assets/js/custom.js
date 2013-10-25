@@ -45,7 +45,7 @@ $(window).scroll(function(){
         animation: "slide",
         slideshow: false,
         animationLoop: false,
-        itemWidth: 300,
+        itemWidth: 330,
         itemMargin: 40,
         move: 1, 
         randomize: true, 

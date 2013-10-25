@@ -69,6 +69,8 @@ ul li { list-style: none outside none; }
 .contentinternalpad  { padding: 40px 0 20px;}
 .contentinternalpad40top0bottom  { padding: 40px 0 0px;}
 .contentinternalpadeven { padding: 40px 0;}
+.contentinternalpadevenbottom { padding:0 0 40px 0;}
+.contentholder60 { padding: 60px 0;}
 .contentholder80 { padding: 80px 0;}
 .normalcontent { padding: 0 10px;}
 .content20 { padding: 20px 0;}
@@ -172,8 +174,8 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; font-weight: 100; color: #4A545A;}
 
 h1.mainh1 {  position: absolute; top: 220px;/* left: 90px; */color: #fff;font-size: 68px; font-weight: 300; line-height: 1.2;  }
-h1.mainh11 { font-size: 50px; color: #fff; margin: 2% 0 0; font-weight: 300; }
-h1.mainh111 { font-size: 88px; color: #fff; margin: 0;  }
+h1.mainh11 { font-size: 50px; color: #fff; margin: 2% 0 0; font-weight: 300; letter-spacing: 0.01em; }
+h1.mainh111 { font-size: 88px; color: #fff; margin: 0; letter-spacing: 0.01em;  }
 h1.mediumh1 { font-size: 46px; position: absolute; top: 100px;/* left: 90px; */color: #fff;  }
 h1.mediumh11 { font-size: 46px; color: #fff;  }
 
@@ -219,15 +221,18 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 
 /**************** =image holders with that lovely hover effect ********************/
 
-.box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; }
-	.box p.plus {  color: #eee; font-size: 18px; line-height: auto; padding: 0; opacity: 0; text-align: left; position: absolute; top: 5%; left: 5%; }
+.box{ float: left; margin: 10px 0; width: 100%; position: relative; transition: background 0.3s ease-out; max-height: 300px; overflow: hidden; border: 1px solid #d6d6d6; }
+	.box p.plus {  color: #eee; font-size: 18px; opacity: 0; 
+text-align: center; top: 40%; position: absolute; color: #fff; width: 100%; letter-spacing: 0.07em 
+
+	 }
 	.box p.plus a {  color: #fff; }
 	.box img{ opacity: 1; width: 100%; display: block; transition: opacity 0.4s ease-in-out; }
 	.box:hover img{ opacity: 0.4; }
 /* box colors */
 .box:hover p { opacity: 1; transition: opacity 0.5s ease-in-out; }
 .box:nth-child(1):hover{ background: #16A085 ; }
-
+.box:hover{ background: #16A085 ; }
 
 /**************** =animated fades etc - slight customisation ********************/
 
@@ -326,6 +331,9 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 
 /******* =Important fix - fixes foundation's random floating to the right last span when mobile size ********/
 .row.end [class*="column"] + [class*="column"]:last-child { float: left; }
+
+/*widerthanrow*/
+.width1100{ margin: 0 auto; max-width: 100%; min-width: 1100px!important; width: 1000px; }
 
 /******* hides feedburner footer ********/
 #creditfooter { display: none;}

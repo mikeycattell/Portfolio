@@ -1,21 +1,35 @@
 {% layout "alternative" %}
 {% block content %}
 
+<header class="clearfix">
+  <section id="testabout">
+    <div class="row">
+      <div class="headerpositiontestabout">
+      <hgroup>
+        <h1 class="mainh111 animated fadeIn Big">Eat, Design, Sleep</h1>
+        <h2 class="standardh222 animated fadeInDown gray">Repeat</h2>
+       </hgroup>
+      </div>
+    </div>
+  </section>
+</header>
+
 <section class="contentnobg">
-  <div class="contentinternalpad40top0bottom">
+  <div class="contentinternalpadevenbottom">
     <!-- Thumbnails -->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="title">My Work</h1>
+        <h1 class="title">Case Studies</h1>
         <p class="intro">Here is a small selection of recent work, for both personal customers and web agencies. I have a huge amount of work thats not allowed in the public domain, full portfolio available on request.</p>
       </div>
     </div>
   </div>
 
-    <div class="row" style="">
+
+   <div class="row ">
       <div class="twelve columns">
         <!-- Thumbnails start -->
-        <ul class="block-grid three-up showcase-items">
+        <ul class="block-grid two-up showcase-items">
           <li>
             <div class="box">
               <a href="premierfoodsafety" title="view the case study for Premier Food Safety"> {{ "premierfoodsafety_nail.jpg" | asset_url | image_tag }}
@@ -30,6 +44,77 @@
           </li>
           <li>
             <div class="box"> <a href="apex" title="view the case study for Apex"> {{ "apexworkplace_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Apex Workplace Solutions<br><span class="darktxt">Design, Build, Consult</span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="pomsnotbombs" title="view the case study for Poms not Bombs"> {{ "pomsnotbombs_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Poms not Bombs<br><span class="darktxt">Design, Build, Feeder, Owner</span></p>
+              </a> </div>
+          </li>
+
+          <li>
+            <div class="box"> <a href="argos" title="view the case study for Argos-Spain"> {{ "argos_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Argos<br><span class="darktxt">Build</span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="nathanielcars"> {{ "nathaniels_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Nathaniel Cars<br><span class="darktxt">Design, Build </span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="mtcdirect"> {{ "mtcdirect_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">MTC Direct<br><span class="darktxt">Design, Build </span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="michaelandemmasayido"> {{ "michaelandemmasayido_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Mike And Emma Say I Do<br><span class="darktxt">Design, Build </span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="hotelsinleeds"> {{ "hotelsinleeds_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Hotels in Leeds<br><span class="darktxt">Build</span></p>
+              </a> </div>
+          </li>
+          <li>
+          <div class="box"> <a href="rotherhamtitans"> {{ "rotherhamtitans_nail.jpg" | asset_url | image_tag }}
+            <p class="plus">Rotherham Titans<br><span class="darktxt">Design, Build</span></p>
+            </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="intraining"> {{ "intraining_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">inTraining<br><span class="darktxt">Build</span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="daxon"> {{ "daxon_nail.jpg" | asset_url | image_tag }}
+              <p class="plus">Daxon<br><span class="darktxt">Design, Build</span></p>
+              </a> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="display: none">
+      <div class="twelve columns">
+        <!-- Thumbnails start -->
+        <ul class="block-grid three-up showcase-items">
+          <li>
+            <div class="box">
+              <a href="premierfoodsafety" title="view the case study for Premier Food Safety"> {{ "template_slide.jpg" | asset_url | image_tag }}
+              <p class="plus">Premier Food Safety<br>
+              <span class="darktxt">Design, Build, Manage</span></p></a>
+              </div>
+          </li>
+          <li>
+            <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety"> {{ "template_slide.jpg" | asset_url | image_tag }}
+              <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
+              </a> </div>
+          </li>
+          <li>
+            <div class="box"> <a href="apex" title="view the case study for Apex"> {{ "template_slide.jpg" | asset_url | image_tag }}
               <p class="plus">Apex Workplace Solutions<br><span class="darktxt">Design, Build, Consult</span></p>
               </a> </div>
           </li>

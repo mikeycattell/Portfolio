@@ -5,7 +5,6 @@
   </section>
 </header>
 
-
 <section class="contentinternalpadeven">
     <div class="row">
         <div class="twelve columns">
@@ -16,8 +15,11 @@
 </section>
  
 <section class="contentinternalpadeven preview fadeIn">
-  {{ "rotherhamtitans_layout.jpg" | asset_url | image_tag }}
+    <div class="row width1100">  
+      {{ "rotherhamtitans_layout.jpg" | asset_url | image_tag }}
+    </div>
 </section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
