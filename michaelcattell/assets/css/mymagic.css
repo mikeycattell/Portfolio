@@ -84,7 +84,7 @@ ul li { list-style: none outside none; }
 .info-image { display: block; height: 315px; max-height: 315px; overflow: hidden; }
 
 .headerholder { background:#16A085; width: 100%; }
-.headerposition { margin: 0; padding: 9em 0 3em; }
+.headerposition { margin: 0; padding: 8em 0 3em; }
 .headerposition hgroup { margin: 0 0 2em; padding: 0; text-align: center; }
 
 .headerholderabout { width: 100%; }
@@ -137,13 +137,23 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 	#button:hover { transition: background 0.3s ease-in-out; text-decoration: none; }
 
 .greenbuttonhome { background: #16A085; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px rgba(255, 255, 255, 0.15) inset; color: #FFFFFF; display: inline-block; font-size: 18px; letter-spacing: 1px; margin: 5% 0 0; padding: 20px 60px; text-transform: capitalize; transition: all 0.2s ease-in 0s;}	
-	.greenbuttonhome:hover { background: #12836C; color: #fff; }
+	.greenbuttonhome a:hover { background: #12836C; color: #fff; }
+
+.whitebuttonhome { border: 1px solid #fff; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px rgba(255, 255, 255, 0.15) inset; color: #fff; display: inline-block; font-size: 18px; letter-spacing: 1px; margin: 5% 0 0; padding: 20px 60px; text-transform: capitalize; transition: all 0.2s ease-in 0s; }	
+	.whitebuttonhome:hover { background: #fff; color: #12836C; }
+
+.whitebutton { background: #fff; border: 1px solid #fff; border-radius: 3px 3px 3px 3px; box-shadow: 1px 1px rgba(255, 255, 255, 0.15) inset; color: #12836C; display: inline-block; font-size: 28px; letter-spacing: 1px; margin: 3% 0; padding: 20px 80px; text-transform: capitalize; transition: all 0.2s ease-in 0s; }	
+	.whitebutton a:hover { background: #f6f6f6; color: #12836C; }	
+
 /* handy parallex code but unused in end */
 #home { background: url(../images/header/home_green.jpg) 50%  100% no-repeat fixed; height: 590px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
 #about { background: url(../images/header/about_gray.jpg) 50%  0% no-repeat fixed; height: 460px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
 
 #testms { background: url(../images/header/home.jpg) ; height: 500px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
 .headerpositiontestms { margin: 0; padding: 6em 0 3em; }
+
+#testabout { background: url(../images/header/home.jpg) 50%  0% no-repeat fixed; height: 460px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
+.headerpositiontestabout { margin: 0; padding: 6em 0 3em;  text-align: right;}
 
 .story { height: 600px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 #second { background: url(../images/header/home.jpg) 50% 0 bottom no-repeat fixed; }
@@ -162,7 +172,7 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; font-weight: 100; color: #4A545A;}
 
 h1.mainh1 {  position: absolute; top: 220px;/* left: 90px; */color: #fff;font-size: 68px; font-weight: 300; line-height: 1.2;  }
-h1.mainh11 { font-size: 50px; color: #fff; margin: 2% 0 0;  }
+h1.mainh11 { font-size: 50px; color: #fff; margin: 2% 0 0; font-weight: 300; }
 h1.mainh111 { font-size: 88px; color: #fff; margin: 0;  }
 h1.mediumh1 { font-size: 46px; position: absolute; top: 100px;/* left: 90px; */color: #fff;  }
 h1.mediumh11 { font-size: 46px; color: #fff;  }
@@ -205,6 +215,7 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 .darkgray { color: #f2f2f2;}
 .white { color: #fff;}
 .green { color: #16A085;}
+.gray { color: #666!important }
 
 /**************** =image holders with that lovely hover effect ********************/
 
@@ -309,6 +320,9 @@ span.headline a {font-size: 30px; color: #16A085; font-weight: 300; }
 .booksiread li p small { font-size:11px; font-size:1.1rem; }
 .booksiread li:hover img { opacity:1; }
 
+.writingspara li { float: left; width: 50%; padding: 0;} 
+.writingspara li:first-child { float: left; padding: 0 40px 0 0;}
+.writingspara li:last-child { float: left; padding: 0 0 0 40px;}
 
 /******* =Important fix - fixes foundation's random floating to the right last span when mobile size ********/
 .row.end [class*="column"] + [class*="column"]:last-child { float: left; }
@@ -358,6 +372,9 @@ a.orbit-prev, a.orbit-next, .orbit-timer { display:none; }
 	h3.standardh33 { font-size: 18px; }
 	.headerposition { margin: 0; padding: 5em 0 2em; }
 	.fixermargin { margin: 64px 0 0;}
+	.writingspara li { float: left; width: 100%; padding: 0;} 
+	.writingspara li:first-child { float: left; padding: 0 0px 0 0;}
+	.writingspara li:last-child { float: left; padding: 0 0 0;}	
 }
 
 /* Anything 450 to 767 - 768px */

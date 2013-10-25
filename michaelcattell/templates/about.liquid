@@ -1,18 +1,18 @@
 {% block content %}
 <header class="clearfix">
-  <section id="about">
+  <section id="testabout">
     <div class="row">
-      <div class="headerholderabout">
+      <div class="headerpositiontestabout">
       <hgroup>
-        <h1 class="mainh111 animated fadeIn Big">Eat, Design, Sleep</h1>
-        <h2 class="standardh222 animated fadeInDown">Repeat</h2>
+        <h1 class="mainh111 animated fadeIn Big gray">Eat, Design, Sleep</h1>
+        <h2 class="standardh222 animated fadeInDown gray">Repeat</h2>
        </hgroup>
       </div>
     </div>
   </section>
 </header>
   
-<section>
+<section style="display: none">
   <div class="lightgraybgstyle contentinternalpadeven animated fadeIn quoted">
     <div class="row">
       <div class="twelve columns">
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section>
+<section style="display: none;">
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="eight columns">
@@ -46,6 +46,54 @@
       </div>
     </div>
 </section>
+
+<section>
+  <div class="contentholder80">
+    <div class="row">
+      <div class="ten columns">
+        <p class="intro">Me in a brief sentence: Freelance Designer & Front End Developer. Husband to <a href="http://www.glamlifeofahousewife.com" title="head this way to see my wife's blog">Emma</a>, father to  a rather fluffy Pomeranian called <a href="http://www.pomsnotbombs.co.uk" title="see my little pomeranian this way">Ralph</a>.</p>
+         <p class="intro">My experience includes being in this industry for 9 years, working for agencies, startups, huge corporations and now, as a freelancer - based in Yorkshire, Birmingham and California, America (sometimes <span data-tooltip class="has-tip" title="Basically this means &quot;work-at-home&quot;, totally dedicated to you and your project needs">remotely</span>, sometimes <span data-tooltip class="has-tip" title="I come to you, who doesn’t want a happy designer in the office hogging all the coffee?">on location</span>).</p> 
+         <p class="intro">Specialising in Front end web design, ecommerce & interface design plus the occasional app design. Also have a keen practiced interest in branding and logo design.</p>
+         <p class="intro">I mainly work from my well equipped offices based in Doncaster and Birmingham. When I’m not my office I’m usually on-site with clients or agencies around Yorkshire, Midlands or even America!</p>
+          <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little Ralph around the garden with my camera!</p>
+        <p class="intro">Hire me! <a href="contact" class="animated fadeIn" title="Available to design the heck out of anything you can dream of, so let me know!">I'm available. </a>         
+      </div>
+      <div class="two columns">
+      </div>
+
+      <div class="twelve columns" style="display: none;">
+        <p class="intro">Me in a brief sentence: Freelance Designer & Front End Developer. Husband to <a href="http://www.glamlifeofahousewife.com" title="head this way to see my wife's blog">Emma</a>, father to  a rather fluffy Pomeranian called <a href="http://www.pomsnotbombs.co.uk" title="see my little pomeranian this way">Ralph</a>.</p>
+         <p class="intro">My experience includes being in this industry for 9 years, working for agencies, startups, huge corporations and now, as a freelancer - based in Yorkshire, Birmingham and California, America (sometimes <span data-tooltip class="has-tip" title="Basically this means &quot;work-at-home&quot;, totally dedicated to you and your project needs">remotely</span>, sometimes <span data-tooltip class="has-tip" title="I come to you, who doesn’t want a happy designer in the office hogging all the coffee?">on location</span>).</p> 
+         <p class="intro">Specialising in Front end web design, ecommerce & interface design plus the occasional app design. Also have a keen practiced interest in branding and logo design.</p>
+         <p class="intro">I mainly work from my well equipped offices based in Doncaster and Birmingham. When I’m not my office I’m usually on-site with clients or agencies around Yorkshire, Midlands or even America!</p>
+      </div>
+      <div class="four columns preview fadeInRight" style="display: none;">
+        <img src="{{"familyandme.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
+      </div>
+      <div class="height10 show-for-small"></div>
+      <div class="twelve columns" style="display: none;">
+        <p class="intro">You’ll usually find me with Photoshop or (the mighty) Fireworks open, hard-coding HTML5 responsive websites like I’m a man obsessed, making magical things happen with CSS3 or chasing my little Ralph around the garden with my camera!</p>
+        <p class="intro">Hire me! <a href="contact" class="animated fadeIn" title="Available to design the heck out of anything you can dream of, so let me know!">I'm available. </a>
+      </div>
+      
+      </div>
+    </div>
+</section>
+
+  <section id="testms" data-speed="4" data-type="background">
+    <div class="row">
+      <div class="headerpositiontestms">
+      <hgroup>
+        <blockquote>
+        <strong>&quot;</strong>blah de blah is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
+        </blockquote>
+        <p class="quote">Christine Le - Project Manager of Marketing Campaigns</p>  
+       </hgroup>
+      </div>
+    </div>
+  </section>
+
+  {% include "otherwork" %}  
 
 {% include "writings" %} 
 {% include "contactme" %} 

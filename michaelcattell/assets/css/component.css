@@ -27,7 +27,7 @@
 
 .cbp-af-header.cbp-af-header-shrink { height: 90px; background: #f6f6f6; opacity:0.6; filter:alpha(opacity=60); /* For IE8 and earlier */
 }
-.cbp-af-header.cbp-af-header-shrink .logoholder { float: left; background: transparent; }
+.cbp-af-header.cbp-af-header-shrink .logoholder { float: left; background: transparent; color: #333; }
 .cbp-af-header.cbp-af-header-shrink h1,
 .cbp-af-header.cbp-af-header-shrink nav a {	line-height: 90px; }
 
