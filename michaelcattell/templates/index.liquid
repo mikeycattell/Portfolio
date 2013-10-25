@@ -1,6 +1,6 @@
 {% block content %}
 <header class="clearfix">
-  <section id="home">
+  <section id="home"  data-speed="4" data-type="background">
     <div class="row">
       <div class="headerposition">
       <hgroup>
@@ -14,10 +14,22 @@
   </section>
 </header>
 
-<section class="contentnobg">
-  <div class="row">    
+<section class="contentholder80">
+  <div class="row">  
+
+    <div class="five columns">
+        <h1 class="green" style="font-size: 36px; font-style: italic;  padding: 0; margin: 0;">freelance digital designer and front-end developer.</h1>
+        <br><p>Based in Yorkshire, The Midlands and America</p>
+    </div>
+
+    <div class="seven columns">
+          <p class="intro">Hi there, I am Michael, a freelance digital designer and front-end developer working across Yorkshire, The Midlands and America. I mainly specialise in designing and building user interfaces for both the web and mobile applications. </p>
+          <p class="intro">As of <strong>November 2013</strong>, I will be going full-time freelance, aiming to work with agencies as well as start ups and small businesses.</p>
+          <p class="intro">Interested in working with me? <a href="contact" title="get in touch to discuss your project">Tell me about your project.</a> </p>          
+    </div>
+
     
-    <div class="eight columns">
+    <div class="eight columns" style="display: none">
       <h2>About me</h2>
       <br>
       <p class="intro">Hi there, I am Michael, a freelance digital designer and front-end developer working across Yorkshire, The Midlands and America. I mainly specialise in designing and building user interfaces for both the web and mobile applications. </p>
@@ -25,7 +37,7 @@
       <p class="intro">Interested in working with me? <a href="contact" title="get in touch to discuss your project">Tell me about your project.</a> </p>
     </div>
 
-    <div class="four columns preview fadeInRight">
+    <div class="four columns preview fadeInRight"  style="display: none">
       <a class="box" href="about" title="Want to know more about me? Click here"> 
       <img src="{{"michaelcattell.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
       <p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
@@ -34,7 +46,21 @@
   </div>
 </section>
 
-{% include "otherwork" %}     
+{% include "otherwork" %}  
+
+  <section id="testms" data-speed="4" data-type="background">
+    <div class="row">
+      <div class="headerpositiontestms">
+      <hgroup>
+        <blockquote>
+        <strong>&quot;</strong>blah de blah is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
+        </blockquote>
+        <p class="quote">Christine Le - Project Manager of Marketing Campaigns</p>  
+       </hgroup>
+      </div>
+    </div>
+  </section>
+
 {% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
