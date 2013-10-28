@@ -12,6 +12,7 @@
 .cbp-af-header nav a { line-height:97px; }   color: #FFFFFF;
 
 .cbp-af-header .logoholder { padding: 35px 10px 0; display: inline-block; position: relative; font-size: 18px; font-weight: 300; }
+.logoholder:hover { color: #fff; }
 /*.cbp-af-header .logoholder { padding: 35px 10px 0; display: inline-block; position: relative;background: #; }*/
 .cbp-af-header h1 {	color: #fff; letter-spacing: 4px; font-size: 4em; margin: 0; padding: 10px; float: left; background: #1abc9c; }
 

@@ -1,5 +1,12 @@
 {% layout "alternative" %}
 {% block content %}
+<span class="nextPagi">
+  <a rel="prev" href="michaelandemmasayido" title="click here to see Michael and Emma Say I Do case study">Michael and Emma Say I Do</a>
+</span>
+<span class="prevPagi">
+  <a rel="next" href="rotherhamtitans" title="click here to see Rotherham Titans Rugby Club work">Rotherham Titans Rugby Club</a>
+</span> 
+
 <header class="clearfix">
   <section class="fixermargin">
     <img src="{{"hotelsinleedsopen.jpg" | asset_url }}" alt="" />
@@ -14,19 +21,13 @@
         </div>
     </div>
 </section>
- 
-<span class="nextPagi">
-  <a rel="prev" href="michaelandemmasayido" title="click here to see Michael and Emma Say I Do case study">Michael and Emma Say I Do</a>
-</span>
-<span class="prevPagi">
-  <a rel="next" href="rotherhamtitans" title="click here to see Rotherham Titans Rugby Club work">Rotherham Titans Rugby Club</a>
-</span> 
 
-<section class="contentinternalpadeven whitebackground preview fadeIn">
+<section class="contentinternalpadeven whitebackground">
     <div class="row width1100">
       {{ "hotelsinleeds_layout.jpg" | asset_url | image_tag }}
     </div>
 </section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
