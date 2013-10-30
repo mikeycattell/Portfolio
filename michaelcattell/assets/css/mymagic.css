@@ -148,7 +148,7 @@ a#bigred { background-color: #DA4F49;  border-color: 0; color: #FFFFFF; font-siz
 	.whitebutton a:hover { background: #f6f6f6; color: #12836C; }	
 
 /* handy parallex code but unused in end */
-#home { background: url(../images/header/home_green.jpg) 50%  100% no-repeat fixed; height: 590px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
+#home { background: url(../images/header/home_green.jpg) 50%  100% no-repeat fixed; overflow: hidden;height: 590px; margin: 0 auto; width: 100%; max-width: 1920px;   }
 #about { background: url(../images/header/about_gray.jpg) 50%  0% no-repeat fixed; height: 460px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
 
 #testms { background: url(../images/header/home.jpg) ; height: 500px; margin: 0 auto; width: 100%; max-width: 1920px; position: relative;  }
