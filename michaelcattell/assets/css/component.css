@@ -95,7 +95,7 @@
 
 .logoholdermob { background: transparent; float: left; padding: 0px 0 0; }
 .logoholdermob:hover { margin-right: 10px; } 
-.logoholder { background: transparent; float: left; padding: 35px 0 0; font-size: 24px; font-weight: 300; color: #fff; font-family: 'Roboto', sans-serif;  }
+.logoholder { background: transparent; float: left; padding: 32px 0 0; font-size: 32px; font-weight: 300; color: #fff; font-family: 'Roboto', sans-serif;  }
 .logoholder a:link, a:visit{ color: #fff;  }
 .logoholder:hover { margin-right: 10px; } 
 

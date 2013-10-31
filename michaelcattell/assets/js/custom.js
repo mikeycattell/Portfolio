@@ -59,3 +59,27 @@ $(window).scroll(function(){
       });
     });
 
+$(document).ready(function(){
+ 
+    $('section[data-type="background"]').each(function(){
+      var $bgobj = $(this); // assigning the object
+    }); 
+ 
+}); 
+
+$(document).foundation('orbit', {
+  animation: 'fade',
+  timer_speed: 9000,
+  pause_on_hover: false,
+  resume_on_mouseout: false,
+  animation_speed: 500,
+  stack_on_small: true,
+  navigation_arrows: true,
+  slide_number: false,
+  bullets: false,
+  timer: true,
+  next_on_click: true,
+  variable_height: true,
+  before_slide_change: function(){},
+  after_slide_change: function(){}
+});
