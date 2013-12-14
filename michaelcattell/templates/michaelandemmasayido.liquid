@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-  <img src="assets/images/portfolio/michaelandemmasayido/michaeandemma_opening.jpg">
+    <img src="{{ "michaeandemma_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" /> 
   </section>
 </header>
 
@@ -24,8 +24,8 @@
         <h3 class="standardh3">My Role</h3>
         <p class="intro">Well..all of it.</p>
       </div>
-      <div class="six columns preview fadeIn">
-          <img src="assets/images/portfolio/michaelandemmasayido/michaelandemma_role.png">
+      <div class="six columns fadeInImg animated">
+        <img src="{{ "michaelandemma_role.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>      
     </div>
   </div>
@@ -42,9 +42,9 @@
   </div>
 </section>
 
-<section class="contentnopad preview fadeIn">
-  <div class="row width1100">
-    <img src="assets/images/portfolio/michaelandemmasayido/michaelandemma_layout.jpg">
+<section class="contentnopad">
+  <div class="row width1100 fadeInImg animated">
+    <img src="{{ "michaelandemma_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
   </div>
 </section>
 
@@ -55,11 +55,20 @@
       <div class="twelve columns">
         <h3 class="standardh3">Putting it all together</h3>
         <p class="intro">Straight HTML/CSS site – simply built and put live in 24 hours. </p>
-        <pDisclaimer – I shall be revisiting this site to update the look and pictures to make it responsive and a blog of our ‘happily ever after’ life.</p>
+        <p>Disclaimer – I shall be revisiting this site to update the look and pictures to make it responsive and a blog of our ‘happily ever after’ life.</p>
       </div>
      </div>
   </div>
 </section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="hotelsinleeds">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
+</section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 

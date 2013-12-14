@@ -1,10 +1,9 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-    {{ "nathaniel_opening.jpg" | asset_url | image_tag }}
+    <img src="{{ "nathaniel_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
   </section>
 </header>
-
 
 <section class="contentinternalpadeven">
     <div class="row">
@@ -26,16 +25,16 @@
         <h3 class="standardh3">The Layout</h3>
         <p class="intro">As previously stated, the client wanted something that stood out from the others, I worked hard to make it usable, attractive and not so pushy as most car dealers.</p>        
       </div>
-      <div class="six columns preview fadeIn">
-         {{ "nathaniel_role.jpg" | asset_url | image_tag }}
+      <div class="six columns fadeInImg animated">
+        <img src="{{ "nathaniel_role.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
       </div>          
     </div>
   </div>
 </section>
 
-<section class="contentinternalpadeven preview fadeIn">
-    <div class="row width1100">  
-      {{ "nathaniel_layout.jpg" | asset_url | image_tag }}
+<section class="contentinternalpadeven">
+    <div class="row width1100 fadeInImg animated"> 
+      <img src="{{ "nathaniel_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />   
     </div>
 </section>
 
@@ -49,6 +48,14 @@
       </div>
    
     </div>
+  </div>
+</section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="mtcdirect">Next Project &nbsp;&nbsp;&gt;</a>
   </div>
 </section>
 

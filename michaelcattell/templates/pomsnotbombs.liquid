@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-    {{ "pomsnotbombs_opening.jpg" | asset_url | image_tag }}
+  <img src="{{ "pomsnotbombs_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />   
   </section>
 </header>
 
@@ -19,8 +19,8 @@
 <section class="contentnopad">
   <div class="contentinternalpadeven">
     <div class="row">
-      <div class="six columns preview fadeIn">
-        {{ "pomsnotbombs_layout.png" | asset_url | image_tag }}
+      <div class="six columns fadeInImg animated">
+        <img src="{{ "pomsnotbombs_layout.png" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>       
       <div class="six columns">
         <h3 class="standardh3">My Role</h3>
@@ -39,8 +39,8 @@
         <h3 class="standardh3">The best dog in the world?</h3>
         <p style="font-size: 80px;">Yes.</p>
       </div>
-      <div class="six columns preview fadeIn">
-        {{ "pomsnotbombs_bestdog.png" | asset_url | image_tag }}
+      <div class="six columns fadeInImg animated">
+        <img src="{{ "pomsnotbombs_bestdog.png" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>   
      </div>
   </div>
@@ -58,7 +58,16 @@
   </div>
 </section>
 
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="argos">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
+</section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
+
 {% endblock %}

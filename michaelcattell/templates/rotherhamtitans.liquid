@@ -1,7 +1,7 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-    {{ "titanrugby_opening.jpg" | asset_url | image_tag }}
+    <img src="{{ "titanrugby_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
   </section>
 </header>
 
@@ -14,10 +14,18 @@
     </div>
 </section>
  
-<section class="contentinternalpadeven preview fadeIn">
-    <div class="row width1100">  
-      {{ "rotherhamtitans_layout.jpg" | asset_url | image_tag }}
+<section class="contentinternalpadeven">
+    <div class="row width1100 fadeInImg animated">  
+      <img src="{{ "rotherhamtitans_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
     </div>
+</section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="intraining">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
 </section>
 
 {% include "otherwork" %} 

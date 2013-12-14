@@ -1,8 +1,7 @@
-{% layout "alternative" %}
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-    {{ "_argos_opening.jpg" | asset_url | image_tag }}
+    <img src="{{ "_argos_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
   </section>
 </header>
 
@@ -13,8 +12,8 @@
           <h2>About the project</h2>
           <p><a href="http://www.argosonline.es/wcsstore/argosspain/index.html" title="view argos spain here">www.argosonline.es</a></p>
           <p class="intro">Argos is the UK's leading digital and in store retailer, I am sure sometime in your childhood you have been in there – trying to work out how many pens you can cram into your pocket <del>I got 5 before my mum noticed</del>! </p>
-          <p>On average the stores (740 of them) and online services, serves around 130 million customers a year.</p>
-          <p>The need was to design and build a website, answering to the Spain users of Argos (Ex Pats to be exact).</p>
+          <p class="intro">On average the stores (740 of them) and online services, serves around 130 million customers a year.</p>
+          <p class="intro">The need was to design and build a website, answering to the Spain users of Argos (Ex Pats to be exact).</p>
         </div>
     </div>
 </section>
@@ -24,10 +23,10 @@
     <div class="row">
       <div class="six columns">
         <h3 class="standardh3">My Role</h3>
-        <p>Be the Front-end Developer, working alongside their marketing team to ensure consistent branding throughout the home and sub pages.</p>
+        <p class="intro">Be the Front-end Developer, working alongside their marketing team to ensure consistent branding throughout the home and sub pages.</p>
       </div>       
       <div class="six columns fadeInImg animated">
-        {{ "argos_role.png" | asset_url | image_tag }}
+        <img src="{{ "argos_role.png" | asset_url }}" alt="Michael Cattell Home Icon" />        
       </div>      
     </div>
   </div>
@@ -38,7 +37,7 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="standardh3">The Layout</h3>
-        <p>Before setting out to build the site, we designed a plan of action, so to fall under the branding rules – to ensure consistent branding was kept. The famous red of Argos’ logo was to be used often to offset the blue.</p>
+        <p class="intro">Before setting out to build the site, we designed a plan of action, so to fall under the branding rules – to ensure consistent branding was kept. The famous red of Argos’ logo was to be used often to offset the blue.</p>
       </div>       
     </div>
   </div>
@@ -46,8 +45,7 @@
 
 
 <section class="contentinternalpadeven fadeInImg animated row width1100">
-  {{ "argos_layout.png" | asset_url | image_tag }}
-
+  <img src="{{ "argos_layout.png" | asset_url }}" alt="Michael Cattell Home Icon" />          
 </section>
 
 <section class="contentnopad">
@@ -55,10 +53,10 @@
     <div class="row">
       <div class="six columns">
         <h3 class="standardh3">Location Location Location</h3>
-        <p>As the site was aiming to Ex-pat audience, we kept the feeling of Argos intact while promoting more diverse products – who doesn’t want a BBQ or sun beds in Spain?</p>
+        <p class="intro">As the site was aiming to Ex-pat audience, we kept the feeling of Argos intact while promoting more diverse products – who doesn’t want a BBQ or sun beds in Spain?</p>
       </div>       
       <div class="six columns fadeInImg animated">
-        {{ "argosspain_location.png" | asset_url | image_tag }}
+        <img src="{{ "argosspain_location.png" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>      
     </div>
   </div>
@@ -69,11 +67,20 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="standardh3">Putting it all together</h3>
-        <p>Build (I didn’t design the complete site, but had to do sub-pages taken from rough storyboarding) took me 5 days from start to finish, built within a pre-existing PHP environment.</p>
+        <p class="intro">Build (I didn’t design the complete site, but had to do sub-pages taken from rough storyboarding) took me 5 days from start to finish, built within a pre-existing PHP environment.</p>
       </div>       
     </div>
   </div>
 </section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="nathanielcars">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
+</section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 

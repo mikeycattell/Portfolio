@@ -2,7 +2,8 @@
 {% block content %}
 <header class="clearfix">
   <section class="fixermargin">
-  {{ "apex_opening.jpg" | asset_url | image_tag }}
+  <img src="{{ "apex_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+
   </section>
 </header>
 
@@ -21,7 +22,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns fadeInImg animated">
-        {{ "grouppic.jpg" | asset_url | image_tag }}
+        <img src="{{ "grouppic.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">My Role</h3>
@@ -35,7 +36,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns fadeInImg animated">
-        {{ "apex_layout.png" | asset_url | image_tag }}
+        <img src="{{ "apex_layout.png" | asset_url }}" alt="Michael Cattell Home Icon" />
       </div>     
       <div class="six columns end">
         <h3 class="standardh3">The Layout</h3>
@@ -58,7 +59,7 @@
 
 <section class="contentnopad">
   <div class="twelve coulums fadeInImg animated row width1100">
-  {{ "apexworkplace_layout.jpg" | asset_url | image_tag }}
+      <img src="{{ "apexworkplace_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
   </div>
 </section>
 
@@ -72,9 +73,17 @@
     </div>
   </div>
 </section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="pomsnotbombs">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
+</section>
+
 {% include "otherwork" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"></script>
+
 {% endblock %}

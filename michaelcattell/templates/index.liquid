@@ -1,69 +1,61 @@
 {% block content %}
+
 <header class="clearfix">
-  <section id="home"  data-speed="4" data-type="background">
+  <section id="mast" data-speed="4" data-type="background" >
     <div class="row">
       <div class="headerposition">
-      <hgroup>
-        <img src="{{ "logo1.png" | asset_url }}" alt="Michael Cattell Home Icon" class="animated FadeInUp" />
-        <h1 class="mainh11 animated fadeInLeft Big">Creative thinker. Code tinker. Coffee drinker</h1>
-        <h2 class="standardh22 animated fadeInDown">Digital Designer: Yorkshire, Midlands and America</h2>
-        <a class="animated fadeIn whitebuttonhome" href="contact" title="Got work and need a designer/coder? Get in touch!">Available for work!</a>
+      <hgroup class="text-center">
+        <h1 class="mainh11 animated fadeInLeft Big" style=" text-transform: uppercase;">I am a Digital Designer, who makes that web stuff simple</h1>
+        <h3 class="standardh22 animated fadeInDown">Designing websites, apps and emailers since the old days: 2003.<br>Based in Yorkshire, England.</h3>
+
+        <div class="color-7" id="btn-click">
+          <p>
+            <a href="tel:+44077851848" class="whitebuttonmast">Phone</a>
+            <a href="contact" class="whitebuttonmast">Email</a>
+          </p>
+        </div>
+
+        <a class="animated fadeIn whitebuttonhome" href="contact" title="Got work and need a designer/coder? Get in touch!" style="display: none;">Available for work!</a>
        </hgroup>
       </div>
     </div>
   </section>
 </header>
 
-<section class="contentholder80">
+<section class="contentinternalpadeven">
   <div class="row">  
 
-    <div class="five columns">
-        <br>
-        <h3 class="title green">Freelance Digital Designer and Front-end Developer.</h3>
-        <br><br><p>Based in Yorkshire, The Midlands and America</p>
+    <div class="twelve columns">
+        <h2 class="introtitle">
+          <span class="titleunderline">
+            Hi there, I am Michael, a <span class="green">freelance digital designer</span> and <span class="green">front-end developer</span> working across <span class="green">Yorkshire</span>, <span class="green">The Midlands</span> and <span class="green">America</span>.
+          </span>
+        </h2> 
     </div>
 
-    <div class="seven columns">
-          <p class="intro">Hi there, I am Michael, a freelance digital designer and front-end developer working across Yorkshire, The Midlands and America. I mainly specialise in designing and building user interfaces for both the web and mobile applications. </p>
-          <p class="intro">As of <strong>November 2013</strong>, I will be going full-time freelance, aiming to work with agencies as well as start ups and small businesses.</p>
-          <p class="intro">Interested in working with me? <a href="contact" title="get in touch to discuss your project">Tell me about your project.</a> </p>          
-    </div>
+    <div class="height40"></div>
 
-    
-    <div class="eight columns" style="display: none">
-      <h2>About me</h2>
-      <br>
-      <p class="intro">Hi there, I am Michael, a freelance digital designer and front-end developer working across Yorkshire, The Midlands and America. I mainly specialise in designing and building user interfaces for both the web and mobile applications. </p>
-      <p class="intro">As of <strong>November 2013</strong>, I will be going full-time freelance, aiming to work with agencies as well as start ups and small businesses.</p>
-      <p class="intro">Interested in working with me? <a href="contact" title="get in touch to discuss your project">Tell me about your project.</a> </p>
+    <div class="seven columns" style="padding-top: 5px;">
+          <p class="intro">As you have guessed, I am a freelance interactive digital designer with 10 years experience. I have a passion for creating beautiful, intuitive, and highly crafted solutions combining a considered approach with emerging technologies.</p>
+          <p class="intro">My experiences range from designing web sites and emails to doing the odd mobile application design.</p>
+          <div class="height25"></div>
+          <p class="intro">If you are interested in working together I'm available for freelance projects: contract or direct client - onsite or remote, contact details can be found<a href="contact" title="get in touch to discuss your project"> here!</a> </p>
     </div>
+    <div class="five columns animated fadeInRight">
 
-    <div class="four columns preview fadeInRight"  style="display: none">
+
       <a class="box" href="about" title="Want to know more about me? Click here"> 
       <img src="{{"michaelcattell.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
       <p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
-    </div>      
+    </div>
 
-  </div>
+
+  </div>  
+
 </section>
 
 {% include "otherwork" %}  
 
-{% include "testimonials" %} 
-  <section id="testms" data-speed="4" data-type="background" style="display: none">
-    <div class="row">
-      <div class="headerpositiontestms">
-      <hgroup>
-        <blockquote>
-        <strong>&quot;</strong>blah de blah is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed. Always generous with his time, talent, and humor.<strong>&quot;</strong>
-        </blockquote>
-        <p class="quote">Christine Le - Project Manager of Marketing Campaigns</p>  
-       </hgroup>
-      </div>
-    </div>
-  </section>
-
-{% include "writings" %} 
 {% include "contactme" %} 
 {% include "footer" %} 
 {% endblock %}

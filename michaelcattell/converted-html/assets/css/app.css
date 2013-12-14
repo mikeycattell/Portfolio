@@ -3799,7 +3799,7 @@ label.error {
         color: #999999;
         cursor: default; }
     .breadcrumbs > *:before {
-      content: "../../michaelcattell";
+      content: "/";
       color: #aaaaaa;
       margin: 0 0.75em;
       position: relative;

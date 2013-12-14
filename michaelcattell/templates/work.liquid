@@ -1,13 +1,13 @@
-{% layout "alternative" %}
 {% block content %}
 
 <header class="clearfix">
-  <section id="testabout">
+  <section id="testaboutpfs">
     <div class="row">
-      <div class="headerpositiontestabout">
+      <div class="headerpositiontestaboutpfs">
       <hgroup>
-        <h1 class="mainh111 animated fadeIn Big">Eat, Design, Sleep</h1>
-        <h2 class="standardh222 animated fadeInDown gray">Repeat</h2>
+        <h2 class="standardh222 animated fadeInDown">Featured Case Study</h2>
+        <h1 class="mainh111 animated fadeIn Big">Premier Food Safety</h1> 
+        <a class="animated fadeIn whitebuttonhome" href="premierfoodsafety" title="">Read about it</a>
        </hgroup>
       </div>
     </div>
@@ -15,7 +15,7 @@
 </header>
 
 <section class="contentnobg">
-  <div class="contentinternalpadevenbottom">
+  <div class="content20bottom text-center">
     <!-- Thumbnails -->
     <div class="row">
       <div class="twelve columns">
@@ -30,13 +30,6 @@
       <div class="twelve columns">
         <!-- Thumbnails start -->
         <ul class="block-grid two-up showcase-items">
-          <li>
-            <div class="box">
-              <a href="premierfoodsafety" title="view the case study for Premier Food Safety"> {{ "premierfoodsafety_nail.jpg" | asset_url | image_tag }}
-              <p class="plus">Premier Food Safety<br>
-              <span class="darktxt">Design, Build, Manage</span></p></a>
-              </div>
-          </li>
           <li>
             <div class="box"> <a href="smallpeeps" title="view the case study for Premier Food Safety"> {{ "smallpeeps_nail.jpg" | asset_url | image_tag }}
               <p class="plus">Small Peeps<br><span class="darktxt">Design, Build</span></p>
@@ -68,6 +61,10 @@
               <p class="plus">MTC Direct<br><span class="darktxt">Design, Build </span></p>
               </a> </div>
           </li>
+        </ul>
+      
+        <!-- Thumbnails start -->
+        <ul class="block-grid three-up showcase-items">              
           <li>
             <div class="box"> <a href="michaelandemmasayido"> {{ "michaelandemmasayido_nail.jpg" | asset_url | image_tag }}
               <p class="plus">Mike And Emma Say I Do<br><span class="darktxt">Design, Build </span></p>

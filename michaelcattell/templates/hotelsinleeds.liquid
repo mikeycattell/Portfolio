@@ -1,11 +1,5 @@
 {% layout "alternative" %}
 {% block content %}
-<span class="nextPagi">
-  <a rel="prev" href="michaelandemmasayido" title="click here to see Michael and Emma Say I Do case study">Michael and Emma Say I Do</a>
-</span>
-<span class="prevPagi">
-  <a rel="next" href="rotherhamtitans" title="click here to see Rotherham Titans Rugby Club work">Rotherham Titans Rugby Club</a>
-</span> 
 
 <header class="clearfix">
   <section class="fixermargin">
@@ -23,9 +17,17 @@
 </section>
 
 <section class="contentinternalpadeven whitebackground">
-    <div class="row width1100">
-      {{ "hotelsinleeds_layout.jpg" | asset_url | image_tag }}
+    <div class="row width1100 fadeInImg animated">
+      <img src="{{ "hotelsinleeds_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
     </div>
+</section>
+
+<section class="nextbackholder">
+  <div class="row">
+    <p class="intro">Like this? Why don't you <a href="contact">tell</a> me.</p>
+    <a class="btn btn-line left" href="/work">&lt; &nbsp;&nbsp;See all work</a>
+    <a class="btn btnsolid right" href="rotherhamtitans">Next Project &nbsp;&nbsp;&gt;</a>
+  </div>
 </section>
 
 {% include "otherwork" %} 
