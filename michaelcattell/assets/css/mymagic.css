@@ -112,6 +112,17 @@ blockquote { margin:0px 0 25px 0;  font-size: 30px; text-align: center; border: 
 
 .testimonial__cite:before { background-color: #fff; display: block; content: ""; height: 1px; margin: 0 auto 24px; opacity: 0.5; width: 8.47039%; }
 
+p.socialtext { color: #ffffff; font-size: 2.65rem; font-weight: 900; line-height: 1.1em; text-align: center;
+}
+a.links2 { color: #ffffff; display: block; padding: 20px;
+}
+a.links2:hover {
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; background:#32425b;  padding:20px;
+}
 
 /*********** =button styling ************/
 
@@ -471,4 +482,8 @@ h1.mainh11 { font-size: 34px; color: #fff; margin: 0; font-weight: 300; position
 
 @media (max-width: 400px) {
 h3.standardh22 { font-size: 20px; }
+h1.mainh11 { font-size: 28px;}
+h1.mediumh11 { font-size: 28px;}
+h2.introtitle { font-size: 28px;}
+
 }

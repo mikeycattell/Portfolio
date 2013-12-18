@@ -74,7 +74,7 @@ $(document).foundation('orbit', {
   pause_on_hover: false,
   resume_on_mouseout: false,
   animation_speed: 500,
-  stack_on_small: true,
+  stack_on_small: false,
   navigation_arrows: true,
   slide_number: false,
   bullets: false,
