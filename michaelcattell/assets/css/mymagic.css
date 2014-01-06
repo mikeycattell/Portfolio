@@ -211,6 +211,30 @@ a.btnsolid:hover {background: #d8624a; color: #fff;}
 
 /**************** =Font/Type rules ********************/
 
+@font-face
+{
+font-family: 'Sentinel-Medium';
+src: url('../fonts/Sentinel-Medium.ttf'),
+     url('../fonts/Sentinel-Medium.ttf'); /* IE9 */ 
+}
+.sentinel-med { font-family: Sentinel-Medium; }
+
+@font-face
+{
+font-family: 'Sentinel-Book';
+src: url('../fonts/Sentinel-Book.ttf'),
+     url('../fonts/Sentinel-Book.ttf'); /* IE9 */ 
+}
+.sentinel-book { font-family: Sentinel-Book; }
+
+@font-face
+{
+font-family: 'Sentinel-Light';
+src: url('../fonts/Sentinel-Light.ttf'),
+     url('../fonts/Sentinel-Light.ttf'); /* IE9 */ 
+}
+.sentinel-light { font-family: Sentinel-Light; }
+
 h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; font-weight: 100; color: #4A545A;}
 
 h1.mainh1 {  position: absolute; top: 220px;/* left: 90px; */color: #fff;font-size: 68px; font-weight: 300; line-height: 1.2;  }
@@ -260,6 +284,7 @@ span.headline a {font-size: 26px; color: #16A085; font-weight: 300; }
  
  span.testimonial { font-size: 1.2em; color: #999; line-height: 30px; font-weight: 300 }
 span.itleunderline { border-bottom: 1px solid #dedede; padding-bottom: 3px; }
+
 
 
 .darktxt { color: #333;}

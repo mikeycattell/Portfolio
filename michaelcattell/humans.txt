@@ -8,7 +8,7 @@ Site: http://michaelcattell.com, https://github.com/mikeycattell
 Email: hello@michaelcattell.com                            
 Twitter: @mikeycattell
                             
-Location: Anaheim, USA.
+Location: Doncaster, South Yorkshire, UK.
 					
 
 ################
@@ -27,7 +27,6 @@ Last update: YYYY/MM/DD
 Standards: HTML5, CSS3
                             
 Components: Foundation Zurb, jQuery
-
 
 Software: Sublime Text 2, Fireworks, Photoshop, Git, Mixture.io. 
 
