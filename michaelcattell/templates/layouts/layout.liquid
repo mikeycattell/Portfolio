@@ -18,10 +18,11 @@
   <link rel="shortcut icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/michaelcattell.png">
   {{ "foundation.css" | asset_url | stylesheet_tag }}
+  {{ "offcanvas.css" | asset_url | stylesheet_tag }} 
   {{ "app.css" | asset_url | stylesheet_tag }}
   {{ "animate.css" | asset_url | stylesheet_tag }}
   {{ "mymagic.css" | asset_url | stylesheet_tag }}
-  {{ "component.css" | asset_url | stylesheet_tag }}
+  <!--{{ "component.css" | asset_url | stylesheet_tag }}-->
   {{ "normalize.css" | asset_url | stylesheet_tag }}
   {{ "humans.txt" | asset_url | stylesheet_tag }} 
   {{ "flexslider.css" | asset_url | stylesheet_tag }}
@@ -30,6 +31,10 @@
 
   <script src="{{ "custom.modernizr.js" | asset_url }}"></script>  
 </head>
+    <!--
+      - If you’re looking in here then you’re probably exactly the type of
+      - person I would love to work with! Drop me a line: harry@csswizardry.com
+      -->
 <body>
   {% include "navigation" %}	
   {% block content %}{% endblock %}

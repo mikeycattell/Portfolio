@@ -2,10 +2,20 @@
 {% block title %}Michael Cattell : Work - Digital Designer and coder, contact me to work on your brilliant projects!{% endblock %}
 {% block content %} 
 
-<section class="contentnobg hide-for-small">
+<section class="aboutintro">
+  <div class="contentholder40">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class="mediummaintitle white">I am currently: <span class="green">Available</span>.</h1>
+        <p class="intro">If you have a project that you think would be great, magical and just downright brilliant, or even if it's not (I'm yet to find anyone with a bad idea), I’d love to hear from you, all you need to do is fill in this handy form below!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="" style="display: none;">
   <div class="contentinternalpadeven">
     <div class="twelve columns">
-
       <!-- Google Map -->
       <div id="map-area">
         <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
@@ -17,7 +27,7 @@
   </div>
 </section>
 
- <section class="contentnobg">
+ <section class="contentnobg" style="display: none;">
     <div class="contentinternalpad40top0bottom">
        <div class="row">
           <div class="twelve columns">
@@ -29,47 +39,63 @@
     </div>
  </section>
 
-    
-<!-- Contact Form -->
-<section>
-  <div class="row">
-    
-    <div class="twelve columns contact-form">
-       <form action="contact.php" method="post">
-           <p class="contact-name controls">
-              <input id="name" type="text" placeholder="Name" value="" name="mc_name" />
-            </p>
-            <p class="contact-email controls">
-              <input id="email" name="mc_email" type="email" placeholder="Email address">
-            </p>
-            <p class="contact-message controls">
-              <textarea id="message" name="mc_message" placeholder="Your Message" rows="10" cols="40"></textarea>
-            </p>
-            <p class="contact-submit controls">
+<section id="contact_form" class="contentinternalpadeven">
+   
+      <form action="contact.php" method="post">
+         <div class="row">
+            <div class="twelve columns">
+               <h3 class="substyle">1. Tell me a bit about you.</h3>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <input id="name" type="text" placeholder="Name" value="" name="mc_name" />
+               <input id="email" name="mc_email" type="email" placeholder="Email address">
+            </div>
+            <div class="height5"></div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <h3 class="substyle">2. What can I do for you?</h3>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <input id="subject" name="mc_subject" type="text" placeholder="Subject" style="width: 100%">
+            </div>
+         </div>
+               
+
+         <div class="row">
+            <div class="twelve columns">
+                <textarea id="message" name="mc_message" placeholder="Your Message"></textarea>
+            </div>
+         </div>
+         <div class="height5"></div>
+         <div class="row">
+            <div class="twelve columns submit-field">
             <button id="contact-submit" type="submit" value="Send" class="bigblue button">Send</button>
-            </p>
-        </form>
-    </div>
+
+               <div class="clear"></div>
+            </div>
+         </div>
+      </form>
+
+</section>
+
+<section class="getintouch">
+  <div class="row">
+    <h3 class="substyle white">Say Hello</h3>
+    <p class="intro white">I'd love to hear from you, if you have any questions, or whether you just want a chat - either follow me on twitter, have a look on LinkedIn or simply send me an email.</p>
+    <ul>
+      <li><a href="http://twitter.com/mikeycattell" title="Follow us on Twitter" target="_blank"><img src="{{ "twitter_icon_contact.png" | asset_url }}" alt="Michael Cattell Home Icon" /></a></li>
+      <li><a href="mailto:hello@michaelcattell.com?subject=Enquiry%20from%MichaelCattell.com%20" title="Send me an email - hello@michaelcattell.com"><img src="{{ "linkedin_icon_contact.png" | asset_url }}" alt="Michael Cattell Home Icon" /></a></li>
+      <li class="last end"><a href="#" title="Download our Project Planner"><img src="{{ "mail_icon_contact.png" | asset_url }}" alt="Michael Cattell Home Icon" /></a></li>
+    </ul>
   </div>
 </section>
 
-<section>
-  <div id="site-content" role="main" style="margin-top:130px; background:#2c3b52; padding-top:20px;">
-    <div class="row">
-      <p class="socialtext"><a href="https://twitter.com/mikeycattell" class="links2">Twitter</a></p>    
-      <p class="socialtext"><a href="http://instagram.com/mikeycattell" class="links2">Instagram</a></p>
-      <p class="socialtext"><a href="http://www.last.fm/user/mikey_cattell" class="links2">Last.fm</a></p>      
-      <p class="socialtext"><a href="http://uk.linkedin.com/pub/michael-cattell/18/919/6a/" target="_blank" class="links2">Linkedin</a></p>
-    </div>
-  </div>
-</section>
 
-
-   </div>
-</section>
-<div class="height20"></div>
-
-{% include "writings" %} 
 {% include "footer" %} 
 
 {% endblock %}

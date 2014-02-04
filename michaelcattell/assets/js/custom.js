@@ -68,24 +68,40 @@ $(document).ready(function(){
 }); 
 
 
-$(document).foundation('orbit', {
-  animation: 'fade',
-  timer_speed: 9000,
-  pause_on_hover: false,
-  resume_on_mouseout: false,
-  animation_speed: 500,
-  stack_on_small: false,
-  navigation_arrows: true,
-  slide_number: false,
-  bullets: false,
-  timer: false,
-  next_on_click: true,
-  variable_height: true,
-  before_slide_change: function(){},
-  after_slide_change: function(){}
+$(document).foundation({
+  orbit: {
+      animation: 'slide', // Sets the type of animation used for transitioning between slides, can also be 'fade'
+      timer_speed: 10000, // Sets the amount of time in milliseconds before transitioning a slide
+      pause_on_hover: false, // Pauses on the current slide while hovering
+      resume_on_mouseout: false, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
+      animation_speed: 500, // Sets the amount of time in milliseconds the transition between slides will last
+      stack_on_small: false,
+      navigation_arrows: false,
+      slide_number: false,
+      slide_number_text: 'of',
+      container_class: 'orbit-container',
+      stack_on_small_class: 'orbit-stack-on-small',
+      next_class: 'orbit-next', // Class name given to the next button
+      prev_class: 'orbit-prev', // Class name given to the previous button
+      timer_container_class: 'orbit-timer', // Class name given to the timer
+      timer_paused_class: 'paused', // Class name given to the paused button
+      timer_progress_class: 'orbit-progress', // Class name given to the progress bar
+      slides_container_class: 'orbit-slides-container', // Class name given to the slides container
+      slide_selector: 'li', // Default is "*" which selects all chilren under the container
+      bullets_container_class: 'orbit-bullets',
+      bullets_active_class: 'active', // Class name given to the active bullet
+      slide_number_class: 'orbit-slide-number', // Class name given to the slide number
+      caption_class: 'orbit-caption', // Class name given to the caption
+      active_slide_class: 'active', // Class name given to the active slide
+      orbit_transition_class: 'orbit-transitioning',
+      bullets: true, // Does the slider have bullets visible?
+      circular: true, // Does the slider should go to the first slide after showing the last?
+      timer: true, // Does the slider have a timer visible?
+      variable_height: false, // Does the slider have variable height content?
+      swipe: true,
+      before_slide_change: noop, // Execute a function before the slide changes
+      after_slide_change: noop // Execute a function after the slide changes
+  }
 });
-
-
-var parallaxIt=function(){$hero=$("#mast"),$window=$(window);if($hero.length){var heroHeight=$hero.outerHeight(true),$heroHeading=$hero.find("hgroup"),parallaxFactor=0.5;$window.on("scroll",function(e){var scrollTop=$window.scrollTop(),parallaxOffset=Math.round(scrollTop*parallaxFactor),parallaxBgPosition="50% calc(50% + "+parallaxOffset+"px)";parallaxBgPosition2="50% -webkit-calc(50% + "+parallaxOffset+"px)";if(scrollTop>0){$heroHeading.css("opacity",1-(scrollTop/heroHeight*1.4));$hero.css("background-position",parallaxBgPosition);$hero.css("background-position",parallaxBgPosition2)}else{$heroHeading.css("opacity",1);$hero.css("background-position","50% 50%")}if(scrollTop>heroHeight-140){$("#header-container").addClass("expand")}else{$("#header-container").removeClass("expand")}})}else{$("#header-container").addClass("expand");$("#page").addClass("nomast")}};var navIt=function(){$("#trigger-nav, .closed").click(function(e){$("#page, .main-navigation, #trigger-nav, #footer").toggleClass("nav-open");e.preventDefault()});$("#stream-toggle").click(function(e){$("#archive-nav ul").toggleClass("stream-open");e.preventDefault()})};$(document).ready(navIt);var scrollEvents=function(){$(".s-waypoint").click(function(e){$("html, body").animate({scrollTop:$(".e-waypoint").offset().top-88},1000);e.preventDefault()})};$(document).ready(scrollEvents);var hammerIt=function(){$("#page").swipe({swipeLeft:function(event,direction,distance,duration,fingerCount){$("#page, .main-navigation, #trigger-nav, #footer").addClass("nav-open")},swipeRight:function(event,direction,distance,duration,fingerCount){$("#page, .main-navigation, #trigger-nav, #footer").removeClass("nav-open")},threshold:75})};var slidersRoyal=function(){$("#project-slide").royalSlider({arrowsNav:false,controlsInside:true,loop:true,imageScaleMode:"fill",imageAlignCenter:true,controlNavigationSpacing:0,controlNavigation:"bullets",navigateByClick:true,autoScaleSlider:true,autoScaleSliderHeight:700,autoScaleSliderWidth:1280,numImagesToPreload:6,video:{autoHideBlocks:true,autoHideArrows:false},autoPlay:{enabled:false,pauseOnHover:true,delay:4500},transitionType:"move",slidesOrientation:"vertical"});$("#heartbeat-slide").royalSlider({arrowsNav:false,controlsInside:true,loop:true,imageScaleMode:"fill",imageAlignCenter:true,controlNavigationSpacing:0,controlNavigation:"bullets",navigateByClick:true,autoScaleSlider:true,autoScaleSliderHeight:577,autoScaleSliderWidth:1280,numImagesToPreload:9,autoPlay:{enabled:false,pauseOnHover:true,delay:4500},transitionType:"move",slidesOrientation:"vertical"});$(".rsArrowLeft .rsArrowIcn").html("&lt;");$(".rsArrowRight .rsArrowIcn").html("&gt;")};$(document).ready(slidersRoyal);var postDiscussion=function(){$("#social-trigger").click(function(e){$("#social-wrap").fadeIn().toggleClass("social-open");e.preventDefault()});$("#social-trigger-close").click(function(e){$("#social-wrap").fadeOut();e.preventDefault()});$("#comment-trigger").click(function(e){$("#comment-wrap").fadeIn().toggleClass("comment-open");e.preventDefault()});$("#comment-trigger-close").click(function(e){$("#comment-wrap").fadeOut();e.preventDefault()});$(document).keyup(function(e){if(e.keyCode==27){$("#social-wrap, #comment-wrap").fadeOut()}})};$(document).ready(postDiscussion);var reachForm=function(){$(".btn-group.multi button").click(function(e){$(this).toggleClass("checked");$(this).closest(".btn-group").find("input.hidden-button").val("");var totes=[];$(this).closest(".btn-group").find("button.checked").each(function(i,selected){totes[i]=$(selected).attr("value")});$(this).closest(".btn-group").find("input.hidden-button").val(totes);e.preventDefault()});$(".btn-group:not(.multi) button").click(function(e){$(this).closest(".btn-group").find("button").removeClass("checked");$(this).toggleClass("checked");$(this).closest(".btn-group").find("input.hidden-button").val("");var totes=[];$(this).closest(".btn-group").find("button.checked").each(function(i,selected){totes[i]=$(selected).attr("value")});$(this).closest(".btn-group").find("input.hidden-button").val(totes);e.preventDefault()});$("a#form-contact").click(function(e){$("a#form-planner").removeClass("checked");$("a#form-contact").addClass("checked");$("div#form-planner").fadeOut();$("div#form-contact").fadeIn(500);e.preventDefault()});$("a#form-planner").click(function(e){$("a#form-contact").removeClass("checked");$("a#form-planner").addClass("checked");$("div#form-contact").fadeOut();$("div#form-planner").fadeIn(500);e.preventDefault()})};$(document).ready(reachForm);var videoStuff=function(){$(".heart-beat-mast video").hide();$(".watch-btn").click(function(e){$("video").each(function(){$(this).get(0).play()});$(".video-txt").fadeOut("slow");$(".heart-beat-mast video").fadeIn("slow");e.preventDefault()});$("video").click(function(e){$("video").each(function(){$(this).get(0).pause()});$(".video-txt").fadeIn("slow");e.preventDefault()});$("video").bind("ended",function(){$(".video-txt").fadeIn("slow");$(".heart-beat-mast video").fadeOut("slow");this.currentTime=0})};$(document).ready(videoStuff);function resizeMast(){$hero=$("#mast"),$video_mast=$(".video-mast"),$video_hero=$("#mast video");if($hero.length){$hero.css("height",$(window).height());$video_hero.maximage("maxcover")}}$(window).load(function(){resizeMast();var deviceAgent=navigator.userAgent.toLowerCase();var agentID=deviceAgent.match(/(iphone|ipod|ipad|android|mobile)/);if(agentID){}else{parallaxIt()}});window.onresize=function(event){resizeMast();var deviceAgent=navigator.userAgent.toLowerCase();var agentID=deviceAgent.match(/(iphone|ipod|ipad|android|mobile)/);if(agentID){}else{parallaxIt()}};jQuery(document).ready(function($){var deviceAgent=navigator.userAgent.toLowerCase();var agentID=deviceAgent.match(/(iphone|ipod|ipad|android|mobile)/);if(agentID){$(document).ready(hammerIt);$("#header-container").addClass("expand");$("#page").addClass("nomast")}else{}});if(("standalone" in window.navigator)&&window.navigator.standalone){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(!a[i].onclick&&a[i].getAttribute("target")!="_blank"){a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}};
 
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Michael Cattell: Freelance Digital Designer and Front-end Developer based in Yorkshire, England</title>
+  <title></title>
   <meta name="description" content="Freelance Digital Designer and Front-end Developer with 10 years experience designing and building websites and apps. Available for work on-site or remotely."> 
   <meta name="author" content="Michael Cattell" />
   <meta name="Copyright" content="Copyright Michael Cattell 2013. All Rights Reserved." />
@@ -21,7 +21,6 @@
   <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/mymagic.min.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href="assets/css/component.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="humans.txt" rel="stylesheet" type="text/css" media="all"/> 
   <link href="assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -32,7 +31,53 @@
 <!--<body id="sub">-->
 <body>
   <div id="homeslide"></div>
-<!-- desktop navigation -->
+
+<div id="header" role="navigation" class="hide-for-small"style="position: fixed;">
+<div class="cbp-af-header" role="navigation">
+  <div class="cbp-af-inner">    
+
+    <div class="row">
+      <a href="index.html"><div class="logo animated fadeIn" alt=""></div></a>
+      <div id="menu">
+        <li><a href="work.html" >work</a></li>        
+        <li><a href="about.html" >about</a></li>
+        <li><a href="blog">blog</a></li>
+        <button type="button" class="buttonhead" href="contact.html" >get in touch</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<nav class="top-bar show-for-small" role="navigation">
+  <ul class="title-area">
+    
+    <li class="logoholderformobile"  style="float: left;" >
+       <a class="logoholdermob logoholdmobile"href="index.html" title="Go to home page" style="margin: 17px 0 0 5px;"><img src="assets/images/icons/mc_logo_mob.png" alt="" /></a>
+    </li>
+    <li class="toggle-topbar"  style="float: right;" >
+    <div style="margin-top: 10px;">
+          <a href="#"><span class="lines" style=" line-height: 3; font-size: 18px;">Menu</span></a>
+    </div>
+      </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left">
+      <li><a href="work.html" >work</a></li>
+      <li><a href="about.html" >about</a></li>
+      <li><a href="blog" >blog</a></li>
+      <li><a href="contact.html" >contact</a></li>
+    </ul>
+  </section>
+</nav>
+
+<style type="text/css">
+.cbp-af-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; height: 150px; overflow: hidden; -webkit-transition: height 0.3s; -moz-transition: height 0.3s;  transition: height 0.3s; background: #2c3133;}
+
+
+</style>  
+<!-- desktop navigation 
 
 <div class="cbp-af-header gray hide-for-small" role="navigation">
   <div class="cbp-af-inner">
@@ -46,7 +91,7 @@
   </div>
 </div>      
              
-<!-- mobile navigation -->
+mobile navigation 
 <nav class="top-bar noise show-for-small" role="navigation">
   <ul class="title-area">
     
@@ -66,7 +111,7 @@
   </section>
 </nav>
 
-<!-- End Navigation -->
+ End Navigation -->
 
 <!-- Google Show -->
 <div style="display:none" itemscope itemtype="http://schema.org/Person">
@@ -215,11 +260,16 @@
       </section>
 
 <section class="contentnopad">
-  <div class="contentholder60 darkgreen">
+  <div class="contentholder60 graypixelate">
     <div class="row">
       <div class="twelve columns">
         <p class="lookhere">If you want to talk about a project you have in mind, a podcast to guest on, anything design related, or even my work, feel free to drop me an email.</p>
-        <div class="text-center">
+      
+          <p class="ctaSeparator"><span><a class="ulBtn" href="contact.html">Email Me</a></span></p>
+          <p class="text-center intro">Or call me on +44 (0)7925 460880</p>
+
+
+        <div class="text-center" style="display: none;">
         	<a href="contact.html" class="whitebutton">Contact Me</a>
           <p class="white intro">Or call me on +44 (0)7925 460880</p>
         </div>
@@ -227,22 +277,56 @@
       <div style="bottom: 0; height: 40px; position: absolute; right: 20px; width: 90px;"><a href="#homeslide" class="scrollTo"><img src="assets/images/icons/top.png"></a></div>
     </div>
   </div>
-</section> 
-<section role="contentinfo" class="position: relative">
+</section>
+
+<style>
+.ctaSeparator {
+/*background: url('http://www.upsidelearning.com/images/bg-h3.png') repeat-x left center;
+color: #454545;
+text-align: center;
+margin: 3em 0 1em;
+}
+.ctaSeparator span {
+  background: url('http://www.upsidelearning.com/images/bg-area-textured.gif');
+display: inline-block;
+padding: 0 15px;
+}
+.ulBtn {
+background-color: #16A085; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border-bottom: none !important; color: #fff !important; display: inline-block; font-size: 1.3em; line-height: 1.4 !important; padding: 20px 80px; margin-right: 20px; }
+.ulBtn:hover { background-color: #097159 ; }
+
+.ctaSeparator .greyLink {
+margin-left: 0px;
+background-color: transparent;
+border-radius: 5px;
+border: 1px solid #bbb;
+color: #666 !important;
+line-height: 1.4 !important;
+padding: 20px 0px;
+font-size: 1.3em;
+border: 0;*/
+}
+
+</style> 
+<section role="contentinfo" class="position: relative; display: none;">
 
   <div class="darkblack contentinternalpad">
     <div class="row">
       <div class="six columns">
-        <p class="gray">Freelance Digital Designer and Front-end Developer<br>Based in <span class="white">Yorkshire , England. </span></p>
-        <p>Call me on +44 (0)7925 460880 or send a <a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell">tweet</a> or <a href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">email</a>.</p>
+        <p>Freelance Digital Designer and Front-end Developer<br>Based in <span class="white">Yorkshire , England. </span></p>
       </div>
       <div class="six columns text-right end">
-        <p class="gray" style="font-family: 30px;"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
+        <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
+      </div>
+      <div class="twelve columns">
+        <p>Michael Cattell Design Ltd<br>
+        Registered in England & Wales. Company number 8809245</p>
       </div>
     </div>
   </div>
   
 </section>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

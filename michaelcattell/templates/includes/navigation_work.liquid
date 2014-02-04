@@ -1,0 +1,89 @@
+<div id="homeslide"></div>
+
+<div id="header" role="navigation" class="hide-for-small">
+<div class="cbp-af-header" role="navigation">
+  <div class="cbp-af-inner">    
+
+    <div class="row">
+      <a href="index"><div class="logo animated fadeIn" alt=""></div></a>
+      <div id="menu">
+        <li><a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>work</a></li>        
+        <li><a href="about" {% if mixture.url == "about" %}class="active"{% endif %}>about</a></li>
+        <li><a href="blog"{% if mixture.url == "blog" %}class="active"{% endif %}>blog</a></li>
+        <a href="contact"><button type="button" class="buttonhead" {% if mixture.url == "contact" %}class="active"{% endif %}>get in touch</button></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<nav class="top-bar show-for-small" role="navigation">
+  <ul class="title-area">
+    
+    <li class="logoholderformobile"  style="float: left;" >
+       <a class="logoholdermob logoholdmobile"href="index" title="Go to home page" style="margin: 17px 0 0 5px;"><img src="{{"mc_logo_mob.png" | asset_url }}" alt="" /></a>
+    </li>
+    <li class="toggle-topbar"  style="float: right;" >
+    <div style="margin-top: 10px;">
+          <a href="#"><span class="lines" style=" line-height: 3; font-size: 18px;">Menu</span></a>
+    </div>
+      </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left">
+      <li><a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>work</a></li>
+      <li><a href="about" {% if mixture.url == "about" %}class="active"{% endif %}>about</a></li>
+      <li><a href="blog" {% if mixture.url == "blog" %}class="active"{% endif %}>blog</a></li>
+      <li><a href="contact" {% if mixture.url == "contact" %}class="active"{% endif %}>contact</a></li>
+    </ul>
+  </section>
+</nav>
+
+<style type="text/css">
+.cbp-af-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; height: 150px; overflow: hidden; -webkit-transition: height 0.3s; -moz-transition: height 0.3s;  transition: height 0.3s; background: #f6f6f6; opacity:0.6; }
+
+</style>  
+<!-- desktop navigation
+
+<div class="cbp-af-header hide-for-small" role="navigation">
+  <div class="cbp-af-inner">
+    <a class="logoholder animated wobble" href="index" title="Go to home page"><img src="{{"mc_logo.png" | asset_url }}" alt="" /></a>
+     <nav>
+        <a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>WORK</a>
+        <a href="about" {% if mixture.url == "about" %}class="active"{% endif %}>ABOUT</a>
+        <a href="blog"{% if mixture.url == "blog" %}class="active"{% endif %}>JOURNAL</a>
+        <a href="contact" {% if mixture.url == "contact" %}class="active"{% endif %}>CONTACT</a>
+     </nav>
+  </div>
+</div>-->       
+<!-- mobile navigation
+<nav class="top-bar noise show-for-small" role="navigation">
+  <ul class="title-area">
+    
+    <li >
+       <a class="logoholdermob" href="index" title="Go to home page"><img src="{{"mc_logo_mob.png" | asset_url }}" alt="" /></a>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#" style="color: #fff;"><span>menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left">
+      <li><a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>WORK</a></li>
+      <li><a href="about">ABOUT</a></li>
+      <li><a href="blog">JOURNAL</a></li>
+      <li><a href="contact">CONTACT</a></li>
+    </ul>
+  </section>
+</nav>
+
+<!-- End Navigation -->
+
+<!-- Google Show -->
+<div style="display:none" itemscope itemtype="http://schema.org/Person">
+  <span itemprop="name">Michael Cattell</span>
+  <a href="mailto:hello@michaelcattell">Michael Cattell</a>
+  <a href="https://plus.google.com/103060910479200395110?rel=author">Google+</a>
+  <img src="http://michaelcattell.com/assets/images/michaelcattell.jpg" alt="Michael Cattell" itemprop="image"/>
+</div>
+<!-- Google Show End -->    

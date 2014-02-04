@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="Freelance Digital Designer and Front-end Developer with 10 years experience designing and building websites and apps. Available for work on-site or remotely."> 
+  <meta name="author" content="Michael Cattell" />
+  <meta name="Copyright" content="Copyright Michael Cattell 2013. All Rights Reserved." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@mikeycattell" />
+  <meta name="twitter:creator" content="@mikeycattell" />
+  <meta name="twitter:url" content="http://www.michaelcattell.com/" />
+  <meta name="twitter:title" content="Michael Cattell" />
+  <meta name="twitter:description" content="Freelance Digital Designer & Front End Developer with 10 years experience designing and building websites and apps. Available for work on-site or remotely." />
+  <meta name="twitter:image" content="http://michaelcattell.com/assets/images/icons/michaelcattell_logo.png" />  
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/michaelcattell.png">  
+  {{ "foundation.css" | asset_url | stylesheet_tag }}
+  {{ "app.css" | asset_url | stylesheet_tag }}
+  {{ "animate.css" | asset_url | stylesheet_tag }}
+  {{ "mymagic.css" | asset_url | stylesheet_tag }}
+  {{ "normalize.css" | asset_url | stylesheet_tag }}
+  {{ "humans.txt" | asset_url | stylesheet_tag }} 
+  {{ "flexslider.css" | asset_url | stylesheet_tag }}
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="{{ "custom.modernizr.js" | asset_url }}"></script>
+</head>
+<!--<body id="sub">-->
+<body>
+  {% include "navigation_work" %}	
+  {% block content %}{% endblock %}
+  {% include "scripts" %}
+</body>
+</html>

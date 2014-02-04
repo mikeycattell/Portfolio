@@ -1,66 +1,65 @@
 {% block title %}Freelance Digital Designer and Front-end Developer based in Yorkshire, England - Michael Cattell{% endblock %}
 
 {% block content %}
-
-<header class="clearfix">
-  <section id="mast" data-speed="4" data-type="background" >
-    <div class="row">
-      <div class="headerposition">
-      <hgroup class="text-center">
-        <h1 class="mainh11 animated fadeInLeft Big" style=" text-transform: uppercase;">I am a Digital Designer, who makes that web stuff simple</h1>
-        <h3 class="standardh22 animated fadeInDown">Designing websites, apps and emailers since the old days: 2003.<br>Based in Yorkshire, England.</h3>
-
-        <div class="color-7" id="btn-click">
-          <p>
-            <a href="tel:+447925460880" class="whitebuttonmast">Phone</a>
-            <a href="contact" class="whitebuttonmast">Email</a>
-          </p>
-        </div>
-
-        <a class="animated fadeIn whitebuttonhome" href="contact" title="Got work and need a designer/coder? Get in touch!" style="display: none;">Available for work!</a>
-       </hgroup>
+<header>
+   <section id="headtest" data-speed="4" data-type="background" >
+      <div class="headtestpic">
+         <div class="row">
+            <div class="headerposition">
+               <hgroup class="text-center">
+                  <h1 class="maintitle animated fadeInLeft Big proximanovalight" style="">Digital Designer, <span style="color: #B5D2DB;">Coder.</span></h1>
+                  <h3 class="standardh22 animated fadeInDown" style="color: #fff;font-size: 21px;text-align: center;"><b><strong>Creating, translating, building</strong> and unleashing your great ideas to the online world.</h3>
+                  <div class="stuffsidoesholder">
+                     <p>
+                        <img src="{{ "stuffsidoes.png" | asset_url }}" alt="Michael Cattell Home Icon" width="560" height="65" />
+                     </p>
+                  </div>
+               </hgroup>
+            </div>
+         </div>
       </div>
-    </div>
-  </section>
+   </section>
 </header>
-
-<section class="contentinternalpadeven">
-  <div class="row">  
-
-    <div class="twelve columns">
-        <h2 class="introtitle">
-          <span class="titleunderline">
-            Hi there, I am Michael, a <span class="green">freelance digital designer</span> and <span class="green">front-end developer</span> working across <span class="green">Yorkshire, England</span>.
-          </span>
-        </h2> 
-    </div>
-
-    <div class="height40"></div>
-
-    <div class="seven columns" style="padding-top: 5px;">
-          <p class="intro">As you might of guessed by now, I am a freelance interactive digital designer with 10 years experience.</p>
-          <p class="intro">I strive to make all of my designs simple to use, look beautiful and work as they should on every type of device you can dream of.</p>
-          <p class="intro">My experiences range from designing web sites and emails to doing the odd mobile application design.</p>
-          <p class="intro">From start to finish, I design and code your lovely website to your exact wants, including support throughout the whole experience to the final and best hurdle - going live!</p>
-    </div>
-    <div class="five columns animated fadeInRight">
-
-
-      <a class="box" href="about" title="Want to know more about me? Click here"> 
-      <img src="{{"michaelcattell.jpg" | asset_url }}" alt="A handy picture of me, but in gray..'cos well all cool designers do this." />
-      <p class="plus">Designer<br>Front-end Developer<br>Music Lover<br>Dog Owner<br><span class="darktxt"><del>Funny Man</del></span></p></a>
-    </div>
-
-    <div class="height15"></div>
-    <div class="twelve columns">
-      <p class="intro">If you are interested in working together I'm available for freelance projects: onsite or remote, contact details can be found<a href="contact" title="get in touch to discuss your project"> here!</a> </p>
-    </div>
-
-</div>  
-
+<section class="aboutme contentinternalpadeven">
+   <div class="row">
+      <div class="twelve columns">
+         <h2 class="introtitle">
+            <span class="titleunderline">
+            Hello there, I am Michael, a <span class="green">freelance digital designer</span> and <span class="green">front-end developer</span> working across <span class="green">Yorkshire, England</span>.
+            </span>
+         </h2>
+      </div>
+      <div class="height40"></div>
+      <div class="six columns">
+         <p class="intro">A freelance interactive digital designer with 10 years experience, I am ready to help you bring your digital world to life.</p>
+         <p class="intro">Building your digital identity to a dynamic array of users, my designs are developed to work seamlessly across multiple device platforms. </p>
+         <p class="intro">Taking your product from mental conception to reality, I will design and code your website to the needs of your audience. From brainstorming with you over a live or virtual cup of coffee, to phase designs, beta testing and its final release - I will produce what you need. </p>
+      </div>
+      <div class="six columns animated fadeInRight margintop25 hide-for-small">
+         <div class="circleholder_whatido">
+            <div class="circle simple">
+               <span class="label">Simple</span>
+            </div>
+            <div class="circle pixel">
+               <span class="label tech">Pixel</span>
+            </div>
+            <div class="circle perfection">
+               <span class="label">Perfection</span>
+            </div>
+         </div>
+      </div>
+      <div class="six columns animated fadeInRight show-for-small">
+         <img src="{{ "simplepixelperfection.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+      </div>
+      <div class="twelve columns">
+         <p class="intro">Our friendship won’t end either. I provide you with constant support throughout the entire process, including when your site has gone live (or you just can’t figure out what to have for dinner tonight).</p>
+         <div class="availibilitybox">
+            <p class="availabletext"><strong style="display: none;">If you are interested in working together I'm available for freelance projects: onsite or remote, contact details can be found<a href="contact" title="get in touch to discuss your project"> here!</a></strong><strong>Currently, I am available to work - either onsite or remote.</strong><br>Regardless of your budget, requirements, or location, <a href="contact" title="get in touch">get in touch</a> and we’ll see if we can work something out!</p>
+         </div>
+      </div>
+   </div>
 </section>
 
-{% include "otherwork" %}  
-{% include "contactme" %} 
+
 {% include "footer" %} 
 {% endblock %}

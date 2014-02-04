@@ -16,7 +16,7 @@
 
 .cbp-af-header nav { float: right; }
 .cbp-af-header-shrink  nav a { color: #333!important;	font-weight: 300; margin: 0 0 0 20px; font-size: 18px; }
-.cbp-af-header nav a { color: #fff;	font-weight: normal; margin: 0 0 0 20px; font-size: 16px; font-weight: 300; }
+.cbp-af-header nav a { color: #fff;	font-weight: normal; margin: 0 0 0 20px; font-size: 1.2rem; font-weight: 300; }
 .gray nav a { color: #666; }
 .cbp-af-header nav a:hover {color: #1ABC9C; }
 .cbp-af-header-shrink nav a:hover {color: #1ABC9C; }
@@ -24,7 +24,7 @@
 .cbp-af-header h1,
 .cbp-af-header nav a { -webkit-transition: all 0.3s; -moz-transition: all 0.3s;	transition: all 0.3s; }
 
-.cbp-af-header .active {  font-size: 99px; }
+.cbp-af-header .active {  font-size: 1.4rem; }
 
 .cbp-af-header.cbp-af-header-shrink { height: 90px; background: #f6f6f6; opacity:0.6; filter:alpha(opacity=60); /* For IE8 and earlier */
 }
@@ -108,4 +108,4 @@ a.logoholder:hover { padding: 0px 0 0 5px; }
 .top-bar ul > li.toggle-topbar a {border: 0px ; }
 .top-bar.expanded ul li.toggle-topbar a { border: 0px ; margin: 5px 0; }
 
-.cbp-af-header h1, .cbp-af-header nav a.active { font-size: 18px; font-weight: bold; }
+.cbp-af-header h1, .cbp-af-header nav a.active { font-weight: bold; }
