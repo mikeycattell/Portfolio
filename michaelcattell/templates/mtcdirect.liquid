@@ -1,8 +1,8 @@
 {% layout "work" %}
 {% block content %}
 <header class="clearfix">
-  <section class="fixermargin">
-    {{ "mtcdirect_opening.jpg" | asset_url | image_tag }}
+  <section>
+    <img src="{{ "mtcdirect_opening.jpg" | asset_url }}" alt="" /> 
   </section>
 </header>
 
@@ -25,8 +25,8 @@
         <h3 class="standardh3">My Role</h3>
         <p class="intro">I had the full role of being the designer and the front-end developer, which can never be bad!</p>
       </div>
-      <div class="six columns fadeInImg animated">
-         <div class="fadeInImg">{{ "mtcdirect_role.png" | asset_url | image_tag }}</div>
+      <div class="six columns">
+         <img src="{{ "mtcdirect_role.png" | asset_url }}" alt="" id="object"/>
       </div>      
     </div>
   </div>
@@ -44,8 +44,8 @@
 </section>
 
 <section class="contentnopad">
-  <div class="row fadeInImg animated">  
-    <div class="fadeInImg">{{ "mtcdirect_layout.jpg" | asset_url | image_tag }}</div>
+  <div class="row">  
+    <img src="{{ "mtcdirect_layout.jpg" | asset_url }}" alt="" id="object1"/>
   </div>
 </section>
 
@@ -63,4 +63,27 @@
 
 {% include "otherwork" %} 
 {% include "footer" %} 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script> 
 {% endblock %}

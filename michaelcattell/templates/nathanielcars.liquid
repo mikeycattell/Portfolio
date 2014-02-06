@@ -1,8 +1,8 @@
 {% layout "work" %}
 {% block content %}
 <header class="clearfix">
-  <section class="fixermargin">
-    <img src="{{ "nathaniel_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
+  <section>
+    <img src="{{ "nathaniel_opening.jpg" | asset_url }}" alt="" />  
   </section>
 </header>
 
@@ -26,16 +26,16 @@
         <h3 class="standardh3">The Layout</h3>
         <p class="intro">As previously stated, the client wanted something that stood out from the others, I worked hard to make it usable, attractive and not so pushy as most car dealers.</p>        
       </div>
-      <div class="six columns fadeInImg animated">
-        <img src="{{ "nathaniel_role.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
+      <div class="six columns">
+        <img src="{{ "nathaniel_role.jpg" | asset_url }}" alt="" id="object"/>  
       </div>          
     </div>
   </div>
 </section>
 
 <section class="contentinternalpadeven">
-    <div class="row width1100 fadeInImg animated"> 
-      <img src="{{ "nathaniel_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />   
+    <div class="row width1100"> 
+      <img src="{{ "nathaniel_layout.jpg" | asset_url }}" alt="" id="object1"/>   
     </div>
 </section>
 
@@ -54,4 +54,27 @@
 
 {% include "otherwork" %} 
 {% include "footer" %} 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script> 
 {% endblock %}

@@ -1,7 +1,7 @@
 {% layout "work" %}
 {% block content %}
 <header class="clearfix">
-  <section class="fixermargin">
+  <section>
     <img src="{{ "_argos_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />  
   </section>
 </header>
@@ -75,5 +75,37 @@
 </section>
 
 {% include "otherwork" %} 
-{% include "footer" %} 
+{% include "footer" %}
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object2').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script> 
 {% endblock %}

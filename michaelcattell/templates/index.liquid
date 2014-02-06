@@ -35,15 +35,15 @@
          <p class="intro">Building your digital identity to a dynamic array of users, my designs are developed to work seamlessly across multiple device platforms. </p>
          <p class="intro">Taking your product from mental conception to reality, I will design and code your website to the needs of your audience. From brainstorming with you over a live or virtual cup of coffee, to phase designs, beta testing and its final release - I will produce what you need. </p>
       </div>
-      <div class="six columns animated fadeInRight margintop25 hide-for-small">
+      <div class="six columns margintop25 hide-for-small">
          <div class="circleholder_whatido">
-            <div class="circle simple">
+            <div class="circle simple" id="object2">
                <span class="label">Simple</span>
             </div>
-            <div class="circle pixel">
+            <div class="circle pixel" id="object1">
                <span class="label tech">Pixel</span>
             </div>
-            <div class="circle perfection">
+            <div class="circle perfection" id="object">
                <span class="label">Perfection</span>
             </div>
          </div>
@@ -60,6 +60,38 @@
    </div>
 </section>
 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object2').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script>
 
 {% include "footer" %} 
 {% endblock %}

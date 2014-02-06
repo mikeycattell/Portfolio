@@ -17,7 +17,15 @@ CONTENTS:
 =Important fix
 =media changes and stuff
 ---------------------------------*/
+#object { visibility: hidden; }
+#object1 { visibility: hidden; }
+#object2 { visibility: hidden; }
+#object3 { visibility: hidden; }
+#object4 { visibility: hidden; }
 
+.delay-5 { -webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; -ms-animation-delay: 0.8s; -o-animation-delay: 0.8s; animation-delay: 0.8s; }
+.delay-6 { -webkit-animation-delay: 1.2s; -moz-animation-delay: 1.2s; -ms-animation-delay: 1.2s; -o-animation-delay: 1.2s; animation-delay: 1.2s; }
+.delay-7 { -webkit-animation-delay: 1.8; -moz-animation-delay: 1.8s; -ms-animation-delay: 1.8s; -o-animation-delay: 1.8s; animation-delay: 1.8s; }
 
 body { background: #fff; /*font-family: 'Roboto', sans-serif;*/ font-family: proximanova-reg; color: #9BA6AD; font-size: 20px; font-weight: 300; }
 	 #sub { background: #F5F6F6; }
@@ -64,6 +72,7 @@ ul.discs20 li { font-size: 20px; list-style: disc; }
 .graypixelate { background-image: url('http://www.upsidelearning.com/images/bg-area-textured.gif'); }
 
 .darkblack { background: #2c3133;}
+.darkblack a { color: #fff; }
 
 .content { background-color:#fefefe; padding-top:2.5em; padding-bottom:0; position:relative; }
 .contentnobg {  padding-top:2.5em; padding-bottom:0; position:relative; }
@@ -133,7 +142,7 @@ a:hover .logo { background: url("../../assets/images/icons/michaelcattell_logo_h
 #menu li a.active {  border-bottom: 1px dashed #fff; color: #4280A1; }
 
 #menu button { font-size: 18px; margin-top: -45px; margin-left: 40px; display: inline-block; }
-button.buttonhead { background: 0; font-size: 18px; font-weight: 700; padding: 22px 26px 14px 26px; color: #B5D2DB; border: 2px solid #B5D2DB; border-radius: 7px; transition: all .2s ease-in-out; box-shadow: none; }
+button.buttonhead { background: 0; font-size: 18px; font-weight: 700; padding: 22px 26px 14px 26px; color: #4280a1; border: 2px solid #4280a1; border-radius: 7px; transition: all .2s ease-in-out; box-shadow: none; }
 button.buttonhead:hover { background: #f2f2f2; color: #333; border: 2px solid #fff; transition: all .2s ease-in-out; }
 
 .cbp-af-header.cbp-af-header-shrink .logo { background: url("../../assets/images/icons/michaelcattell_logo_shrink.png")no-repeat; transition: all .2s ease-in-out; top: -3px; }
@@ -425,7 +434,7 @@ span.itleunderline { border-bottom: 1px solid #dedede; padding-bottom: 3px; }
 
 /**************** =animated fades etc - slight customisation ********************/
 
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s; visibility: visible !important;		}
 
 
 /* this bit makes my images fade in */
@@ -454,6 +463,7 @@ span.itleunderline { border-bottom: 1px solid #dedede; padding-bottom: 3px; }
 	-moz-animation-name: fadeIn;
 	-o-animation-name: fadeIn;
 	animation-name: fadeIn;
+	visibility: visible !important;		
 }
 
 .animate {
@@ -465,6 +475,7 @@ span.itleunderline { border-bottom: 1px solid #dedede; padding-bottom: 3px; }
 	   -moz-animation-fill-mode: both;
 	     -o-animation-fill-mode: both;
 	        animation-fill-mode: both;
+	        visibility: visible !important;	
 }
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
@@ -510,17 +521,7 @@ span.itleunderline { border-bottom: 1px solid #dedede; padding-bottom: 3px; }
 /******* hides feedburner footer ********/
 #creditfooter { display: none;}
 
-/*  Contact Section 
-.contact-details ul { margin: 0; padding: 0; list-style: none; }
-	.contact-details ul li { margin: 0 0 20px; line-height: 28px;  padding: 0; }
-.contact-form { margin-bottom: 0; }
-.contact-form p { margin-bottom: 1px; }
-.contact-form input,
-.contact-form textarea { border: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background-color: #f2f2f2; color: #666; font-size: 16px; height: auto; padding: 15px; margin: 0; resize: none; }
-.contact-form input { -moz-box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; width: 100%; }
-.contact-form textarea { width: 100%; resize: vertical; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #D6D6D6; margin: 15px 0; }
-.contact-form .submit { background: #E0E0E0; color: #fff; cursor: pointer; display: inline-block; font-size: 18px; font-weight: 500; padding: 16px 40px; text-align: center; vertical-align: middle; width: auto; margin-top: 10px;-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s; -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s; -o-transition: background 0.1s linear 0s, color 0.1s linear 0s; transition: background 0.1s linear 0s, color 0.1s linear 0s; }
-.contact-form .submit:hover { background: #16A085; color: #FFFFFF; } */
+/*  Contact Section */
 
 input[type=email], input[type=text] 
 { background: #f2f2f2; color: #767676; height: 50px; box-sizing: border-box; display: inline-block; font-size: 18px; padding: 6px 10px 0 10px; width: 49%; outline: none; margin-top: 15px;  -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;}
@@ -530,17 +531,6 @@ input[type=text] { margin-right: 15px; }
 textarea { background: #f2f2f2; color: #767676; height: 200px; box-sizing: border-box; display: inline-block; font-size: 18px; padding: 12px 10px 0; margin-top: 15px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 
 
-/* carousel fixes ORBIT 
-
-a.orbit-prev, a.orbit-next, .orbit-timer, .orbit-slide-number { display: none;}
-.orbit-container { background: transparent;}
-
-.orbit-progress { -webkit-transition: width 3s linear; }
-.flexslider .slides li:hover img { filter: none; opacity: 0.4!important; transform: scale(1.02); transition: all 0.15s ease-in 0s; }
-.orbit-bullets { margin: 0 auto 30px; overflow: hidden; position: relative; top: -55px; z-index: 10; left: 50%; }
-.orbit-bullets li { background: 0; border: 1px solid #ffffff; cursor: pointer;}
-.orbit-bullets li.active { background: #fff; border: 1px solid #ffffff; } */
-/* interests page unused */
 .interestbanner { background-color: #cecec1; }
 
 /******** =footer(contact)****/
@@ -569,7 +559,7 @@ display: block; color: #ffffff;  width: 82px; height: 82px; border-radius: 82px;
 	.block-grid.three-up > li:nth-child(3n+1) { clear: none; }
 
 	h1.maintitle { font-size: 72px; line-height: 76px; margin-bottom: 40px; }
-	h1.mediummaintitle { font-size: 38px; line-height: 46px; }
+	h1.mediummaintitle { font-size: 38px; line-height: 55px; }
 	h2.introtitle { font-size: 38px; line-height: 46px; }
 	.bordertopdashed_test { border-top: 1px dashed #d6d6d6; }
 
@@ -605,7 +595,7 @@ display: block; color: #ffffff;  width: 82px; height: 82px; border-radius: 82px;
 	.headtestpic { height: 650px;}
 	#menu li { margin: 0 0 0 0px;}
 	h1.maintitle { font-size: 66px; line-height: 70px; }
-	h1.mediummaintitle { font-size: 32px; line-height: 40px; }
+	h1.mediummaintitle { font-size: 32px; line-height: 48px; }
 	h2.introtitle { font-size: 32px; line-height: 40px; }
 	.stuffsidoesholder { margin-top: 60px;}
 	.circleholder_whatido { height: 520px; }
@@ -622,21 +612,8 @@ display: block; color: #ffffff;  width: 82px; height: 82px; border-radius: 82px;
 	blockquote {   font-size: 18px!important;  }
 	.headerposition hgroup {  padding: 50px 20px;}
 	.headerposition { padding: 2em 0 2em; }
+
+	.delay-5 { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; -ms-animation-delay: 0.2s; -o-animation-delay: 0.2s; animation-delay: 0.2s; }
+	.delay-6 { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; -ms-animation-delay: 0.2s; -o-animation-delay: 0.2s; animation-delay: 0.2s; }
+	.delay-7 { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; -ms-animation-delay: 0.2s; -o-animation-delay: 0.2s; animation-delay: 0.2s; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

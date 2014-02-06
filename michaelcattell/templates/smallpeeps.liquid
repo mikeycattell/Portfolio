@@ -1,7 +1,7 @@
 {% layout "work" %}
 {% block content %}
 <header class="clearfix">
-  <section class="fixermargin">
+  <section>
       <img src="{{"smallpeeps_opening.png" | asset_url }}" alt="Michael Cattell Home Icon" />
   </section>
 </header>
@@ -25,8 +25,8 @@
         <h3 class="standardh3">My Role</h3>
         <p class="intro">Design logo and personalize ‘off-the-shelf’ bought shop (for e-commerce). Also assist in teaching how to use backend of shop and advise on SEO techniques.</p>
       </div>
-      <div class="six columns fadeInImg animated">
-           <img src="{{"smallpeeps_role.png" | asset_url }}" alt="Michael Cattell Home Icon" />
+      <div class="six columns">
+           <img src="{{"smallpeeps_role.png" | asset_url }}" alt="Michael Cattell Home Icon" id="object" />
       </div>      
     </div>
   </div>
@@ -46,7 +46,7 @@
 
 <section class="contentnopad fadeInImg animated">
     <div class="row width1100">  
-      <img src="{{"smallpeeps_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+      <img src="{{"smallpeeps_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" id="object1"/>
     </div>
 </section>
 
@@ -54,7 +54,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns fadeInImg animated">
-        <img src="{{"smallpeeps_birds.jpg" | asset_url }}" alt="" />
+        <img src="{{"smallpeeps_birds.jpg" | asset_url }}" alt="" id="object2"/>
       </div>      
       <div class="six columns">
         <h3 class="standardh3">Is it a bird..well no, it’s a logo</h3>
@@ -77,5 +77,37 @@
 </section>
 
 {% include "otherwork" %} 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object2').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script>
 {% include "footer" %} 
 {% endblock %}

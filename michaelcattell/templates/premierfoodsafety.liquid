@@ -2,7 +2,7 @@
 {% block content %}
 
 <header class="clearfix">
-  <section class="fixermargin" >
+  <section>
     <img src="{{ "premierfoodsafety_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
   </section>
 </header>
@@ -20,8 +20,8 @@
 </section>
 
 <section class="contentnopad">
-  <div class="row fadeInImg animated">
-    <img src="{{ "premierfoodsafety_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+  <div class="row">
+    <img src="{{ "premierfoodsafety_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" id="object"/>
   </div>
 </section>
  
@@ -32,8 +32,8 @@
         <h3 class="standardh3">My Role</h3>
         <p class="intro">Lead Designer, showcasing and explaining modern techniques to the CEO of the company, ensuring a new brand direction to be kept consistent. Branding was reinvented and controlled in print, online and internally. </p>
       </div>
-      <div class="six columns fadeInImg animated">
-        <img src="{{ "premierfoodsafety_myrole.png" | asset_url }}" alt="Michael Cattell Home Icon" />      
+      <div class="six columns">
+        <img src="{{ "premierfoodsafety_myrole.png" | asset_url }}" alt="Michael Cattell Home Icon" id="object1"/>      
       </div>      
     </div>
   </div>
@@ -54,7 +54,7 @@
   <div class="contentinternalpadeven">
     <div class="row">
       <div class="six columns fadeInImg animated">
-          <img src="{{ "premierfoodsafety_print.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />      
+          <img src="{{ "premierfoodsafety_print.jpg" | asset_url }}" alt="Michael Cattell Home Icon" id="object2"/>      
       </div>         
       <div class="six columns">
         <h3 class="standardh3">Who says print is dead?</h3>
@@ -78,4 +78,36 @@
 
 {% include "otherwork" %} 
 {% include "footer" %} 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object2').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+        
+    }); 
+</script> 
 {% endblock %}

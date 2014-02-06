@@ -18,18 +18,20 @@
   <link rel="shortcut icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/michaelcattell.png">  
   <link href="assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>  
+  <link href="assets/css/animations.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/mymagic.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="humans.txt" rel="stylesheet" type="text/css" media="all"/> 
   <link href="assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="assets/js/vendor/custom.modernizr.min.js"></script>
 </head>
-<!--<body id="sub">-->
-<body>
+    <!--
+      - If you’re looking in here then you’re probably exactly the type of
+      - person I would love to work with! Drop me a line: hello@michaelcattell.com
+      -->
+  <body>
   <div id="homeslide"></div>
 
 <div id="header" role="navigation" class="hide-for-small"style="position: fixed;">
@@ -174,7 +176,7 @@ mobile navigation
     </div>
     <div class="height15"></div>
     <div class="twelve columns">
-          <p class="intro"><strong>I enjoy pixel-perfection (who doesn't I hear you ask)</strong>. I'm also a big fan of football (or Soccer as my American friends like me to call it), craft beers, walking around taking pictures, running (I've been known to murder the odd 10k), donuts, my wife, Vimto, 2001 Space Oddysey, the <a href="http://www.pomsnotbombs.com" title="click here to see my little Pomeranian Ralph">pooch</a>, Disney and listening to a lot of music.</p>  
+          <p class="intro"><strong>I enjoy pixel-perfection (who doesn't I hear you ask)</strong>. I'm also a big fan of football (or Soccer as my American friends like me to call it), craft beers, walking around taking pictures, running (I've been known to murder the odd 10k), donuts, my wife, Vimto, 2001 Space Oddysey, the <a href="http://www.pomsnotbombs.co.uk" title="click here to see my little Pomeranian Ralph">pooch</a>, Disney and listening to a lot of music.</p>  
     </div>
 </div>
 </section>
@@ -199,18 +201,18 @@ mobile navigation
         <!-- Thumbnails start -->
        <ul class="block-grid three-up showcase-items">              
           <li>
-            <a href="michaelandemmasayido.html"><img src="assets/images/interests/picaweek_side.jpg" alt="Michael Cattell Home Icon" />
-              </a> 
+            <img src="assets/images/interests/picaweek_side.jpg" alt="Michael Cattell Home Icon"  id="testy" />
+              
               <h4 class="pastwork">PicaWeek</h4>
               <p>Pic-a-week is a place where I am going to dump my pictures, one collection of snaps a week, any topic and any time.<br>Loooooooose schedule!</p>
-              <p>› <a href="http://creativemornings.com/cities/chi" target="new">PicaWeek</a></p>
+              <p>› <a href="" target="new">PicaWeek</a></p>
           </li>
           <li>
-            <a href="http://www.pomsnotbombs.com" title="" target="new"><img src="assets/images/interests/pomsnotbombs_side.jpg" alt="Michael Cattell Home Icon" />
+            <a href="http://www.pomsnotbombs.couk" title="" target="new"><img src="assets/images/interests/pomsnotbombs_side.jpg" alt="Michael Cattell Home Icon" />
               </a> 
               <h4 class="pastwork">Poms not Bombs</h4>
               <p>When you have a dog, and you can build websites - it just makes sense.<br><strong>Warning - cuteness alarm.</strong></p>
-              <p>› <a href="http://www.pomsnotbombs.com" title="" target="new">PomsNotBombs</a></p>
+              <p>› <a href="http://www.pomsnotbombs.couk" title="" target="new">PomsNotBombs</a></p>
           </li>
           <li>
             <img src="assets/images/interests/comingsoon_side.jpg" alt="Michael Cattell Home Icon" />
@@ -222,6 +224,19 @@ mobile navigation
       </div>
     </div>
   </section>
+
+  <section>
+
+ 
+
+<div id="object" style="display: none;">
+        <img src="http://www.justinaguilar.com/animations/images/pin.png" class="pin" height="311" width="212" />
+      </div>
+
+  
+
+  </section>
+
 
 <section class="testimonialsecond">
   
@@ -235,7 +250,18 @@ mobile navigation
   </div>
   
 </section>
+<script>
+  $(window).scroll(function() {
+    $('#object').each(function(){
+    var imagePos = $(this).offset().top;
 
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("fadeIn");
+      }
+    });
+  });
+</script>
 <section role="contentinfo" class="position: relative; display: none;">
 
   <div class="darkblack contentinternalpad">
@@ -245,6 +271,7 @@ mobile navigation
       </div>
       <div class="six columns text-right end">
         <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
+        <p><a href="sitemap.html">Sitemap</a>&nbsp;&#124;&nbsp;<a href="">Work</a>&nbsp;&#124;&nbsp;<a href="">Contact me</a></p>
       </div>
       <div class="twelve columns">
         <p>Michael Cattell Design Ltd<br>
@@ -268,7 +295,6 @@ mobile navigation
   })();
 
 </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
  
 

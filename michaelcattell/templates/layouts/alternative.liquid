@@ -18,18 +18,21 @@
   <link rel="shortcut icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/michaelcattell.png">  
   {{ "foundation.css" | asset_url | stylesheet_tag }}
-  {{ "app.css" | asset_url | stylesheet_tag }}
   {{ "animate.css" | asset_url | stylesheet_tag }}
+  {{ "app.css" | asset_url | stylesheet_tag }}  
+  {{ "animate.css" | asset_url | stylesheet_tag }} 
   {{ "mymagic.css" | asset_url | stylesheet_tag }}
   {{ "normalize.css" | asset_url | stylesheet_tag }}
   {{ "humans.txt" | asset_url | stylesheet_tag }} 
   {{ "flexslider.css" | asset_url | stylesheet_tag }}
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="{{ "custom.modernizr.js" | asset_url }}"></script>
 </head>
-<!--<body id="sub">-->
-<body>
+    <!--
+      - If you’re looking in here then you’re probably exactly the type of
+      - person I would love to work with! Drop me a line: hello@michaelcattell.com
+      -->
+  <body>
   {% include "navigation_sub" %}	
   {% block content %}{% endblock %}
   {% include "scripts" %}

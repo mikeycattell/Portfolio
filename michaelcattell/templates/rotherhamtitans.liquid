@@ -1,7 +1,7 @@
 {% layout "work" %}
 {% block content %}
 <header class="clearfix">
-  <section class="fixermargin">
+  <section>
     <img src="{{ "titanrugby_opening.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
   </section>
 </header>
@@ -16,11 +16,25 @@
 </section>
  
 <section class="contentinternalpadeven">
-    <div class="row width1100 fadeInImg animated">  
-      <img src="{{ "rotherhamtitans_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+    <div class="row width1100">  
+      <img src="{{ "rotherhamtitans_layout.jpg" | asset_url }}" alt="Michael Cattell Home Icon" id="object"/>
     </div>
 </section>
 
 {% include "otherwork" %} 
 {% include "footer" %} 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+        
+    }); 
+</script> 
 {% endblock %}

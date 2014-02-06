@@ -53,7 +53,7 @@
     </div>
     <div class="height15"></div>
     <div class="twelve columns">
-          <p class="intro"><strong>I enjoy pixel-perfection (who doesn't I hear you ask)</strong>. I'm also a big fan of football (or Soccer as my American friends like me to call it), craft beers, walking around taking pictures, running (I've been known to murder the odd 10k), donuts, my wife, Vimto, 2001 Space Oddysey, the <a href="http://www.pomsnotbombs.com" title="click here to see my little Pomeranian Ralph">pooch</a>, Disney and listening to a lot of music.</p>  
+          <p class="intro"><strong>I enjoy pixel-perfection (who doesn't I hear you ask)</strong>. I'm also a big fan of football (or Soccer as my American friends like me to call it), craft beers, walking around taking pictures, running (I've been known to murder the odd 10k), donuts, my wife, Vimto, 2001 Space Oddysey, the <a href="http://www.pomsnotbombs.co.uk" title="click here to see my little Pomeranian Ralph">pooch</a>, Disney and listening to a lot of music.</p>  
     </div>
 </div>
 </section>
@@ -61,7 +61,7 @@
 <section class="testimonials">
   
   <div class="row">
-    <div class="twelve columns">
+    <div class="twelve columns" id="object">
         <blockquote>"Having a quick and accurate designer on board is exactly what I required for the job in hand, and he delivered above and beyond. He also coded the site, saving me time and effort. Would recommend Mikey to anyone looking for the complete package!"</blockquote>
         <cite class="testimonial__cite white"><strong>Guillermo Gette</strong> - Software Engineer</cite>
     </div>
@@ -78,21 +78,21 @@
         <!-- Thumbnails start -->
        <ul class="block-grid three-up showcase-items">              
           <li>
-            <a href="michaelandemmasayido"><img src="{{ "picaweek_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
-              </a> 
+            <img src="{{ "picaweek_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon"  id="object2" />
+              
               <h4 class="pastwork">PicaWeek</h4>
               <p>Pic-a-week is a place where I am going to dump my pictures, one collection of snaps a week, any topic and any time.<br>Loooooooose schedule!</p>
-              <p>› <a href="http://creativemornings.com/cities/chi" target="new">PicaWeek</a></p>
+              <p>› <a href="" target="new">PicaWeek</a></p>
           </li>
           <li>
-            <a href="http://www.pomsnotbombs.com" title="" target="new"><img src="{{ "pomsnotbombs_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+            <a href="http://www.pomsnotbombs.couk" title="" target="new"><img src="{{ "pomsnotbombs_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon" class="delay-5" id="object3" />
               </a> 
               <h4 class="pastwork">Poms not Bombs</h4>
               <p>When you have a dog, and you can build websites - it just makes sense.<br><strong>Warning - cuteness alarm.</strong></p>
-              <p>› <a href="http://www.pomsnotbombs.com" title="" target="new">PomsNotBombs</a></p>
+              <p>› <a href="http://www.pomsnotbombs.couk" title="" target="new">PomsNotBombs</a></p>
           </li>
           <li>
-            <img src="{{ "comingsoon_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon" />
+            <img src="{{ "comingsoon_side.jpg" | asset_url }}" alt="Michael Cattell Home Icon" class="delay-6" id="object4" />
               
               <h4 class="pastwork">Coming Soon</h4>
               <p>I'm working on it!</p>
@@ -105,7 +105,7 @@
 <section class="testimonialsecond">
   
   <div class="row">
-    <div class="twelve columns">
+    <div class="twelve columns" id="object1">
         <blockquote>"Michael is a talented and expert designer who has the skills and knowledge to not only produce wonderful works but also recommend better solutions to enhance the project if needed.
           Always generous with his time, talent, and humor."</blockquote>
         <cite class="testimonial__cite"><strong>Christine Le</strong> - Project Manager of Marketing Campaigns</cite>
@@ -115,6 +115,55 @@
   
 </section>
 
+<script>
+$(window).scroll(function() {
+
+      $('#object').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });   
+
+      $('#object1').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object2').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+      $('#object3').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });
+
+      $('#object4').each(function(){
+      var imagePos = $(this).offset().top;
+      
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+          $(this).addClass("animate fadeInImg start");
+        }
+      });      
+        
+    }); 
+</script>
 {% include "footer" %} 
 
 {% endblock %}
