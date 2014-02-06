@@ -1,5 +1,4 @@
 <img src="http://michaelcattell.com/demo/assets/images/icons/michaelcattell_logo_hover.png">
-
 <h1>MichaelCattell.com</h1>
 <h2>Table of Contents</h2>
 <ul>
