@@ -18,8 +18,9 @@
   <link rel="shortcut icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/michaelcattell.png">  
   <link href="assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>  
-  <link href="assets/css/animations.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/> 
   <link href="assets/css/mymagic.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="assets/css/normalize.min.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="humans.txt" rel="stylesheet" type="text/css" media="all"/> 
@@ -28,14 +29,14 @@
   <script src="assets/js/vendor/custom.modernizr.min.js"></script>
 </head>
     <!--
-      - If you’re looking in here then you’re probably exactly the type of
+      - If you’re the type of person looking in here then you are most certainly the type of
       - person I would love to work with! Drop me a line: hello@michaelcattell.com
       -->
   <body>
   <div id="homeslide"></div>
 
-<div id="header" role="navigation" class="hide-for-small"style="position: fixed;">
-<div class="cbp-af-header" role="navigation">
+<div id="header" role="navigation" class="hide-for-small">
+<div class="cbp-af-header backgroundaltmenu" role="navigation">
   <div class="cbp-af-inner">    
 
     <div class="row">
@@ -43,8 +44,7 @@
       <div id="menu">
         <li><a href="work.html" >work</a></li>        
         <li><a href="about.html" >about</a></li>
-        <li><a href="blog">blog</a></li>
-        <button type="button" class="buttonhead" href="contact.html" class="active">get in touch</button>
+        <a href="contact.html"><button type="button" class="buttonhead" class="active">get in touch</button></a>
       </div>
     </div>
   </div>
@@ -54,12 +54,12 @@
 <nav class="top-bar show-for-small" role="navigation">
   <ul class="title-area">
     
-    <li class="logoholderformobile"  style="float: left;" >
-       <a class="logoholdermob logoholdmobile"href="index.html" title="Go to home page" style="margin: 17px 0 0 5px;"><img src="assets/images/icons/mc_logo_mob.png" alt="" /></a>
+    <li class="logoholderformobile logoholderfixleft">
+       <a class="logoholdermob logoholdmobile"href="index.html" title="Go to home page"><img src="assets/images/icons/mc_logo_mob.png" alt="" /></a>
     </li>
-    <li class="toggle-topbar"  style="float: right;" >
-    <div style="margin-top: 10px;">
-          <a href="#"><span class="lines" style=" line-height: 3; font-size: 18px;">Menu</span></a>
+    <li class="toggle-topbar">
+    <div class="margintop10">
+          <a href="#"><span class="lines">Menu</span></a>
     </div>
       </li>
   </ul>
@@ -68,52 +68,12 @@
     <ul class="left">
       <li><a href="work.html" >work</a></li>
       <li><a href="about.html" >about</a></li>
-      <li><a href="blog" >blog</a></li>
       <li><a href="contact.html" class="active">contact</a></li>
     </ul>
   </section>
 </nav>
 
-<style type="text/css">
-.cbp-af-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; height: 150px; overflow: hidden; -webkit-transition: height 0.3s; -moz-transition: height 0.3s;  transition: height 0.3s; background: #2c3133;}
-
-
-</style>  
-<!-- desktop navigation 
-
-<div class="cbp-af-header gray hide-for-small" role="navigation">
-  <div class="cbp-af-inner">
-    <a class="logoholder animated wobble" href="index.html" title="Go to home page"><img src="assets/images/icons/mc_logo_alt.png" alt="" /></a>     
-     <nav>
-        <a href="work.html" >WORK</a>
-        <a href="about.html" >ABOUT</a>
-        <a href="blog">JOURNAL</a>
-        <a href="contact.html" class="active">CONTACT</a>
-     </nav>
-  </div>
-</div>      
-             
-mobile navigation 
-<nav class="top-bar noise show-for-small" role="navigation">
-  <ul class="title-area">
-    
-    <li style="padding: 5px 0 0;">
-       <a class="logoholdermob" href="index.html" title="Go to home page"><img src="assets/images/icons/mc_logo_mob.png" alt="" /></a>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#" style="color: #fff;"><span>menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <ul class="left">
-      <li><a href="work.html" >WORK</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="blog">JOURNAL</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </section>
-</nav>
-
- End Navigation -->
+<!-- End Navigation -->
 
 <!-- Google Show -->
 <div style="display:none" itemscope itemtype="http://schema.org/Person">
@@ -130,22 +90,8 @@ mobile navigation
     <div class="row">
       <div class="twelve columns">
         <h1 class="mediummaintitle white">I am currently: <span class="green">Available</span>.</h1>
-        <p class="intro">If you have a project that you think would be great, magical and just downright brilliant, or even if it's not (I'm yet to find anyone with a bad idea), I’d love to hear from you, all you need to do is fill in this handy form below!</p>
+        <p class="intro">I would love to discuss your project with you, no matter its state of existence, concept, or budget - give me a holler below!</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="" style="display: none;">
-  <div class="contentinternalpadeven">
-    <div class="twelve columns">
-      <!-- Google Map -->
-      <div id="map-area">
-        <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
-      </div>
-      <!-- End Google Map -->
-      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=2&amp;oq=doncaster&amp;sll=53.49785,-1.851196&amp;sspn=0.851206,3.4552&amp;mra=mr&amp;ie=UTF8&amp;t=m&amp;ll=53.548467,-1.128845&amp;spn=0.571153,1.167297&amp;z=9&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=2&amp;oq=doncaster&amp;sll=53.49785,-1.851196&amp;sspn=0.851206,3.4552&amp;mra=mr&amp;ie=UTF8&amp;t=m&amp;ll=53.548467,-1.128845&amp;spn=0.571153,1.167297&amp;z=9" style="color:#0000FF;text-align:left">View Larger Map</a></small>  
-
     </div>
   </div>
 </section>
@@ -162,7 +108,7 @@ mobile navigation
     </div>
  </section>
 
-<section id="contact_form" class="contentinternalpadeven">
+<section id="contact_form" class="contentinternalpad">
    
       <form action="contact.php" method="post">
          <div class="row">
@@ -205,34 +151,46 @@ mobile navigation
       </form>
 
 </section>
-
+<section class="hide-for-small">
+    <div class="twelve columns" style="padding-left: 0; padding-right: 0;">
+      <!-- Google Map -->
+      <div id="map-area">
+        <div class="map" id="map_1" data-mapLat="51.911475" data-mapLon="-1.461815" data-mapZoom="11" data-mapTitle="Your Title"></div>
+      </div>
+      <!-- End Google Map -->
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=2&amp;oq=doncaster&amp;sll=53.49785,-1.851196&amp;sspn=0.851206,3.4552&amp;mra=mr&amp;ie=UTF8&amp;t=m&amp;ll=53.548467,-1.128845&amp;spn=0.571153,1.167297&amp;z=9&amp;output=embed"></iframe>
+    </div>
+</section>
+<div class="clear"></div>
 <section class="getintouch">
   <div class="row">
     <h3 class="substyle white">Say Hello</h3>
     <p class="intro white">I'd love to hear from you, if you have any questions, or whether you just want a chat - either follow me on twitter, have a look on LinkedIn or simply send me an email.</p>
     <ul>
       <li><a href="http://twitter.com/mikeycattell" title="Follow us on Twitter" target="_blank"><img src="assets/images/icons/twitter_icon_contact.png" alt="Michael Cattell Home Icon" /></a></li>
-      <li><a href="mailto:hello@michaelcattell.com?subject=Enquiry%20from%MichaelCattell.com%20" title="Send me an email - hello@michaelcattell.com"><img src="assets/images/icons/linkedin_icon_contact.png" alt="Michael Cattell Home Icon" /></a></li>
-      <li class="last end"><a href="#" title="Download our Project Planner"><img src="assets/images/icons/mail_icon_contact.png" alt="Michael Cattell Home Icon" /></a></li>
+      <li><a href="http://uk.linkedin.com/pub/michael-cattell/18/919/6a" title="check me out on LinkedIn"><img src="assets/images/icons/linkedin_icon_contact.png" alt="Michael Cattell Home Icon" /></a></li>
+      <li class="last end"><a href="mailto:hello@michaelcattell.com?subject=Enquiry%20from%MichaelCattell.com%20" title="Send me an email - hello@michaelcattell.com"><img src="assets/images/icons/mail_icon_contact.png" alt="Michael Cattell Home Icon" /></a></li>
     </ul>
   </div>
 </section>
 
-
-<section role="contentinfo" class="position: relative; display: none;">
+<section role="contentinfo" class="position: relative;">
 
   <div class="darkblack contentinternalpad">
     <div class="row">
       <div class="six columns">
         <p>Freelance Digital Designer and Front-end Developer<br>Based in <span class="white">Yorkshire , England. </span></p>
+        <p class="smallpara">Michael Cattell Design Ltd<br>
+        Registered in England & Wales. Company number 8809245</p>
       </div>
-      <div class="six columns text-right end">
-        <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
-        <p><a href="sitemap.html">Sitemap</a>&nbsp;&#124;&nbsp;<a href="">Work</a>&nbsp;&#124;&nbsp;<a href="">Contact me</a></p>
+      <div class="six columns right-align end">
+        <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact.html" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a><br>
+        Or call me on +44 (0)7925 460880<br>
+        <span class="smallpara"><a href="sitemap.html">sitemap</a>&nbsp;&#124;&nbsp;<a href="work.html">work</a>&nbsp;&#124;&nbsp;<a href="contact.html">contact me</a></span></p>
+
       </div>
       <div class="twelve columns">
-        <p>Michael Cattell Design Ltd<br>
-        Registered in England & Wales. Company number 8809245</p>
+
       </div>
     </div>
   </div>

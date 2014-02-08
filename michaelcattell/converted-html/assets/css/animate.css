@@ -84,7 +84,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-.animated.shake {
+#animated #shake {
 	-webkit-animation-name: shake;
 	-moz-animation-name: shake;
 	-o-animation-name: shake;

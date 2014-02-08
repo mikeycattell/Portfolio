@@ -1,7 +1,7 @@
 <div id="homeslide"></div>
 
-<div id="header" role="navigation" class="hide-for-small"style="position: fixed;">
-<div class="cbp-af-header" role="navigation">
+<div id="header" role="navigation" class="hide-for-small">
+<div class="cbp-af-header backgroundaltmenu" role="navigation">
   <div class="cbp-af-inner">    
 
     <div class="row">
@@ -9,8 +9,7 @@
       <div id="menu">
         <li><a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>work</a></li>        
         <li><a href="about" {% if mixture.url == "about" %}class="active"{% endif %}>about</a></li>
-        <li><a href="blog"{% if mixture.url == "blog" %}class="active"{% endif %}>blog</a></li>
-        <button type="button" class="buttonhead" href="contact" {% if mixture.url == "contact" %}class="active"{% endif %}>get in touch</button>
+        <a href="contact"><button type="button" class="buttonhead" {% if mixture.url == "contact" %}class="active"{% endif %}>get in touch</button></a>
       </div>
     </div>
   </div>
@@ -20,12 +19,12 @@
 <nav class="top-bar show-for-small" role="navigation">
   <ul class="title-area">
     
-    <li class="logoholderformobile"  style="float: left;" >
-       <a class="logoholdermob logoholdmobile"href="index" title="Go to home page" style="margin: 17px 0 0 5px;"><img src="{{"mc_logo_mob.png" | asset_url }}" alt="" /></a>
+    <li class="logoholderformobile logoholderfixleft">
+       <a class="logoholdermob logoholdmobile"href="index" title="Go to home page"><img src="{{"mc_logo_mob.png" | asset_url }}" alt="" /></a>
     </li>
-    <li class="toggle-topbar"  style="float: right;" >
-    <div style="margin-top: 10px;">
-          <a href="#"><span class="lines" style=" line-height: 3; font-size: 18px;">Menu</span></a>
+    <li class="toggle-topbar">
+    <div class="margintop10">
+          <a href="#"><span class="lines">Menu</span></a>
     </div>
       </li>
   </ul>
@@ -34,15 +33,10 @@
     <ul class="left">
       <li><a href="work" {% if mixture.url == "work" %}class="active"{% endif %}>work</a></li>
       <li><a href="about" {% if mixture.url == "about" %}class="active"{% endif %}>about</a></li>
-      <li><a href="blog" {% if mixture.url == "blog" %}class="active"{% endif %}>blog</a></li>
       <li><a href="contact" {% if mixture.url == "contact" %}class="active"{% endif %}>contact</a></li>
     </ul>
   </section>
 </nav>
-
-<style type="text/css">
-.cbp-af-header { background: #2c3133;}
-</style>  
 
 <!-- End Navigation -->
 

@@ -28,11 +28,13 @@
   <script src="../assets/js/vendor/custom.modernizr.min.js"></script>  
 </head>
     <!--
-      - If you’re looking in here then you’re probably exactly the type of
+      - If you’re the type of person looking in here then you are most certainly the type of
       - person I would love to work with! Drop me a line: hello@michaelcattell.com
       -->
 <body>
   <div id="homeslide"></div>
+
+<!-- start of navigation -->
 
 <div id="header" role="navigation" class="hide-for-small">
 <div class="cbp-af-header" role="navigation">
@@ -43,8 +45,7 @@
       <div id="menu">
         <li><a href="work" >work</a></li>        
         <li><a href="about" >about</a></li>
-        <li><a href="blog">blog</a></li>
-        <a href="contact"><button type="button" class="buttonhead" >get in touch</button></a>
+        <a href="contact"><button type="button" class="buttonheaddarkblue" >get in touch</button></a>
       </div>
     </div>
   </div>
@@ -54,12 +55,12 @@
 <nav class="top-bar show-for-small" role="navigation">
   <ul class="title-area">
     
-    <li class="logoholderformobile"  style="float: left;" >
-       <a class="logoholdermob logoholdmobile"href="index" title="Go to home page" style="margin: 17px 0 0 5px;"><img src="../assets/images/icons/mc_logo_mob.png" alt="" /></a>
+    <li class="logoholderformobile logoholderfixleft" >
+       <a class="logoholdermob logoholdmobile"href="index" title="Go to home page"><img src="../assets/images/icons/mc_logo_mob.png" alt="" /></a>
     </li>
-    <li class="toggle-topbar"  style="float: right;" >
-    <div style="margin-top: 10px;">
-          <a href="#"><span class="lines" style=" line-height: 3; font-size: 18px;">Menu</span></a>
+    <li class="toggle-topbar">
+    <div class="margintop10">
+          <a href="#"><span class="lines">Menu</span></a>
     </div>
       </li>
   </ul>
@@ -68,54 +69,7 @@
     <ul class="left">
       <li><a href="work" >work</a></li>
       <li><a href="about" >about</a></li>
-      <li><a href="blog" >blog</a></li>
       <li><a href="contact" >contact</a></li>
-    </ul>
-  </section>
-</nav>
-    
-
-<style type="text/css">
-
-button.buttonhead { background: 0; font-size: 18px; font-weight: 700; padding: 22px 26px 14px 26px; color: #B5D2DB; border: 2px solid #B5D2DB; border-radius: 7px; transition: all .2s ease-in-out; box-shadow: none; }
-button.buttonhead:hover { background: #f2f2f2; color: #333; border: 2px solid #fff; transition: all .2s ease-in-out; }
-
-
-
-
-
-
-
-</style>  
-<!-- desktop navigation
-
-<div class="cbp-af-header hide-for-small" role="navigation">
-  <div class="cbp-af-inner">
-    <a class="logoholder animated wobble" href="index" title="Go to home page"><img src="../assets/images/icons/mc_logo.png" alt="" /></a>
-     <nav>
-        <a href="work" >WORK</a>
-        <a href="about" >ABOUT</a>
-        <a href="blog">JOURNAL</a>
-        <a href="contact" >CONTACT</a>
-     </nav>
-  </div>
-</div>-->       
-<!-- mobile navigation
-<nav class="top-bar noise show-for-small" role="navigation">
-  <ul class="title-area">
-    
-    <li >
-       <a class="logoholdermob" href="index" title="Go to home page"><img src="../assets/images/icons/mc_logo_mob.png" alt="" /></a>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#" style="color: #fff;"><span>menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <ul class="left">
-      <li><a href="work" >WORK</a></li>
-      <li><a href="about">ABOUT</a></li>
-      <li><a href="blog">JOURNAL</a></li>
-      <li><a href="contact">CONTACT</a></li>
     </ul>
   </section>
 </nav>
@@ -231,50 +185,24 @@ font-size: 1rem;
     </div>
   </div>
 </section>
-
-<style>
-.ctaSeparator {
-/*background: url('http://www.upsidelearning.com/images/bg-h3.png') repeat-x left center;
-color: #454545;
-text-align: center;
-margin: 3em 0 1em;
-}
-.ctaSeparator span {
-  background: url('http://www.upsidelearning.com/images/bg-area-textured.gif');
-display: inline-block;
-padding: 0 15px;
-}
-.ulBtn {
-background-color: #16A085; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border-bottom: none !important; color: #fff !important; display: inline-block; font-size: 1.3em; line-height: 1.4 !important; padding: 20px 80px; margin-right: 20px; }
-.ulBtn:hover { background-color: #097159 ; }
-
-.ctaSeparator .greyLink {
-margin-left: 0px;
-background-color: transparent;
-border-radius: 5px;
-border: 1px solid #bbb;
-color: #666 !important;
-line-height: 1.4 !important;
-padding: 20px 0px;
-font-size: 1.3em;
-border: 0;*/
-}
-
-</style> 
-<section role="contentinfo" class="position: relative; display: none;">
+ 
+<section role="contentinfo" class="position: relative;">
 
   <div class="darkblack contentinternalpad">
     <div class="row">
       <div class="six columns">
         <p>Freelance Digital Designer and Front-end Developer<br>Based in <span class="white">Yorkshire , England. </span></p>
+        <p class="smallpara">Michael Cattell Design Ltd<br>
+        Registered in England & Wales. Company number 8809245</p>
       </div>
-      <div class="six columns text-right end">
-        <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a></p>
-        <p><a href="sitemap">Sitemap</a>&nbsp;&#124;&nbsp;<a href="">Work</a>&nbsp;&#124;&nbsp;<a href="">Contact me</a></p>
+      <div class="six columns right-align end">
+        <p class="gray"><a class="white" href="mailto:hello@michaelcattell.com" title="drop me an email, i love um!">hello@michaelcattell.com</a><br><a href="http://www.twitter.com/mikeycattell" title="follow me on twitter at @mikeycattell"><img src="assets/images/icons/twitter_icon_.png"></a><a href="http://www.linkedin.com/pub/michael-cattell/18/919/6a/" title="look at my resume on linkedin"><img src="assets/images/icons/linkedin_icon.png">&nbsp;</a><a href="http://www.last.fm/user/mikey_cattell" title="check out my tunes on last fm, bad songs..blame the wife/dog/weather"><img src="assets/images/icons/lastfm_icon.png"></a>&nbsp;&nbsp;<a href="https://svpply.com/mikeycattell" title="view all my wants/needs on svpply!"><img src="assets/images/icons/sv_icon.png"></a>&nbsp;&nbsp;<a href="contact" title="send me an email via my contact form"><img src="assets/images/icons/mail_icon.png"></a><br>
+        Or call me on +44 (0)7925 460880<br>
+        <span class="smallpara"><a href="sitemap">sitemap</a>&nbsp;&#124;&nbsp;<a href="work">work</a>&nbsp;&#124;&nbsp;<a href="contact">contact me</a></span></p>
+
       </div>
       <div class="twelve columns">
-        <p>Michael Cattell Design Ltd<br>
-        Registered in England & Wales. Company number 8809245</p>
+
       </div>
     </div>
   </div>
